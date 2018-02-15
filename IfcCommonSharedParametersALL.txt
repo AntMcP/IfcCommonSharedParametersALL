@@ -542,12 +542,10 @@ PARAM	ff02e300-d1c4-11e1-8000-00215ad4efdf	ConstructionMethod	TEXT		6		The type 
 PARAM	032f0080-d1c5-11e1-8000-00215ad4efdf	FireProtectionClass	TEXT		6		Main fire protection class for the building which is assigned from the fire protection classification table as given by the relevant national building code.	1
 PARAM	075b1e00-d1c5-11e1-8000-00215ad4efdf	SprinklerProtection	YESNO		6		Indication whether this object is sprinkler protected (TRUE) or not (FALSE).	1
 PARAM	0c1fd200-d1c5-11e1-8000-00215ad4efdf	SprinklerProtectionAutomatic	YESNO		6		Indication whether this object has an automatic sprinkler protection (TRUE) or not (FALSE).	1
-PARAM	104bef80-d1c5-11e1-8000-00215ad4efdf	OccupancyType	TEXT		6		Occupancy type for this object.
-It is defined according to the presiding national building code.	1
+PARAM	104bef80-d1c5-11e1-8000-00215ad4efdf	OccupancyType	TEXT		6		Occupancy type for this object. It is defined according to the presiding national building code.	1
 PARAM	1510a380-d1c5-11e1-8000-00215ad4efdf	GrossPlannedArea	AREA		6		Total planned gross area for the building  Used for programming the building.	1
 PARAM	193cc100-d1c5-11e1-8000-00215ad4efdf	NetPlannedArea	AREA		6		Total planned net area for the building  Used for programming the building.	1
-PARAM	1d68de80-d1c5-11e1-8000-00215ad4efdf	NumberOfStoreys	ANGLE		6		The number of storeys within a building.
-Captured for those cases where the IfcBuildingStorey entity is not used. Note that if IfcBuilingStorey is asserted and the number of storeys in a building can be determined from it, then this approach shoul...	1
+PARAM	1d68de80-d1c5-11e1-8000-00215ad4efdf	NumberOfStoreys	ANGLE		6		The number of storeys within a building. Captured for those cases where the IfcBuildingStorey entity is not used. Note that if IfcBuilingStorey is asserted and the number of storeys in a building can be determined from it, then this approach shoul...	1
 PARAM	2194fc00-d1c5-11e1-8000-00215ad4efdf	YearOfConstruction	TEXT		6		Year of construction of this building, including expected year of completion.	1
 PARAM	2659b000-d1c5-11e1-8000-00215ad4efdf	YearOfLastRefurbishment	TEXT		6		Year of last major refurbishment, or reconstruction, of the building (applies to reconstruction works).	1
 PARAM	2a85cd80-d1c5-11e1-8000-00215ad4efdf	IsLandmarked	YESNO		6		This builing is listed as a historic building (TRUE), or not (FALSE), or unknown.	1
@@ -601,8 +599,7 @@ PARAM	88eae355-e7df-464a-849b-e613af48fa32	LeadOutTime	TEXT		15		Lead out time a
 PARAM	6c296f00-d1eb-11e1-8000-00215ad4efdf	LandID	TEXT		16		Identification number assigned by the statutory registration authority to a land parcel.	1
 PARAM	7b102180-d1eb-11e1-8000-00215ad4efdf	LandTitleID	TEXT		16		Identification number assigned by the statutory registration authority to the title to a land parcel.	1
 PARAM	bada0780-d1f1-11e1-8000-00215ad4efdf	Purpose	TEXT		17		Indication of the purpose for that opening, e.g. 'ventilation', 'access', etc.	1
-PARAM	c0cfe880-d1f1-11e1-8000-00215ad4efdf	FireExit	YESNO		17		Indication whether this object is designed to serve as an exit in the case of fire (TRUE) or not (FALSE).
-Here whether the space (in case of e.g., a corridor) is designed to serve as an exit space, e.g., for fire escape purposes.	1
+PARAM	c0cfe880-d1f1-11e1-8000-00215ad4efdf	FireExit	YESNO		17		Indication whether this object is designed to serve as an exit in the case of fire (TRUE) or not (FALSE). Here whether the space (in case of e.g., a corridor) is designed to serve as an exit space, e.g., for fire escape purposes.	1
 PARAM	c7f6f680-d1f1-11e1-8000-00215ad4efdf	ProtectedOpening	YESNO		17		Indication whether the opening is considered to be protected under fire safety considerations. If (TRUE) it counts as a protected opening under the applicable building code, (FALSE) otherwise.	1
 PARAM	d3551c80-d207-11e1-8000-00215ad4efdf	BuildableArea	AREA		18		The area of site utilization expressed as a maximum value according to local building codes.	1
 PARAM	d819d080-d207-11e1-8000-00215ad4efdf	SiteCoverageRatio	NUMBER		18		The ratio of the utilization,  TotalArea / BuildableArea, expressed as a maximum value. The ratio value may be used to derive BuildableArea.	1
@@ -611,36 +608,16 @@ PARAM	e2d46580-d207-11e1-8000-00215ad4efdf	BuildingHeightLimit	LENGTH		18		Allow
 PARAM	ea940a00-d207-11e1-8000-00215ad4efdf	TotalArea	AREA		18		Total planned area for the site. Used for programming the site space.	1
 PARAM	0d72ee00-d209-11e1-8000-00215ad4efdf	PubliclyAccessible	YESNO		19		Indication whether this space (in case of e.g., a toilet) is designed to serve as a publicly accessible space, e.g., for a public toilet (TRUE) or not (FALSE).	1
 PARAM	1499fc00-d209-11e1-8000-00215ad4efdf	HandicapAccessible	YESNO		19		Indication whether this space (in case of e.g., a toilet) is designed to serve as an accessible space for handicapped people, e.g., for a public toilet (TRUE) or not (FALSE). This information is often used to declare the need for access for the di...	1
-PARAM	bfd1f6a6-ca08-4408-9916-5d31dda04831	FloorCovering	TEXT		20		Label to indicate the material or finish of the space flooring. The label is used for room book information and often displayed in room stamp.
-
-The material information is provided in absence of an IfcCovering (type=FLOORING) object with own shape...	1
-PARAM	9650c4d3-c07f-4ccc-9fd8-147b099f0939	FloorCoveringThickness	LENGTH		20		Thickness of the material layer(s) for the space flooring.  
-
-The thickness information is provided in absence of an IfcCovering (type=FLOORING) object with own shape representation. In cases of inconsistency between the geometric parameters of an...	1
-PARAM	69193a7f-647f-4526-bd7f-1d3b9fdd1a9e	WallCovering	TEXT		20		Label to indicate the material or finish of the space flooring. The label is used for room book information and often displayed in room stamp.
-
-The material information is provided in absence of an IfcCovering (type=CLADDING) object with own shape...	1
-PARAM	44c775b1-4a0d-46c5-8ad8-c7e36c34a349	WallCoveringThickness	LENGTH		20		Thickness of the material layer(s) for the space cladding.  
-
-The thickness information is provided in absence of an IfcCovering (type=CLADDING) object with own shape representation. In cases of inconsistency between the geometric parameters of an...	1
-PARAM	da83c423-5c1d-40ab-a951-0f6abe2412f6	CeilingCovering	TEXT		20		Label to indicate the material or finish of the space flooring. The label is used for room book information and often displayed in room stamp.
-
-The material information is provided in absence of an IfcCovering (type=CEILING) object with own shape ...	1
-PARAM	abdab367-fcc6-4b08-b03d-584baeb819c8	CeilingCoveringThickness	LENGTH		20		Thickness of the material layer(s) for the space ceiling.  
-
-The thickness information is provided in absence of an IfcCovering (type=CEILING) object with own shape representation. In cases of inconsistency between the geometric parameters of an a...	1
-PARAM	6d6b4d00-a223-4b90-b4eb-1901ca5be2b5	SkirtingBoard	TEXT		20		Label to indicate the material or construction of the skirting board around the space flooring. The label is used for room book information.
-
-The material information is provided in absence of an IfcCovering (type=SKIRTINGBOARD) object with own sh...	1
-PARAM	af1249f7-1eb2-4579-aaec-871aa4a6287b	SkirtingBoardHeight	LENGTH		20		Height of the skirting board.
-
-The height information is provided in absence of an IfcCovering (type=SKIRTINGBOARD) object with own shape representation and material assignment. In case of inconsistency the height assigned to IfcCovering elements ...	1
-PARAM	3f9ca576-2462-47ff-8bdc-a254b651a15a	Molding	TEXT		20		Label to indicate the material or construction of the molding around the space ceiling. The label is used for room book information.
-
-The material information is provided in absence of an IfcCovering (type=MOLDING) object with own shape representa...	1
-PARAM	1e009268-2e53-47b2-b2c5-050bd03ee111	MoldingHeight	LENGTH		20		Height of the molding.
-
-The height information is provided in absence of an IfcCovering (type=MOLDING) object with own shape representation and material assignment. In case of inconsistency the height assigned to IfcCovering elements takes precede...	1
+PARAM	bfd1f6a6-ca08-4408-9916-5d31dda04831	FloorCovering	TEXT		20		Label to indicate the material or finish of the space flooring. The label is used for room book information and often displayed in room stamp. The material information is provided in absence of an IfcCovering (type=FLOORING) object with own shape...	1
+PARAM	9650c4d3-c07f-4ccc-9fd8-147b099f0939	FloorCoveringThickness	LENGTH		20		Thickness of the material layer(s) for the space flooring.   The thickness information is provided in absence of an IfcCovering (type=FLOORING) object with own shape representation. In cases of inconsistency between the geometric parameters of an...	1
+PARAM	69193a7f-647f-4526-bd7f-1d3b9fdd1a9e	WallCovering	TEXT		20		Label to indicate the material or finish of the space flooring. The label is used for room book information and often displayed in room stamp. The material information is provided in absence of an IfcCovering (type=CLADDING) object with own shape...	1
+PARAM	44c775b1-4a0d-46c5-8ad8-c7e36c34a349	WallCoveringThickness	LENGTH		20		Thickness of the material layer(s) for the space cladding. The thickness information is provided in absence of an IfcCovering (type=CLADDING) object with own shape representation. In cases of inconsistency between the geometric parameters of an...	1
+PARAM	da83c423-5c1d-40ab-a951-0f6abe2412f6	CeilingCovering	TEXT		20		Label to indicate the material or finish of the space flooring. The label is used for room book information and often displayed in room stamp. The material information is provided in absence of an IfcCovering (type=CEILING) object with own shape ...	1
+PARAM	abdab367-fcc6-4b08-b03d-584baeb819c8	CeilingCoveringThickness	LENGTH		20		Thickness of the material layer(s) for the space ceiling.   The thickness information is provided in absence of an IfcCovering (type=CEILING) object with own shape representation. In cases of inconsistency between the geometric parameters of an a...	1
+PARAM	6d6b4d00-a223-4b90-b4eb-1901ca5be2b5	SkirtingBoard	TEXT		20		Label to indicate the material or construction of the skirting board around the space flooring. The label is used for room book information. The material information is provided in absence of an IfcCovering (type=SKIRTINGBOARD) object with own sh...	1
+PARAM	af1249f7-1eb2-4579-aaec-871aa4a6287b	SkirtingBoardHeight	LENGTH		20		Height of the skirting board. The height information is provided in absence of an IfcCovering (type=SKIRTINGBOARD) object with own shape representation and material assignment. In case of inconsistency the height assigned to IfcCovering elements ...	1
+PARAM	3f9ca576-2462-47ff-8bdc-a254b651a15a	Molding	TEXT		20		Label to indicate the material or construction of the molding around the space ceiling. The label is used for room book information. The material information is provided in absence of an IfcCovering (type=MOLDING) object with own shape representa...	1
+PARAM	1e009268-2e53-47b2-b2c5-050bd03ee111	MoldingHeight	LENGTH		20		Height of the molding. The height information is provided in absence of an IfcCovering (type=MOLDING) object with own shape representation and material assignment. In case of inconsistency the height assigned to IfcCovering elements takes precede...	1
 PARAM	8650a689-ba06-4df6-9f05-2a87ab070f02	ConcealedFlooring	YESNO		20		Indication whether this space is designed to have a concealed flooring space (TRUE) or not (FALSE). A concealed flooring space is normally meant to be the space beneath a raised floor.	1
 PARAM	56029141-a7c0-40c4-aef5-1a242fa1611f	ConcealedFlooringOffset	LENGTH		20		Distance between the floor slab and the floor covering, often used for cables and other installations. Often referred to as raised flooring. 	1
 PARAM	7502fd34-b7fa-4942-80c6-10aec4787043	ConcealedCeiling	YESNO		20		Indication whether this space is designed to have a concealed flooring space (TRUE) or not (FALSE). A concealed ceiling space is normally meant to be the space between a slab and a ceiling.	1
@@ -677,26 +654,16 @@ PARAM	8d4e8780-d20c-11e1-8000-00215ad4efdf	NaturalVentilation	YESNO		25		Indicat
 PARAM	94759580-d20c-11e1-8000-00215ad4efdf	NaturalVentilationRate	NUMBER		25		Indication of the requirement of a particular natural air ventilation rate, given in air changes per hour.	1
 PARAM	9a6b7680-d20c-11e1-8000-00215ad4efdf	MechanicalVentilationRate	NUMBER		25		Indication of the requirement of a particular mechanical air ventilation rate, given in air changes per hour.	1
 PARAM	9fc8c100-d20c-11e1-8000-00215ad4efdf	AirConditioning	YESNO		25		Indication whether this space requires air conditioning provided (TRUE) or not (FALSE).	1
-PARAM	a5bea200-d20c-11e1-8000-00215ad4efdf	AirConditioningCentral	YESNO		25		Indication whether the space  requires a central air conditioning provided (TRUE) or not (FALSE).
-It should only be given, if the property "AirConditioning" is set to TRUE.	1
+PARAM	a5bea200-d20c-11e1-8000-00215ad4efdf	AirConditioningCentral	YESNO		25		Indication whether the space  requires a central air conditioning provided (TRUE) or not (FALSE). It should only be given, if the property "AirConditioning" is set to TRUE.	1
 PARAM	000e3180-d212-11e1-8000-00215ad4efdf	CapacityPeople	NUMBER		27		Capacity of the transportation element measured in numbers of person.	1
 PARAM	056b7c00-d212-11e1-8000-00215ad4efdf	CapacityWeight	MASS		27		Capacity of the transport element measured by weight.	1
 PARAM	1a480f80-d212-11e1-8000-00215ad4efdf	FireFightingLift	YESNO		28		Indication whether the elevator is designed to serve as a fire fighting lift the case of fire (TRUE) or not (FALSE). A fire fighting lift is used by fire fighters to access the location of fire and to evacuate people.	1
-PARAM	20d68700-d212-11e1-8000-00215ad4efdf	ClearWidth	LENGTH		28		Clear width of the object (elevator). It indicates the distance from the inner surfaces of the elevator car left and right from the elevator door. 
-The shape information is provided in addition to the shape representation and the geometric paramet...	1
-PARAM	29c75880-d212-11e1-8000-00215ad4efdf	ClearDepth	LENGTH		28		Clear depth of the object (elevator). It indicates the distance from the inner surface of the elevator door to the opposite surface of the elevator car. 
-The shape information is provided in addition to the shape representation and the geometric p...	1
-PARAM	321f9380-d212-11e1-8000-00215ad4efdf	ClearHeight	LENGTH		28		Clear height of the object (elevator).  
-The shape information is provided in addition to the shape representation and the geometric parameters used within. In cases of inconsistency between the geometric parameters and the shape properties, provi...	1
-PARAM	19888c80-d1c4-11e1-8000-00215ad4efdf	Span	LENGTH		36		Clear span for this object.
-
-The shape information is provided in addition to the shape representation and the geometric parameters used within. In cases of inconsistency between the geometric parameters and the shape properties, provided in the a...	1
-PARAM	1ee5d700-d1c4-11e1-8000-00215ad4efdf	Slope	ANGLE		36		Slope angle - relative to horizontal (0.0 degrees).
-
-The shape information is provided in addition to the shape representation and the geometric parameters used within. In cases of inconsistency between the geometric parameters and the shape prope...	1
-PARAM	23aa8b00-d1c4-11e1-8000-00215ad4efdf	Roll	ANGLE		36		Rotation against the longitudinal axis - relative to the global Z direction for all beams that are non-vertical in regard to the global coordinate system (Profile direction equals global Z is Roll = 0.)
-
-The shape information is provided in additi...	1
+PARAM	20d68700-d212-11e1-8000-00215ad4efdf	ClearWidth	LENGTH		28		Clear width of the object (elevator). It indicates the distance from the inner surfaces of the elevator car left and right from the elevator door.  The shape information is provided in addition to the shape representation and the geometric paramet...	1
+PARAM	29c75880-d212-11e1-8000-00215ad4efdf	ClearDepth	LENGTH		28		Clear depth of the object (elevator). It indicates the distance from the inner surface of the elevator door to the opposite surface of the elevator car.  The shape information is provided in addition to the shape representation and the geometric p...	1
+PARAM	321f9380-d212-11e1-8000-00215ad4efdf	ClearHeight	LENGTH		28		Clear height of the object (elevator).   The shape information is provided in addition to the shape representation and the geometric parameters used within. In cases of inconsistency between the geometric parameters and the shape properties, provi...	1
+PARAM	19888c80-d1c4-11e1-8000-00215ad4efdf	Span	LENGTH		36		Clear span for this object. The shape information is provided in addition to the shape representation and the geometric parameters used within. In cases of inconsistency between the geometric parameters and the shape properties, provided in the a...	1
+PARAM	1ee5d700-d1c4-11e1-8000-00215ad4efdf	Slope	ANGLE		36		Slope angle - relative to horizontal (0.0 degrees). The shape information is provided in addition to the shape representation and the geometric parameters used within. In cases of inconsistency between the geometric parameters and the shape prope...	1
+PARAM	23aa8b00-d1c4-11e1-8000-00215ad4efdf	Roll	ANGLE		36		Rotation against the longitudinal axis - relative to the global Z direction for all beams that are non-vertical in regard to the global coordinate system (Profile direction equals global Z is Roll = 0.) The shape information is provided in additi...	1
 PARAM	5c972f80-d1c5-11e1-8000-00215ad4efdf	Shape	TEXT		38		The shape form of the provision for void, the minimum set of agreed values includes 'Rectangle', 'Round', and 'Undefined'.	1
 PARAM	615be380-d1c5-11e1-8000-00215ad4efdf	Width	LENGTH		38		The requested width (horizontal extension in elevation) of the provision for void, only provided if the Shape property is set to "rectangle".	1
 PARAM	65880100-d1c5-11e1-8000-00215ad4efdf	Height	LENGTH		38		The requested height (vertical extension in elevation) of the provision for void", only provided if the Shape property is set to "rectangle".	1
@@ -704,35 +671,25 @@ PARAM	69b41e80-d1c5-11e1-8000-00215ad4efdf	Diameter	LENGTH		38		The requested di
 PARAM	6de03c00-d1c5-11e1-8000-00215ad4efdf	Depth	LENGTH		38		The requested depth or thickness of the provision for void.	1
 PARAM	720c5980-d1c5-11e1-8000-00215ad4efdf	System	TEXT		38		he building service system that requires the provision for voids, e.g. 'Air Conditioning', 'Plumbing', 'Electro', etc.	1
 PARAM	573be400-d1c9-11e1-8000-00215ad4efdf	NumberOfDrafts	NUMBER		40		Number of the chimney drafts, continuous holes in the chimney through which the air passes, within the single chimney.	1
-PARAM	febc1500-d1cf-11e1-8000-00215ad4efdf	Permeability	NUMBER		42		Ratio of the permeability of the ceiling.
-The ration can be used to indicate an open ceiling (that enables identification of whether ceiling construction should be considered as impeding distribution of sprinkler water, light etc. from installatio...	1
+PARAM	febc1500-d1cf-11e1-8000-00215ad4efdf	Permeability	NUMBER		42		Ratio of the permeability of the ceiling. The ration can be used to indicate an open ceiling (that enables identification of whether ceiling construction should be considered as impeding distribution of sprinkler water, light etc. from installatio...	1
 PARAM	04195f80-d1d0-11e1-8000-00215ad4efdf	TileLength	LENGTH		42		Length of ceiling tiles. The size information is provided in addition to the shape representation and the geometric parameters used within. In cases of inconsistency between the geometric parameters and the size properties, provided in the attache...	1
 PARAM	0976aa00-d1d0-11e1-8000-00215ad4efdf	TileWidth	LENGTH		42		Width of ceiling tiles. The size information is provided in addition to the shape representation and the geometric parameters used within. In cases of inconsistency between the geometric parameters and the size properties, provided in the attached...	1
-PARAM	2e6b1d00-d1d0-11e1-8000-00215ad4efdf	AcousticRating	TEXT		43		Acoustic rating for this object.
-It is giving according to the national building code. It indicates the sound transmission resistance of this object by an index ration (instead of providing full sound absorbtion values).	1
-PARAM	3460fe00-d1d0-11e1-8000-00215ad4efdf	FlammabilityRating	TEXT		43		Flammability Rating for this object.
-It is given according to the national building code that governs the rating of flammability for materials.	1
+PARAM	2e6b1d00-d1d0-11e1-8000-00215ad4efdf	AcousticRating	TEXT		43		Acoustic rating for this object. It is giving according to the national building code. It indicates the sound transmission resistance of this object by an index ration (instead of providing full sound absorbtion values).	1
+PARAM	3460fe00-d1d0-11e1-8000-00215ad4efdf	FlammabilityRating	TEXT		43		Flammability Rating for this object. It is given according to the national building code that governs the rating of flammability for materials.	1
 PARAM	39be4880-d1d0-11e1-8000-00215ad4efdf	FragilityRating	TEXT		43		Indication on the fragility of the covering (e.g., under fire conditions).  It is given according to the national building code that might provide a classification for fragility.	1
 PARAM	45aa0a80-d1d0-11e1-8000-00215ad4efdf	Combustible	YESNO		43		Indication whether the object is made from combustible material (TRUE) or not (FALSE).	1
-PARAM	3f1b9300-d1d0-11e1-8000-00215ad4efdf	SurfaceSpreadOfFlame	TEXT		43		Indication on how the flames spread around the surface,
-It is given according to the national building code that governs the fire behaviour for materials.	1
-PARAM	565a8080-d1d0-11e1-8000-00215ad4efdf	Finish	TEXT		43		Finish selection for this object.
-Here specification of the surface finish for informational purposes.	1
+PARAM	3f1b9300-d1d0-11e1-8000-00215ad4efdf	SurfaceSpreadOfFlame	TEXT		43		Indication on how the flames spread around the surface, It is given according to the national building code that governs the fire behaviour for materials.	1
+PARAM	565a8080-d1d0-11e1-8000-00215ad4efdf	Finish	TEXT		43		Finish selection for this object. Here specification of the surface finish for informational purposes.	1
 PARAM	62ded900-d1d0-11e1-8000-00215ad4efdf	HasNonSkidSurface	YESNO		44		Indication whether the surface finish is designed to prevent slippery (TRUE) or not (FALSE).	1
 PARAM	683c2380-d1d0-11e1-8000-00215ad4efdf	HasAntiStaticSurface	YESNO		44		Indication whether the surface finish is designed to prevent electrostatic charge (TRUE) or not (FALSE).	1
-PARAM	b4409580-d1db-11e1-8000-00215ad4efdf	SecurityRating	TEXT		46		Index based rating system indicating security level.
-It is giving according to the national building code.	1
+PARAM	b4409580-d1db-11e1-8000-00215ad4efdf	SecurityRating	TEXT		46		Index based rating system indicating security level. It is giving according to the national building code.	1
 PARAM	cde1dd00-d1db-11e1-8000-00215ad4efdf	DurabilityRating	TEXT		46		Durability against mechanical stress. It is given according to the national code or regulation.	1
 PARAM	ec47d880-d1db-11e1-8000-00215ad4efdf	HygrothermalRating	TEXT		46		Resistence against hygrothermal impact from different temperatures and humidities inside and outside. It is given according to the national code or regulation.	1
-PARAM	5030f042-24d9-4c74-aba7-53294170b227	WaterTightnessRating	TEXT		46		Water tightness rating for this object.
-It is provided according to the national building code.	1
-PARAM	da9b78df-a88b-4538-887d-4c597a1059dd	MechanicalLoadRating	TEXT		46		Mechanical load rating for this object.
-It is provided according to the national building code.	1
-PARAM	9be0892f-f932-4135-bdaf-cd98782a64ff	WindLoadRating	TEXT		46		Wind load resistance rating for this object.
-It is provided according to the national building code.	1
+PARAM	5030f042-24d9-4c74-aba7-53294170b227	WaterTightnessRating	TEXT		46		Water tightness rating for this object. It is provided according to the national building code.	1
+PARAM	da9b78df-a88b-4538-887d-4c597a1059dd	MechanicalLoadRating	TEXT		46		Mechanical load rating for this object. It is provided according to the national building code.	1
+PARAM	9be0892f-f932-4135-bdaf-cd98782a64ff	WindLoadRating	TEXT		46		Wind load resistance rating for this object. It is provided according to the national building code.	1
 PARAM	23b68500-d1dc-11e1-8000-00215ad4efdf	Infiltration	PIPINGFLOW		46		Infiltration flowrate of outside air for the filler object based on the area of the filler object at a pressure level of 50 Pascals. It shall be used, if the length of all joints is unknown.	1
-PARAM	5d878b80-d1dc-11e1-8000-00215ad4efdf	GlazingAreaFraction	NUMBER		46		Fraction of the glazing area relative to the total area of the filling element. 
-It shall be used, if the glazing area is not given separately for all panels within the filling element.	1
+PARAM	5d878b80-d1dc-11e1-8000-00215ad4efdf	GlazingAreaFraction	NUMBER		46		Fraction of the glazing area relative to the total area of the filling element.  It shall be used, if the glazing area is not given separately for all panels within the filling element.	1
 PARAM	aa6b6200-d1dc-11e1-8000-00215ad4efdf	HasDrive	YESNO		46		Indication whether this object has an automatic drive to operate it (TRUE) or no drive (FALSE)	1
 PARAM	beaf5f00-d1dc-11e1-8000-00215ad4efdf	SelfClosing	YESNO		46		Indication whether this object is designed to close automatically after use (TRUE) or not (FALSE).	1
 PARAM	cec73e80-d1dc-11e1-8000-00215ad4efdf	SmokeStop	YESNO		46		Indication whether the object is designed to provide a smoke stop (TRUE) or not (FALSE).	1
@@ -753,37 +710,25 @@ PARAM	88beaa80-d1dd-11e1-8000-00215ad4efdf	SolarReflectance	NUMBER		47		(Rsol): 
 PARAM	8ceac800-d1dd-11e1-8000-00215ad4efdf	SolarTransmittance	NUMBER		47		(Tsol): The ratio of incident solar radiation that directly passes through a glazing system (also named τe). Note the following equation Asol + Rsol + Tsol = 1	1
 PARAM	91af7c00-d1dd-11e1-8000-00215ad4efdf	SolarHeatGainTransmittance	NUMBER		47		(SHGC): The ratio of incident solar radiation that contributes to the heat gain of the interior, it is the solar radiation that directly passes (Tsol or τe) plus the part of the absorbed radiation that is distributed to the interior (qi). The SHGC...	1
 PARAM	95db9980-d1dd-11e1-8000-00215ad4efdf	ShadingCoefficient	NUMBER		47		(SC): The measure of the ability of a glazing to transmit solar heat, relative to that ability for 3 mm (1/8-inch) clear, double-strength, single glass. Shading coefficient is being phased out in favor of the solar heat gain coefficient (SHGC), an...	1
-PARAM	9a07b700-d1dd-11e1-8000-00215ad4efdf	ThermalTransmittanceSummer	NUMBER		47		Thermal transmittance coefficient (U-Value) of a material.
-Summer thermal transmittance coefficient of the glazing only, often referred to as (U-value).	1
-PARAM	9e33d480-d1dd-11e1-8000-00215ad4efdf	ThermalTransmittanceWinter	NUMBER		47		Thermal transmittance coefficient (U-Value) of a material.
-Winter thermal transmittance coefficient of the glazing only, often referred to as (U-value).	1
+PARAM	9a07b700-d1dd-11e1-8000-00215ad4efdf	ThermalTransmittanceSummer	NUMBER		47		Thermal transmittance coefficient (U-Value) of a material. Summer thermal transmittance coefficient of the glazing only, often referred to as (U-value).	1
+PARAM	9e33d480-d1dd-11e1-8000-00215ad4efdf	ThermalTransmittanceWinter	NUMBER		47		Thermal transmittance coefficient (U-Value) of a material. Winter thermal transmittance coefficient of the glazing only, often referred to as (U-value).	1
 PARAM	45753380-d1ff-11e1-8000-00215ad4efdf	RequiredHeadroom	LENGTH		51		Required headroom clearance for the passageway according to the applicable building code or additional requirements.	1
-PARAM	4c03ab00-d1ff-11e1-8000-00215ad4efdf	RequiredSlope	ANGLE		51		Required sloping angle of the object  - relative to horizontal (0.0 degrees).
-Required maximum slope for the passageway according to the applicable building code or additional requirements.	1
-PARAM	853c1b00-d1ff-11e1-8000-00215ad4efdf	Headroom	LENGTH		52		Actual headroom clearance for the passageway according to the current design. 
-The shape information is provided in addition to the shape representation and the geometric parameters used within. In cases of inconsistency between the geometric para...	1
-PARAM	971dbe00-d1ff-11e1-8000-00215ad4efdf	CounterSlope	ANGLE		52		Sloping angle of the object, measured perpendicular to the slope  - relative to horizontal (0.0 degrees). 
-Actual maximum slope for the passageway measured perpendicular to the direction of travel according to the current design. The shape informa...	1
+PARAM	4c03ab00-d1ff-11e1-8000-00215ad4efdf	RequiredSlope	ANGLE		51		Required sloping angle of the object  - relative to horizontal (0.0 degrees). Required maximum slope for the passageway according to the applicable building code or additional requirements.	1
+PARAM	853c1b00-d1ff-11e1-8000-00215ad4efdf	Headroom	LENGTH		52		Actual headroom clearance for the passageway according to the current design.  The shape information is provided in addition to the shape representation and the geometric parameters used within. In cases of inconsistency between the geometric para...	1
+PARAM	971dbe00-d1ff-11e1-8000-00215ad4efdf	CounterSlope	ANGLE		52		Sloping angle of the object, measured perpendicular to the slope  - relative to horizontal (0.0 degrees).  Actual maximum slope for the passageway measured perpendicular to the direction of travel according to the current design. The shape informa...	1
 PARAM	6f325880-d207-11e1-8000-00215ad4efdf	MechanicalOperated	YESNO		54		Indication whether the element is operated machanically (TRUE) or not, i.e. manually  (FALSE).	1
 PARAM	a1dc5100-d207-11e1-8000-00215ad4efdf	Roughness	TEXT		54		A measure of the vertical deviations of the surface.	1
 PARAM	a86ac880-d207-11e1-8000-00215ad4efdf	SurfaceColor	TEXT		54		The color of the surface.	1
-PARAM	49598380-d208-11e1-8000-00215ad4efdf	PitchAngle	ANGLE		55		Angle of the slab to the horizontal when used as a component for the roof (specified as 0 degrees or not asserted for cases where the slab is not used as a roof component).      
-
-The shape information is provided in addition to the shape represen...	1
+PARAM	49598380-d208-11e1-8000-00215ad4efdf	PitchAngle	ANGLE		55		Angle of the slab to the horizontal when used as a component for the roof (specified as 0 degrees or not asserted for cases where the slab is not used as a roof component).       The shape information is provided in addition to the shape represen...	1
 PARAM	4199df00-d208-11e1-8000-00215ad4efdf	Compartmentation	YESNO		55		Indication whether the object is designed to serve as a fire compartmentation (TRUE) or not (FALSE).	1
 PARAM	e8807a00-d20c-11e1-8000-00215ad4efdf	NumberOfRiser	NUMBER		56		Total number of the risers included in the stair.	1
 PARAM	ed452e00-d20c-11e1-8000-00215ad4efdf	NumberOfTreads	NUMBER		56		Total number of treads included in the stair.	1
-PARAM	f2a27880-d20c-11e1-8000-00215ad4efdf	RiserHeight	LENGTH		56		Vertical distance from tread to tread. 
-The riser height is supposed to be equal for all steps of a stair or stair flight.	1
-PARAM	fafab380-d20c-11e1-8000-00215ad4efdf	TreadLength	LENGTH		56		Horizontal distance from the front of the thread to the front of the next tread. 
-The tread length is supposed to be equal for all steps of the stair or stair flight at the walking line.	1
+PARAM	f2a27880-d20c-11e1-8000-00215ad4efdf	RiserHeight	LENGTH		56		Vertical distance from tread to tread.  The riser height is supposed to be equal for all steps of a stair or stair flight.	1
+PARAM	fafab380-d20c-11e1-8000-00215ad4efdf	TreadLength	LENGTH		56		Horizontal distance from the front of the thread to the front of the next tread.  The tread length is supposed to be equal for all steps of the stair or stair flight at the walking line.	1
 PARAM	a9e3055e-9126-471c-aa4a-118eb84c2751	NosingLength	LENGTH		56		Horizontal distance from the front of the tread to the riser underneath. It is the overhang of the tread.	1
-PARAM	975f98e2-5ec8-4e4d-ad52-a2fb2cad197c	WalkingLineOffset	LENGTH		56		Offset of the walking line from the inner side of the flight. 
-Note: the walking line may have a own shape representation (in case of inconsistencies, the value derived from the shape representation shall take precedence).	1
-PARAM	468b4f6c-361b-4ced-8545-cc440b4d8a1d	TreadLengthAtOffset	LENGTH		56		Length of treads at a given offset.
-Walking line position is given by the 'WalkingLineOffset'. The resulting value should normally be identical with TreadLength, it may be given in addition, if the walking line offset for building code calculation...	1
-PARAM	9996d6e7-f7ec-4fb9-973c-027edc7fc421	TreadLengthAtInnerSide	LENGTH		56		Minimum length of treads at the inner side of the winder. 
-Only relevant in case of winding flights, for straight flights it is identical with IfcStairFlight.TreadLength. It is a pre-calculated value, in case of inconsistencies, the value derived ...	1
+PARAM	975f98e2-5ec8-4e4d-ad52-a2fb2cad197c	WalkingLineOffset	LENGTH		56		Offset of the walking line from the inner side of the flight.  Note: the walking line may have a own shape representation (in case of inconsistencies, the value derived from the shape representation shall take precedence).	1
+PARAM	468b4f6c-361b-4ced-8545-cc440b4d8a1d	TreadLengthAtOffset	LENGTH		56		Length of treads at a given offset. Walking line position is given by the 'WalkingLineOffset'. The resulting value should normally be identical with TreadLength, it may be given in addition, if the walking line offset for building code calculation...	1
+PARAM	9996d6e7-f7ec-4fb9-973c-027edc7fc421	TreadLengthAtInnerSide	LENGTH		56		Minimum length of treads at the inner side of the winder.  Only relevant in case of winding flights, for straight flights it is identical with IfcStairFlight.TreadLength. It is a pre-calculated value, in case of inconsistencies, the value derived ...	1
 PARAM	47b259a7-db12-46f4-87ec-f6049461cc52	WaistThickness	LENGTH		56		Minimum thickness of the stair flight, measured perpendicular to the slope of the flight to the inner corner of riser and tread. It is a pre-calculated value, in case of inconsistencies, the value derived from the shape representation shall take p...	1
 PARAM	ea027000-d215-11e1-8000-00215ad4efdf	ExtendToStructure	YESNO		58		Indicates whether the object extend to the structure above (TRUE) or not (FALSE).	1
 PARAM	e3c1c300-d218-11e1-8000-00215ad4efdf	HasSillExternal	YESNO		59		Indication whether the window opening has an external sill (TRUE) or not (FALSE).	1
@@ -804,10 +749,8 @@ PARAM	3de16a80-d1be-11e1-8000-00215ad4efdf	HeatingTemperatureDelta	HVACTEMPERATU
 PARAM	43d74b80-d1be-11e1-8000-00215ad4efdf	CoolingTemperatureDelta	HVACTEMPERATURE		76		Cooling temperature difference for calculating space air flow rates.	1
 PARAM	49cd2c80-d1be-11e1-8000-00215ad4efdf	Ventilation	PIPINGFLOW		76		Required outside air ventilation.	1
 PARAM	4fc30d80-d1be-11e1-8000-00215ad4efdf	FanPower	HVACPOWER		76		Fan motor loads contributing to the cooling load.	1
-PARAM	7e97ae80-d1d3-11e1-8000-00215ad4efdf	WallThickness	LENGTH		78		The thickness of the duct wall construction
-NOTE: It is assumed that chamber walls will be constructed at a single thickness.	1
-PARAM	835c6280-d1d3-11e1-8000-00215ad4efdf	BaseThickness	LENGTH		78		The thickness of the duct base construction
-NOTE: It is assumed that duct base will be constructed at a single thickness.	1
+PARAM	7e97ae80-d1d3-11e1-8000-00215ad4efdf	WallThickness	LENGTH		78		The thickness of the duct wall construction NOTE: It is assumed that chamber walls will be constructed at a single thickness.	1
+PARAM	835c6280-d1d3-11e1-8000-00215ad4efdf	BaseThickness	LENGTH		78		The thickness of the duct base construction NOTE: It is assumed that duct base will be constructed at a single thickness.	1
 PARAM	88b9ad00-d1d3-11e1-8000-00215ad4efdf	AccessCoverLoadRating	TEXT		78		The load rating of the access cover (which may be a value or an alphanumerically defined class rating).	1
 PARAM	93744200-d1d3-11e1-8000-00215ad4efdf	ChamberLengthOrRadius	LENGTH		79		Length or, in the event of the shape being circular in plan, the radius of the chamber.	1
 PARAM	98d18c80-d1d3-11e1-8000-00215ad4efdf	ChamberWidth	LENGTH		79		Width, in the event of the shape being non circular in plan.	1
@@ -821,11 +764,7 @@ PARAM	13021100-d1d4-11e1-8000-00215ad4efdf	IsShallow	YESNO		81		Indicates whethe
 PARAM	185f5b80-d1d4-11e1-8000-00215ad4efdf	HasSteps	YESNO		81		Indicates whether the chamber has steps (TRUE) or not (FALSE).	1
 PARAM	c0752480-d1d4-11e1-8000-00215ad4efdf	PortNumber	ANGLE		86		The port index for logically ordering the port within the containing element or element type.	1
 PARAM	c79c3280-d1d4-11e1-8000-00215ad4efdf	ColorCode	TEXT		86		Name of a color for identifying the connector, if applicable.	1
-PARAM	4a16661b-e738-43fb-99eb-498a99015880	ConnectionSubtype	TEXT		90		<p>The physical port connection subtype that further qualifies the ConnectionType.  The following values are recommended:</p>
-
-<ul>
-<li>ACPLUG: A, B, C, D, E, F, EF, G, H, I, J, K, L, M</li> 
-<li>DIN: Mini3P, Mini4P, Mini5P, Mini6P, Mini7P, Mini8P...	1
+PARAM	4a16661b-e738-43fb-99eb-498a99015880	ConnectionSubtype	TEXT		90		The physical port connection subtype that further qualifies the ConnectionType.	1
 PARAM	eaf80f92-e6df-4c29-a180-86e89bea20e9	CurrentContent3rdHarmonic	NUMBER		90		The ratio between the third harmonic current and the phase current.	1
 PARAM	15d916dd-1d73-40bc-8148-1576f81d2a08	ConnectionSubType	TEXT		91		The physical port connection subtype that further qualifies the ConnectionType.	1
 PARAM	a28e9f22-6e20-4a90-9976-810e633a45f4	NominalWidth	LENGTH		91		The nominal width or diameter of the duct connection.	1
@@ -834,17 +773,9 @@ PARAM	9aa93573-8189-43ee-9e7a-d7e898fddfae	NominalThickness	LENGTH		91		The nomi
 PARAM	ac9d7980-31fc-44e1-828a-2cc76ae5d86c	NominalDiameter	LENGTH		92		The nominal diameter of the pipe connection.	1
 PARAM	fcd3dc22-fdfd-4ea0-84f2-00be83155aa3	InnerDiameter	LENGTH		92		The actual inner diameter of the pipe.	1
 PARAM	4d18569d-f126-4f3b-aceb-2da495f1dfda	OuterDiameter	LENGTH		92		The actual outer diameter of the pipe.	1
-PARAM	9f173700-d1da-11e1-8000-00215ad4efdf	Diversity	NUMBER		94		The ratio, expressed as a numerical
-value or as a percentage, of the
-simultaneous maximum demand of
-a group of electrical appliances or
-consumers within a specified period,
-to the sum of their individual maximum
-demands within the same
-period. The...	1
+PARAM	9f173700-d1da-11e1-8000-00215ad4efdf	Diversity	NUMBER		94		The ratio, expressed as a numerical value or as a percentage, of the simultaneous maximum demand of a group of electrical appliances or consumers within a specified period, to the sum of their individual maximum demands within the same period. The...	1
 PARAM	048b4300-4767-4386-b8ba-5b688c837bda	NumberOfLiveConductors	ANGLE		94		Number of live conductors within this circuit. Either this property or the ConductorFunction property (if only one) may be asserted.	1
-PARAM	a9393580-d1da-11e1-8000-00215ad4efdf	MaximumAllowedVoltageDrop	NUMBER		94		The maximum voltage drop across the circuit that must not be exceeded. 
-There are two  voltage drop limit settings that may be applied; one for sub-main circuits, and one in each Distribution Board or Consumer Unit for final circuits connected to ...	1
+PARAM	a9393580-d1da-11e1-8000-00215ad4efdf	MaximumAllowedVoltageDrop	NUMBER		94		The maximum voltage drop across the circuit that must not be exceeded.  There are two  voltage drop limit settings that may be applied; one for sub-main circuits, and one in each Distribution Board or Consumer Unit for final circuits connected to ...	1
 PARAM	adfde980-d1da-11e1-8000-00215ad4efdf	NetImpedance	INVALID		94		The maximum earth loop impedance upstream of a circuit (typically stated as the variable Zs). This value is for 55o C (130oF) Celsius usage.	1
 PARAM	b9511500-d1da-11e1-8000-00215ad4efdf	DesignName	TEXT		95		A name for the design values.	1
 PARAM	ce2da880-d1da-11e1-8000-00215ad4efdf	PressureClass	HVACPRESSURE		95		Nominal pressure rating of the system components. (Data type = PressureMeasure)	1
@@ -984,17 +915,11 @@ PARAM	87e74200-d1f8-11e1-8000-00215ad4efdf	Options	TEXT		128		A statement of the
 PARAM	90d81380-d1f8-11e1-8000-00215ad4efdf	ConditionCommencement	TEXT		128		Condition of property provided on commencement of the agreement e.g. cold shell, warm lit shell, broom clean, turn-key.	1
 PARAM	9a617b80-d1f8-11e1-8000-00215ad4efdf	Restrictions	TEXT		128		Restrictions that may be placed by a  competent authority.	1
 PARAM	a0575c80-d1f8-11e1-8000-00215ad4efdf	ConditionTermination	TEXT		128		Condition of property required on termination of the agreement e.g. cold shell, warm lit shell, broom clean, turn-key.	1
-PARAM	1495fe00-d201-11e1-8000-00215ad4efdf	NatureOfRisk	TEXT		129		An indication of the generic nature of the risk that might be encountered. 
-
-NOTE: It is anticipated that there will be a local agreement that constrains the values that might be assigned to this property. An example might be 'Fall'  or 'Fall of g...	1
-PARAM	1bbd0c00-d201-11e1-8000-00215ad4efdf	SubNatureOfRisk1	TEXT		129		A first subsidiary value that might be assigned to designate a more specific type of risk.
-
-NOTE: Nature of risk may be identified in various ways depending upon the place where risk assessment takes place and according to local agreement. This pr...	1
+PARAM	1495fe00-d201-11e1-8000-00215ad4efdf	NatureOfRisk	TEXT		129		An indication of the generic nature of the risk that might be encountered. NOTE: It is anticipated that there will be a local agreement that constrains the values that might be assigned to this property. An example might be 'Fall'  or 'Fall of g...	1
+PARAM	1bbd0c00-d201-11e1-8000-00215ad4efdf	SubNatureOfRisk1	TEXT		129		A first subsidiary value that might be assigned to designate a more specific type of risk. NOTE: Nature of risk may be identified in various ways depending upon the place where risk assessment takes place and according to local agreement. This pr...	1
 PARAM	224b8380-d201-11e1-8000-00215ad4efdf	SubNatureOfRisk2	TEXT		129		A second subsidiary value that might be assigned to designate a more specific type of risk. An example might be 'o person and property'.	1
 PARAM	29729180-d201-11e1-8000-00215ad4efdf	RiskCause	TEXT		129		A value that may be assigned to capture the cause or trigger for the risk. An example might be 'poor fixing'.	1
-PARAM	81a99380-d201-11e1-8000-00215ad4efdf	AffectsSurroundings	YESNO		129		Indicates wether the risk affects only to the person assigned to that task (FALSE) or if it can also affect to the people in the surroundings (TRUE).
-
-For example, the process of painting would affect all the people in the vicinity of the process.	1
+PARAM	81a99380-d201-11e1-8000-00215ad4efdf	AffectsSurroundings	YESNO		129		Indicates wether the risk affects only to the person assigned to that task (FALSE) or if it can also affect to the people in the surroundings (TRUE). For example, the process of painting would affect all the people in the vicinity of the process.	1
 PARAM	8eb2f467-91c2-42e7-b997-996569152d4f	MeanTimeBetweenFailure	TEXT		130		The average time duration between instances of failure of a product.	1
 PARAM	16ff5480-d20f-11e1-8000-00215ad4efdf	IsUsed	YESNO		132		Indicates whether the element is being used in a workstation (= TRUE) or not.(= FALSE).	1
 PARAM	1d8dcc00-d20f-11e1-8000-00215ad4efdf	GroupCode	TEXT		132		e.g. panels, worksurfaces, storage, etc.	1
@@ -1014,14 +939,10 @@ PARAM	30f06580-d216-11e1-8000-00215ad4efdf	Exclusions	TEXT		135		Items, conditio
 PARAM	e098e980-d1bc-11e1-8000-00215ad4efdf	RequestSourceLabel	TEXT		136		A specific name or label that further qualifies the identity of a request source. In the event of an email, this may be the email address.	1
 PARAM	f0b0c900-d1bc-11e1-8000-00215ad4efdf	RequestComments	TEXT		136		Comments that may be made on the request.	1
 PARAM	510e2d80-d1f2-11e1-8000-00215ad4efdf	SpecialInstructions	TEXT		137		Special instructions for packing.	1
-PARAM	5d928600-d1f2-11e1-8000-00215ad4efdf	EscortRequirement	YESNO		138		Indicates whether or not an escort is required to accompany persons carrying out a work order at or to/from the place of work (= TRUE) or not (= FALSE).
-
-NOTE - There are many instances where escorting is required, particularly in a facility that ...	1
+PARAM	5d928600-d1f2-11e1-8000-00215ad4efdf	EscortRequirement	YESNO		138		Indicates whether or not an escort is required to accompany persons carrying out a work order at or to/from the place of work (= TRUE) or not (= FALSE). NOTE - There are many instances where escorting is required, particularly in a facility that ...	1
 PARAM	63886700-d1f2-11e1-8000-00215ad4efdf	StartDate	TEXT		138		Date and time from which the permit becomes valid.	1
 PARAM	697e4800-d1f2-11e1-8000-00215ad4efdf	EndDate	TEXT		138		Date and time at which the permit ceases to be valid.	1
-PARAM	6e42fc00-d1f2-11e1-8000-00215ad4efdf	SpecialRequirements	TEXT		138		Any additional special requirements that need to be included in the permit to work.
-
-NOTE - Additional permit requirements may be imposed according to the nature of the facility at which the work is carried out. For instance, in clean areas, speci...	1
+PARAM	6e42fc00-d1f2-11e1-8000-00215ad4efdf	SpecialRequirements	TEXT		138		Any additional special requirements that need to be included in the permit to work. NOTE - Additional permit requirements may be imposed according to the nature of the facility at which the work is carried out. For instance, in clean areas, speci...	1
 PARAM	38ecdd00-d1f7-11e1-8000-00215ad4efdf	ReasonForChange	TEXT		139		A description of the problem for why a change is needed.	1
 PARAM	42764500-d1f7-11e1-8000-00215ad4efdf	BudgetSource	TEXT		139		The budget source requested.	1
 PARAM	53bf5180-d1f7-11e1-8000-00215ad4efdf	ProductDescription	TEXT		140		A textual description of the products that require the work.	1
@@ -1107,8 +1028,7 @@ PARAM	8c940200-d1c8-11e1-8000-00215ad4efdf	CoreIdentifier	TEXT		225		The core id
 PARAM	cf523435-8315-441f-a6c1-7c9b65bf62a0	PowerFactor	NUMBER		228		The ratio between the rated electrical power and the product of the rated current and rated voltage	1
 PARAM	4b5b1c80-d1df-11e1-8000-00215ad4efdf	NumberOfPoles	ANGLE		228		The number of live lines that is intended to be handled by the device.	1
 PARAM	56ae4800-d1df-11e1-8000-00215ad4efdf	IP_Code	TEXT		228		IP Code, the International Protection Marking, IEC 60529), classifies and rates the degree of protection provided against intrusion.	1
-PARAM	aecd027e-d542-4357-a5fd-13331a99bc51	IK_Code	INVALID		228		IK Code according to IEC 62262 (2002) is a numeric classification for the degree of protection provided by enclosures for electrical equipment against external mechanical impacts.
-<blockquote class="note">NOTE&nbsp; In earlier labeling, the third ...	1
+PARAM	aecd027e-d542-4357-a5fd-13331a99bc51	IK_Code	INVALID		228		IK Code according to IEC 62262 (2002) is a numeric classification for the degree of protection provided by enclosures for electrical equipment against external mechanical impacts...	1
 PARAM	c8b9fc58-cd02-4eed-a320-8ff916082beb	IsMain	YESNO		233		Identifies if the current instance is a main distribution point or topmost level in an electrical distribution hierarchy (= TRUE) or a sub-main distribution point (= FALSE).	1
 PARAM	421bd751-0cf9-47d8-9829-53510c16a01a	IsSkilledOperator	YESNO		233		Identifies if the current instance requires a skilled person or instructed person to perform operations on the distribution board (= TRUE) or whether operations may be performed by a person without appropriate skills or instruction (= FALSE).	1
 PARAM	a277fb1f-cdca-4fcc-9c29-8634518b1066	Level	NUMBER		235		The fraction of usable energy stored.	1
@@ -1156,16 +1076,14 @@ PARAM	ea861100-d1eb-11e1-8000-00215ad4efdf	SensibleLoadToRadiant	NUMBER		242		Pe
 PARAM	05588580-d1ec-11e1-8000-00215ad4efdf	FixtureHeight	LENGTH		243		The height of the fixture, such as the text height of an exit sign.	1
 PARAM	e826b580-d1f1-11e1-8000-00215ad4efdf	IsPluggableOutlet	YESNO		245		Indication of whether the outlet accepts a loose plug connection (= TRUE) or whether it is directly connected (= FALSE) or whether the form of connection has not yet been determined (= UNKNOWN).	1
 PARAM	f9dc44b0-33ee-47e8-adea-fbbbd20abdd8	NumberOfSockets	ANGLE		245		The number of sockets that may be connected. In case of inconsistency, sockets defined on ports take precedence.	1
-PARAM	d09efb00-d1f8-11e1-8000-00215ad4efdf	NominalCurrent	ELECTRICALCURRENT		246		A set of nominal currents in [A] for which the data of this instance is valid. At least one value shall be provided. Any value in the set shall not exceed the value of the 
-UltimateRatedCurrent associated with the same breaker unit.	1
+PARAM	d09efb00-d1f8-11e1-8000-00215ad4efdf	NominalCurrent	ELECTRICALCURRENT		246		A set of nominal currents in [A] for which the data of this instance is valid. At least one value shall be provided. Any value in the set shall not exceed the value of the UltimateRatedCurrent associated with the same breaker unit.	1
 PARAM	b6b1e800-d1f9-11e1-8000-00215ad4efdf	ICU60947	ELECTRICALCURRENT		249		The ultimate breaking capacity in [A] for an MCB tested in accordance with the IEC 60947 series.	1
 PARAM	c0d3e680-d1f9-11e1-8000-00215ad4efdf	ICS60947	ELECTRICALCURRENT		249		The service breaking capacity in [A] for an MCB tested in accordance with the IEC 60947 series.	1
 PARAM	c9c4b800-d1f9-11e1-8000-00215ad4efdf	ICN60898	ELECTRICALCURRENT		249		The nominal breaking capacity in [A] for an MCB tested in accordance with the IEC 60898 series.	1
 PARAM	d2b58980-d1f9-11e1-8000-00215ad4efdf	ICS60898	ELECTRICALCURRENT		249		The service breaking capacity in [A] for an MCB tested in accordance with the IEC 60898 series.	1
 PARAM	14decb00-d1fa-11e1-8000-00215ad4efdf	ICW60947	ELECTRICALCURRENT		250		The thermal withstand current in [A] for a circuit breaker or motor protection device tested in accordance with the IEC 60947 series. The value shall be related to 1 s.	1
 PARAM	1a3c1580-d1fa-11e1-8000-00215ad4efdf	ICM60947	ELECTRICALCURRENT		250		The making capacity in [A] for a circuit breaker or motor protection device tested in accordance with the IEC 60947 series.	1
-PARAM	f9250bdd-70df-4cbf-af6a-d72d26170202	LongTimeFunction	YESNO		251		Applying long time function
-A flag indicating that the long time function (i.e. the thermal tripping) of the device is used. The value should be set to TRUE for all devices except those that allows the Long time function of the device not to be used.	1
+PARAM	f9250bdd-70df-4cbf-af6a-d72d26170202	LongTimeFunction	YESNO		251		Applying long time functionA flag indicating that the long time function (i.e. the thermal tripping) of the device is used. The value should be set to TRUE for all devices except those that allows the Long time function of the device not to be used.	1
 PARAM	337c40a4-98c5-4e4b-aa54-a444cf4790ea	ShortTimeFunction	YESNO		251		Applying short time function A flag indicating that the short time function of the device is used. The value should be set to FALSE for devices not having a short time function, or if the short time function is not selected to be used.	1
 PARAM	ab1a66c0-9b66-4bc3-9fab-a566d40fc3f6	ShortTimei2tFunction	YESNO		251		Applying short time i2t function. A flag indicating that the I2t short time function of the device is used. The value should be set to TRUE only if the I2t function  is explicitly selected for the device.	1
 PARAM	8a30c271-7469-4aa7-8319-e83f13deaf14	GroundFaultFunction	YESNO		251		Applying ground fault function. A flag indicating that the ground fault function of the device is used. The value should be set to FALSE for devices not having a ground fault function, or if the ground fault function is not selected to be used.	1
@@ -1195,8 +1113,7 @@ PARAM	9171a980-d1fa-11e1-8000-00215ad4efdf	ReleaseCurrentI2tStart	ELECTRICALCURR
 PARAM	96cef400-d1fa-11e1-8000-00215ad4efdf	ReleaseTimeI2tStart	TEXT		253		The release time in [s] for the start point of the I2t tripping curve of the G-function, if any.	1
 PARAM	9c2c3e80-d1fa-11e1-8000-00215ad4efdf	ReleaseCurrentI2tEnd	ELECTRICALCURRENT		253		The release current in [x In] for the end point of the I2t tripping curve of the G-function, if any. The value of ReleaseCurrentI2tEnd shall be larger than ReleaseCurrentI2tStart.	1
 PARAM	a2221f80-d1fa-11e1-8000-00215ad4efdf	ReleaseTimeI2tEnd	TEXT		253		The release time in [s] for the end point of the I2 tripping curve of the G-function, if any. The value of ReleaseTimeI2tEnd shall be lower than ReleaseTimeI2tStart.	1
-PARAM	ffb66c00-d1fa-11e1-8000-00215ad4efdf	MaxAdjustmentX_ICS	ELECTRICALCURRENT		254		Provides the maximum setting value for the available current adjustment in relation to the
-Ics breaking capacity of the protection device of which the actual tripping unit is a part of. The value is not asserted unless the instantaneous time prote...	1
+PARAM	ffb66c00-d1fa-11e1-8000-00215ad4efdf	MaxAdjustmentX_ICS	ELECTRICALCURRENT		254		Provides the maximum setting value for the available current adjustment in relation to theIcs breaking capacity of the protection device of which the actual tripping unit is a part of. The value is not asserted unless the instantaneous time prote...	1
 PARAM	a3d271ad-1c7d-4743-92e5-ceb1ef243667	IsOffWhenSFunctionOn	YESNO		254		Indication whether the I-function is automatically switched off when the S-function is switched on.	1
 PARAM	11980f00-d1fb-11e1-8000-00215ad4efdf	UpperCurrent1	ELECTRICALCURRENT		255		The current in [x In], indicating that for currents larger than UpperCurrent1 the I2t part of the L-function will trip the current.	1
 PARAM	16f55980-d1fb-11e1-8000-00215ad4efdf	UpperCurrent2	ELECTRICALCURRENT		255		The current in [x In], indicating the upper current limit of the upper time/current curve of the I2t part of the L-function.	1
@@ -1210,8 +1127,7 @@ PARAM	8521329d-79b1-46be-b0fd-056df538df7f	IsOffWhenLfunctionOn	YESNO		256		Indi
 PARAM	b87cab00-d1fb-11e1-8000-00215ad4efdf	AdjustmentRangeStepValue	ELECTRICALCURRENT		257		Step value of current adjustment for an AdjustmentValueType = RANGE. Note that this property should not have a value for an  AdjustmentValueType = LIST.	1
 PARAM	c4686d00-d1fb-11e1-8000-00215ad4efdf	AdjustmentDesignation	TEXT		257		The desgnation on the device for the adjustment.	1
 PARAM	f083ee00-d1fb-11e1-8000-00215ad4efdf	CurrentForTimeDelay	TEXT		258		The tripping current in [x In] at which the time delay is specified. A value for this property should only be asserted for time delay of L-function, and for I2t of the S and G function.	1
-PARAM	25904080-d1fc-11e1-8000-00215ad4efdf	UseInDiscrimination	YESNO		259		An indication whether the time/current tripping information can be applied in a discrimination
-analysis or not.	1
+PARAM	25904080-d1fc-11e1-8000-00215ad4efdf	UseInDiscrimination	YESNO		259		An indication whether the time/current tripping information can be applied in a discrimination analysis or not.	1
 PARAM	2c1eb800-d1fc-11e1-8000-00215ad4efdf	AtexVerified	YESNO		259		An indication whether the tripping_unit is verified to be applied in EX-environment or not.	1
 PARAM	32149900-d1fc-11e1-8000-00215ad4efdf	OldDevice	YESNO		259		Indication whether the protection_ unit is out-dated or not. If not out-dated, the device is still for sale.	1
 PARAM	393ba700-d1fc-11e1-8000-00215ad4efdf	LimitingTerminalSize	AREA		259		The maximum terminal size capacity of the device.	1
@@ -1245,10 +1161,8 @@ PARAM	837b5300-d211-11e1-8000-00215ad4efdf	PrimaryApparentPower	HVACPOWER		283		
 PARAM	89713400-d211-11e1-8000-00215ad4efdf	SecondaryApparentPower	HVACPOWER		283		The power in VA (volt ampere) that has been transformed and is running out of the transformer on the secondary side.	1
 PARAM	8f671500-d211-11e1-8000-00215ad4efdf	MaximumApparentPower	HVACPOWER		283		Maximum apparent power/capacity in VA (volt ampere).	1
 PARAM	a0b02180-d211-11e1-8000-00215ad4efdf	ShortCircuitVoltage	INVALID		283		A complex number that specifies the real and imaginary parts of the short-circuit voltage at rated current of a transformer given in %.	1
-PARAM	a6a60280-d211-11e1-8000-00215ad4efdf	RealImpedanceRatio	NUMBER		283		The ratio between the real part of the zero sequence impedance and the real part of the positive impedance (i.e. real part of the short-circuit voltage) of the transformer.
-Used for three-phase transformer which includes a N-conductor.	1
-PARAM	ac9be380-d211-11e1-8000-00215ad4efdf	ImaginaryImpedanceRatio	NUMBER		283		The ratio between the imaginary part of the zero sequence impedance and the imaginary part of the positive impedance (i.e. imaginary part of the short-circuit voltage) of the transformer.
-Used for three-phase transformer which includes a N-conductor.	1
+PARAM	a6a60280-d211-11e1-8000-00215ad4efdf	RealImpedanceRatio	NUMBER		283		The ratio between the real part of the zero sequence impedance and the real part of the positive impedance (i.e. real part of the short-circuit voltage) of the transformer. Used for three-phase transformer which includes a N-conductor.	1
+PARAM	ac9be380-d211-11e1-8000-00215ad4efdf	ImaginaryImpedanceRatio	NUMBER		283		The ratio between the imaginary part of the zero sequence impedance and the imaginary part of the positive impedance (i.e. imaginary part of the short-circuit voltage) of the transformer. Used for three-phase transformer which includes a N-conductor.	1
 PARAM	d228ed00-d211-11e1-8000-00215ad4efdf	IsNeutralPrimaryTerminalAvailable	YESNO		283		An indication of whether the neutral point of the primary winding is available as a terminal (=TRUE) or not (= FALSE).	1
 PARAM	d94ffb00-d211-11e1-8000-00215ad4efdf	IsNeutralSecondaryTerminalAvailable	YESNO		283		An indication of whether the neutral point of the secondary winding is available as a terminal (=TRUE) or not (= FALSE).	1
 PARAM	a16b9800-d1be-11e1-8000-00215ad4efdf	NominalAirFlowRate	PIPINGFLOW		307		Nominal airflow rate.	1
@@ -1347,9 +1261,7 @@ PARAM	dc2afb80-d1d1-11e1-8000-00215ad4efdf	FusibleLinkTemperature	HVACTEMPERATUR
 PARAM	e77e2700-d1d1-11e1-8000-00215ad4efdf	ControlType	TEXT		339		The type of control used to operate the damper (e.g., Open/Closed Indicator, Resetable Temperature Sensor, Temperature Override, etc.).	1
 PARAM	e0f5ac80-d1dd-11e1-8000-00215ad4efdf	InteriorRoughnessCoefficient	LENGTH		341		The interior roughness of the duct fitting material.	1
 PARAM	e652f700-d1dd-11e1-8000-00215ad4efdf	HasLiner	YESNO		341		TRUE if the fitting has interior duct insulating lining, FALSE if it does not.	1
-PARAM	eb17ab00-d1dd-11e1-8000-00215ad4efdf	Color	TEXT		341		The color of the duct segment.
-
-Note: This is typically used for any duct segments with a painted surface which is not otherwise specified as a covering.	1
+PARAM	eb17ab00-d1dd-11e1-8000-00215ad4efdf	Color	TEXT		341		The color of the duct segment. Note: This is typically used for any duct segments with a painted surface which is not otherwise specified as a covering.	1
 PARAM	8c066600-d1de-11e1-8000-00215ad4efdf	WorkingPressure	HVACPRESSURE		346		Pressure classification as defined by the authority having jurisdiction (e.g., SMACNA, etc.).	1
 PARAM	a3455380-d1de-11e1-8000-00215ad4efdf	LongitudinalSeam	TEXT		346		The type of seam to be used along the longitudinal axis of the duct segment.	1
 PARAM	a8a29e00-d1de-11e1-8000-00215ad4efdf	NominalDiameterOrWidth	LENGTH		346		The nominal diameter or width of the duct segment.	1
@@ -1415,16 +1327,12 @@ PARAM	6d1dc900-d20a-11e1-8000-00215ad4efdf	NumberOfPanels	ANGLE		390		Number of 
 PARAM	727b1380-d20a-11e1-8000-00215ad4efdf	NumberOfSections	ANGLE		390		Number of vertical sections, measured in the direction of flow.	1
 PARAM	a0f8ee80-d20a-11e1-8000-00215ad4efdf	TubingLength	LENGTH		392		Water tube length inside the component.	1
 PARAM	a9512980-d20a-11e1-8000-00215ad4efdf	WaterContent	MASS		392		Weight of water content within the heater.	1
-PARAM	ad337a80-d20f-11e1-8000-00215ad4efdf	HasLadder	YESNO		394		Indication of whether the tank is provided with a ladder (set TRUE) for access to the top. If no ladder is provided then value is set FALSE.
-
-Note: No indication is given of the type of ladder (gooseneck etc.)	1
+PARAM	ad337a80-d20f-11e1-8000-00215ad4efdf	HasLadder	YESNO		394		Indication of whether the tank is provided with a ladder (set TRUE) for access to the top. If no ladder is provided then value is set FALSE. Note: No indication is given of the type of ladder (gooseneck etc.)	1
 PARAM	b3c1f200-d20f-11e1-8000-00215ad4efdf	HasVisualIndicator	YESNO		394		Indication of whether the tank is provided with a visual indicator (set TRUE) that shows the water level in the tank. If no visual indicator is provided then value is set FALSE.	1
 PARAM	7be8fc90-c36f-4ab3-9132-6f58dc7ec77c	Temperature	HVACTEMPERATURE		395		The temperature of the substance in the tank.	1
 PARAM	4f41ecc2-4f1b-4dc0-981c-a475bd7927d0	Pressure	HVACPRESSURE		395		The pressure of the substance in the tank.	1
 PARAM	eff55280-d20f-11e1-8000-00215ad4efdf	NominalLengthOrDiameter	LENGTH		396		The nominal length or, in the case of a vertical cylindrical tank, the nominal diameter of the tank.	1
-PARAM	f7b4f700-d20f-11e1-8000-00215ad4efdf	NominalWidthOrDiameter	LENGTH		396		The nominal width or, in the case of a horizontal cylindrical tank, the nominal diameter of the tank.
-
-Note: Not required for a vertical cylindrical tank.	1
+PARAM	f7b4f700-d20f-11e1-8000-00215ad4efdf	NominalWidthOrDiameter	LENGTH		396		The nominal width or, in the case of a horizontal cylindrical tank, the nominal diameter of the tank. Note: Not required for a vertical cylindrical tank.	1
 PARAM	0ac7c700-d210-11e1-8000-00215ad4efdf	EffectiveCapacity	VOLUME		396		The total effective or actual volumetric capacity of the tank.	1
 PARAM	0f8c7b00-d210-11e1-8000-00215ad4efdf	OperatingWeight	MASS		396		Operating weight of the tank including all of its contents.	1
 PARAM	2cc14980-d210-11e1-8000-00215ad4efdf	FirstCurvatureRadius	LENGTH		396		FirstCurvatureRadius should be defined as the base or left side radius of curvature value.	1
@@ -1487,12 +1395,8 @@ PARAM	9fb5ca80-d1e6-11e1-8000-00215ad4efdf	HoseConnectionSize	LENGTH		451		The s
 PARAM	a5abab80-d1e6-11e1-8000-00215ad4efdf	DischargeFlowRate	PIPINGFLOW		451		The volumetric rate of fluid discharge.	1
 PARAM	aa705f80-d1e6-11e1-8000-00215ad4efdf	FlowClass	TEXT		451		Alphanumeric indication of the flow class of a hydrant (may be used in connection with or instead of the FlowRate property).	1
 PARAM	b0fed700-d1e6-11e1-8000-00215ad4efdf	WaterIsPotable	YESNO		451		Indication of whether the water flow from the hydrant is potable (set TRUE) or non potable (set FALSE).	1
-PARAM	bbb96c00-d1e6-11e1-8000-00215ad4efdf	BodyColor	TEXT		451		Color of the body of the hydrant.
-
-Note: Consult local fire regulations for statutory colors that may be required for hydrant bodies in particular circumstances.	1
-PARAM	c07e2000-d1e6-11e1-8000-00215ad4efdf	CapColor	TEXT		451		Color of the caps of the hydrant.
-
-Note: Consult local fire regulations for statutory colors that may be required for hydrant caps in particular circumstances.	1
+PARAM	bbb96c00-d1e6-11e1-8000-00215ad4efdf	BodyColor	TEXT		451		Color of the body of the hydrant. Note: Consult local fire regulations for statutory colors that may be required for hydrant bodies in particular circumstances.	1
+PARAM	c07e2000-d1e6-11e1-8000-00215ad4efdf	CapColor	TEXT		451		Color of the caps of the hydrant. Note: Consult local fire regulations for statutory colors that may be required for hydrant caps in particular circumstances.	1
 PARAM	e9061a00-d1e6-11e1-8000-00215ad4efdf	InletConnectionSize	LENGTH		452		Size of the inlet connection to the hose reel.	1
 PARAM	eefbfb00-d1e6-11e1-8000-00215ad4efdf	HoseDiameter	LENGTH		452		Notional diameter (bore) of the hose.	1
 PARAM	f58a7280-d1e6-11e1-8000-00215ad4efdf	HoseLength	LENGTH		452		Notional length of the hose fitted to the hose reel when fully extended.	1
@@ -1593,17 +1497,16 @@ PARAM	a5200e80-d200-11e1-8000-00215ad4efdf	ShortInsideCenterLowerBarPitch	LENGTH
 PARAM	acdfb300-d200-11e1-8000-00215ad4efdf	ShortInsideEndLowerBarPitch	LENGTH		490		The pitch length of the short inside end lower bar.	1
 PARAM	d698da00-d200-11e1-8000-00215ad4efdf	VerticalBarPitch	LENGTH		491		The pitch length of the vertical bar.	1
 PARAM	de587e80-d200-11e1-8000-00215ad4efdf	HorizontalBarPitch	LENGTH		491		The pitch length of the horizontal bar.	1
-PARAM	d2837eec-2e95-439f-97cc-eef7c80d6580	BarLength	LENGTH		492		The total length of the reinforcing bar. The total length of bended bars are calculated according to local standards with corrections for the bends.
-	1
+PARAM	d2837eec-2e95-439f-97cc-eef7c80d6580	BarLength	LENGTH		492		The total length of the reinforcing bar. The total length of bended bars are calculated according to local standards with corrections for the bends.	1
 PARAM	002c10a5-49c4-4cd3-a02a-7d3a7cc3e726	BarSpacing	LENGTH		492		The spacing between bars if constant.	1
-PARAM	b89eecc8-c2d4-45f3-a269-38ae697189aa	BendingShapeCode	TEXT		492		Shape code per a standard like ACI 315, ISO 3766, or a similar standard.  It is presumed that a single standard for defining the bar bending is used throughout the project and that this standard is referenced from the <em>IfcProject</em> object th...	1
+PARAM	b89eecc8-c2d4-45f3-a269-38ae697189aa	BendingShapeCode	TEXT		492		Shape code per a standard like ACI 315, ISO 3766, or a similar standard.  It is presumed that a single standard for defining the bar bending is used throughout the project and that this standard is referenced from the IfcProject object th...	1
 PARAM	0829ac88-9a26-4665-b613-28d5c7ff7f24	MeshLength	INVALID		493			1
 PARAM	91489045-22ec-4efa-a54e-774dc160c4fb	MeshWidth	INVALID		493			1
 PARAM	811e1893-d560-4309-b991-a91420614530	LongitudinalBarNominalDiameter	LENGTH		493			1
 PARAM	3d68be78-7e02-48bd-ac7b-d525d49bf731	LongitudinalBarSpacing	LENGTH		493			1
 PARAM	b387b86a-2194-44f5-b961-f6b7dd3752ae	TransverseBarNominalDiameter	LENGTH		493			1
 PARAM	5fc4c373-68ab-4588-9ff1-6a6fbe877c38	TransverseBarSpacing	LENGTH		493			1
-PARAM	18a3346a-79c9-48f2-a572-94a707b4868c	TransverseBarBendingShapeCode	TEXT		493		Shape code per a standard like ACI 315, ISO 3766, or a similar standard.  It is presumed that a single standard for defining the bar bending is used throughout the project and that this standard is referenced from the <em>IfcProject</em> object th...	1
+PARAM	18a3346a-79c9-48f2-a572-94a707b4868c	TransverseBarBendingShapeCode	TEXT		493		Shape code per a standard like ACI 315, ISO 3766, or a similar standard.  It is presumed that a single standard for defining the bar bending is used throughout the project and that this standard is referenced from the IfcProject object th...	1
 PARAM	a54972ba-690e-404d-b974-4a365cecd3b3	SheathDiameter	LENGTH		495		Diameter of the sheeth (duct) around the tendon, if there is one with this type of tendon.	1
 PARAM	b6f7b680-d1ec-11e1-8000-00215ad4efdf	SpecificHeatCapacity	INVALID		499		Specific heat of the products of combustion: heat energy absorbed per temperature unit.	1
 PARAM	bc550100-d1ec-11e1-8000-00215ad4efdf	N20Content	NUMBER		499		Nitrous oxide (N2O) content of the products of combustion. This is measured in weight of N2O per unit weight and is therefore unitless.	1
