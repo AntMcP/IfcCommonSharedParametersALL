@@ -626,7 +626,7 @@ PARAM	33988e00-d209-11e1-8000-00215ad4efdf	FireRiskFactor	TEXT		21	1	Fire Risk f
 PARAM	3c895f80-d209-11e1-8000-00215ad4efdf	FlammableStorage	YESNO		21	1	"Indication whether the space is intended to serve as a storage of flammable material (which is regarded as such by the presiding building code. (TRUE) indicates yes, (FALSE) otherwise."	1
 PARAM	8bcf9000-d209-11e1-8000-00215ad4efdf	AirPressurization	YESNO		21	1	Indication whether the space is required to have pressurized air (TRUE) or not (FALSE).	1
 PARAM	b53ceb80-d20a-11e1-8000-00215ad4efdf	ArtificialLighting	YESNO		22	1	Indication whether this space  requires artificial lighting (as natural lighting would be not sufficient). (TRUE) indicates yes (FALSE) otherwise.	1
-PARAM	bb32cc80-d20a-11e1-8000-00215ad4efdf	Illuminance	ELECTRICALILLUMINANCE		22	1	Required average illuminance value for this space.	1
+PARAM	bb32cc80-d20a-11e1-8000-00215ad4efdf	Illuminance	ELECTRICAL_ILLUMINANCE		22	1	Required average illuminance value for this space.	1
 PARAM	cf76c980-d20a-11e1-8000-00215ad4efdf	OccupancyNumber	NUMBER		23	1	Number of people required for the activity assigned to this space.	1
 PARAM	d4d41400-d20a-11e1-8000-00215ad4efdf	OccupancyNumberPeak	NUMBER		23	1	Maximal number of people required for the activity assigned to this space in peak time.	1
 PARAM	dac9f500-d20a-11e1-8000-00215ad4efdf	OccupancyTimePerDay	TEXT		23	1	The amount of time during the day that the activity is required within this space.	1
@@ -637,13 +637,13 @@ PARAM	f7662d00-d20a-11e1-8000-00215ad4efdf	ParkingUse	TEXT		24	1	"Identifies the
 PARAM	ffbe6800-d20a-11e1-8000-00215ad4efdf	ParkingUnits	NUMBER		24	1	"Indicates the number of transporation units of the type specified by the property ParkingUse that may be accommodated within the space. Generally, this value should default to 1 unit. However, where the parking space is for motorcycles or bicycles..."	1
 PARAM	051bb280-d20b-11e1-8000-00215ad4efdf	IsAisle	YESNO		24	1	"Indicates that this parking zone is for accessing the parking units, i.e. an aisle (TRUE) and not a parking unit itself (FALSE)"	1
 PARAM	0c42c080-d20b-11e1-8000-00215ad4efdf	IsOneWay	YESNO		24	1	Indicates whether the parking aisle is designed for oneway traffic (TRUE) or twoway traffic (FALSE). Should only be provided if the property IsAisle is set to TRUE.	1
-PARAM	42cd0b00-d20c-11e1-8000-00215ad4efdf	SpaceTemperature	HVACTEMPERATURE		25	1	"Temperature of the space or zone, that is required from user/designer view point.  If no summer or winter space temperature requirements are given, it applies all year, otherwise for the intermediate period. Provide this value, if no temperatur ra..."	1
-PARAM	48c2ec00-d20c-11e1-8000-00215ad4efdf	SpaceTemperatureMax	HVACTEMPERATURE		25	1	"Maximal temperature of the space or zone, that is required from user/designer view point.  If no summer or winter space temperature requirements are given, it applies all year, otherwise for the intermediate period."	1
-PARAM	4eb8cd00-d20c-11e1-8000-00215ad4efdf	SpaceTemperatureMin	HVACTEMPERATURE		25	1	"Minimal temperature of the space or zone, that is required from user/designer view point. If no summer or winter space temperature requirements are given, it applies all year, otherwise for the intermediate period."	1
-PARAM	54161780-d20c-11e1-8000-00215ad4efdf	SpaceTemperatureSummerMax	HVACTEMPERATURE		25	1	"Maximal temperature of the space or zone for the hot (summer) period, that is required from user/designer view point and provided as requirement for cooling."	1
-PARAM	5a0bf880-d20c-11e1-8000-00215ad4efdf	SpaceTemperatureSummerMin	HVACTEMPERATURE		25	1	"Minimal temperature of the space or zone for the hot (summer) period, that is required from user/designer view point and provided as requirement for cooling."	1
-PARAM	6001d980-d20c-11e1-8000-00215ad4efdf	SpaceTemperatureWinterMax	HVACTEMPERATURE		25	1	"Maximal temperature of the space or zone for the cold (winter) period, that is required from user/designer view point and provided as requirement for heating."	1
-PARAM	65f7ba80-d20c-11e1-8000-00215ad4efdf	SpaceTemperatureWinterMin	HVACTEMPERATURE		25	1	"Minimal temperature of the space or zone for the cold (winter) period, that is required from user/designer view point and provided as requirement for heating."	1
+PARAM	42cd0b00-d20c-11e1-8000-00215ad4efdf	SpaceTemperature	HVAC_TEMPERATURE		25	1	"Temperature of the space or zone, that is required from user/designer view point.  If no summer or winter space temperature requirements are given, it applies all year, otherwise for the intermediate period. Provide this value, if no temperatur ra..."	1
+PARAM	48c2ec00-d20c-11e1-8000-00215ad4efdf	SpaceTemperatureMax	HVAC_TEMPERATURE		25	1	"Maximal temperature of the space or zone, that is required from user/designer view point.  If no summer or winter space temperature requirements are given, it applies all year, otherwise for the intermediate period."	1
+PARAM	4eb8cd00-d20c-11e1-8000-00215ad4efdf	SpaceTemperatureMin	HVAC_TEMPERATURE		25	1	"Minimal temperature of the space or zone, that is required from user/designer view point. If no summer or winter space temperature requirements are given, it applies all year, otherwise for the intermediate period."	1
+PARAM	54161780-d20c-11e1-8000-00215ad4efdf	SpaceTemperatureSummerMax	HVAC_TEMPERATURE		25	1	"Maximal temperature of the space or zone for the hot (summer) period, that is required from user/designer view point and provided as requirement for cooling."	1
+PARAM	5a0bf880-d20c-11e1-8000-00215ad4efdf	SpaceTemperatureSummerMin	HVAC_TEMPERATURE		25	1	"Minimal temperature of the space or zone for the hot (summer) period, that is required from user/designer view point and provided as requirement for cooling."	1
+PARAM	6001d980-d20c-11e1-8000-00215ad4efdf	SpaceTemperatureWinterMax	HVAC_TEMPERATURE		25	1	"Maximal temperature of the space or zone for the cold (winter) period, that is required from user/designer view point and provided as requirement for heating."	1
+PARAM	65f7ba80-d20c-11e1-8000-00215ad4efdf	SpaceTemperatureWinterMin	HVAC_TEMPERATURE		25	1	"Minimal temperature of the space or zone for the cold (winter) period, that is required from user/designer view point and provided as requirement for heating."	1
 PARAM	6bed9b80-d20c-11e1-8000-00215ad4efdf	SpaceHumidity	NUMBER		25	1	"Humidity of the space or zone that is required from user/designer view point.  If no summer or winter space humidity requirements are given, it applies all year, otherwise for the intermediate period. Provide this property, if no humidity range (M..."	1
 PARAM	70b24f80-d20c-11e1-8000-00215ad4efdf	SpaceHumidityMax	NUMBER		25	1	"Maximal permitted humidity of the space or zone that is required from user/designer view point.  If no summer or winter space humidity requirements are given, it applies all year, otherwise for the intermediate period."	1
 PARAM	76a83080-d20c-11e1-8000-00215ad4efdf	SpaceHumidityMin	NUMBER		25	1	"Minimal permitted humidity of the space or zone that is required from user/designer view point.  If no summer or winter space humidity requirements are given, it applies all year, otherwise for the intermediate period."	1
@@ -688,7 +688,7 @@ PARAM	ec47d880-d1db-11e1-8000-00215ad4efdf	HygrothermalRating	TEXT		46	1	Resiste
 PARAM	5030f042-24d9-4c74-aba7-53294170b227	WaterTightnessRating	TEXT		46	1	Water tightness rating for this object. It is provided according to the national building code.	1
 PARAM	da9b78df-a88b-4538-887d-4c597a1059dd	MechanicalLoadRating	TEXT		46	1	Mechanical load rating for this object. It is provided according to the national building code.	1
 PARAM	9be0892f-f932-4135-bdaf-cd98782a64ff	WindLoadRating	TEXT		46	1	Wind load resistance rating for this object. It is provided according to the national building code.	1
-PARAM	23b68500-d1dc-11e1-8000-00215ad4efdf	Infiltration	PIPINGFLOW		46	1	"Infiltration flowrate of outside air for the filler object based on the area of the filler object at a pressure level of 50 Pascals. It shall be used, if the length of all joints is unknown."	1
+PARAM	23b68500-d1dc-11e1-8000-00215ad4efdf	Infiltration	PIPING_FLOW		46	1	"Infiltration flowrate of outside air for the filler object based on the area of the filler object at a pressure level of 50 Pascals. It shall be used, if the length of all joints is unknown."	1
 PARAM	5d878b80-d1dc-11e1-8000-00215ad4efdf	GlazingAreaFraction	NUMBER		46	1	"Fraction of the glazing area relative to the total area of the filling element.  It shall be used, if the glazing area is not given separately for all panels within the filling element."	1
 PARAM	aa6b6200-d1dc-11e1-8000-00215ad4efdf	HasDrive	YESNO		46	1	Indication whether this object has an automatic drive to operate it (TRUE) or no drive (FALSE)	1
 PARAM	beaf5f00-d1dc-11e1-8000-00215ad4efdf	SelfClosing	YESNO		46	1	Indication whether this object is designed to close automatically after use (TRUE) or not (FALSE).	1
@@ -735,20 +735,20 @@ PARAM	e3c1c300-d218-11e1-8000-00215ad4efdf	HasSillExternal	YESNO		59	1	Indicatio
 PARAM	eae8d100-d218-11e1-8000-00215ad4efdf	HasSillInternal	YESNO		59	1	Indication whether the window opening has an internal sill (TRUE) or not (FALSE).	1
 PARAM	c9a6c700-d1bd-11e1-8000-00215ad4efdf	Name	TEXT		76	1	The name of the air side system.	1
 PARAM	d0353e80-d1bd-11e1-8000-00215ad4efdf	Description	TEXT		76	1	The description of the air side system.	1
-PARAM	0377cd80-d1be-11e1-8000-00215ad4efdf	TotalAirflow	PIPINGFLOW		76	1	"The total design supply air flowrate required for the system for either heating or cooling conditions, whichever is greater."	1
-PARAM	08d51800-d1be-11e1-8000-00215ad4efdf	EnergyGainTotal	HVACPOWER		76	1	"The total amount of energy gains for the spaces served by the system during the peak cooling conditions, plus any system-level total energy gains."	1
-PARAM	0ecaf900-d1be-11e1-8000-00215ad4efdf	AirflowSensible	PIPINGFLOW		76	1	The air flowrate required to satisfy the sensible peak loads.	1
-PARAM	14284380-d1be-11e1-8000-00215ad4efdf	EnergyGainSensible	HVACPOWER		76	1	"The sum of total energy gains for the spaces served by the system during the peak cooling conditions, plus any system-level sensible energy gains."	1
-PARAM	1ab6bb00-d1be-11e1-8000-00215ad4efdf	EnergyLoss	HVACPOWER		76	1	The sum of energy losses for the spaces served by the system during the peak heating conditions.	1
+PARAM	0377cd80-d1be-11e1-8000-00215ad4efdf	TotalAirflow	PIPING_FLOW		76	1	"The total design supply air flowrate required for the system for either heating or cooling conditions, whichever is greater."	1
+PARAM	08d51800-d1be-11e1-8000-00215ad4efdf	EnergyGainTotal	HVAC_POWER		76	1	"The total amount of energy gains for the spaces served by the system during the peak cooling conditions, plus any system-level total energy gains."	1
+PARAM	0ecaf900-d1be-11e1-8000-00215ad4efdf	AirflowSensible	PIPING_FLOW		76	1	The air flowrate required to satisfy the sensible peak loads.	1
+PARAM	14284380-d1be-11e1-8000-00215ad4efdf	EnergyGainSensible	HVAC_POWER		76	1	"The sum of total energy gains for the spaces served by the system during the peak cooling conditions, plus any system-level sensible energy gains."	1
+PARAM	1ab6bb00-d1be-11e1-8000-00215ad4efdf	EnergyLoss	HVAC_POWER		76	1	The sum of energy losses for the spaces served by the system during the peak heating conditions.	1
 PARAM	20ac9c00-d1be-11e1-8000-00215ad4efdf	LightingDiversity	NUMBER		76	1	Lighting diversity.	1
 PARAM	2609e680-d1be-11e1-8000-00215ad4efdf	InfiltrationDiversitySummer	NUMBER		76	1	Diversity factor for Summer infiltration.	1
 PARAM	2b673100-d1be-11e1-8000-00215ad4efdf	InfiltrationDiversityWinter	NUMBER		76	1	Diversity factor for Winter infiltration.	1
 PARAM	31f5a880-d1be-11e1-8000-00215ad4efdf	ApplianceDiversity	NUMBER		76	1	Diversity of appliance load.	1
 PARAM	37eb8980-d1be-11e1-8000-00215ad4efdf	LoadSafetyFactor	NUMBER		76	1	Load safety factor.	1
-PARAM	3de16a80-d1be-11e1-8000-00215ad4efdf	HeatingTemperatureDelta	HVACTEMPERATURE		76	1	Heating temperature difference for calculating space air flow rates.	1
-PARAM	43d74b80-d1be-11e1-8000-00215ad4efdf	CoolingTemperatureDelta	HVACTEMPERATURE		76	1	Cooling temperature difference for calculating space air flow rates.	1
-PARAM	49cd2c80-d1be-11e1-8000-00215ad4efdf	Ventilation	PIPINGFLOW		76	1	Required outside air ventilation.	1
-PARAM	4fc30d80-d1be-11e1-8000-00215ad4efdf	FanPower	HVACPOWER		76	1	Fan motor loads contributing to the cooling load.	1
+PARAM	3de16a80-d1be-11e1-8000-00215ad4efdf	HeatingTemperatureDelta	HVAC_TEMPERATURE		76	1	Heating temperature difference for calculating space air flow rates.	1
+PARAM	43d74b80-d1be-11e1-8000-00215ad4efdf	CoolingTemperatureDelta	HVAC_TEMPERATURE		76	1	Cooling temperature difference for calculating space air flow rates.	1
+PARAM	49cd2c80-d1be-11e1-8000-00215ad4efdf	Ventilation	PIPING_FLOW		76	1	Required outside air ventilation.	1
+PARAM	4fc30d80-d1be-11e1-8000-00215ad4efdf	FanPower	HVAC_POWER		76	1	Fan motor loads contributing to the cooling load.	1
 PARAM	7e97ae80-d1d3-11e1-8000-00215ad4efdf	WallThickness	LENGTH		78	1	The thickness of the duct wall construction NOTE: It is assumed that chamber walls will be constructed at a single thickness.	1
 PARAM	835c6280-d1d3-11e1-8000-00215ad4efdf	BaseThickness	LENGTH		78	1	The thickness of the duct base construction NOTE: It is assumed that duct base will be constructed at a single thickness.	1
 PARAM	88b9ad00-d1d3-11e1-8000-00215ad4efdf	AccessCoverLoadRating	TEXT		78	1	The load rating of the access cover (which may be a value or an alphanumerically defined class rating).	1
@@ -778,39 +778,39 @@ PARAM	048b4300-4767-4386-b8ba-5b688c837bda	NumberOfLiveConductors	ANGLE		94	1	Nu
 PARAM	a9393580-d1da-11e1-8000-00215ad4efdf	MaximumAllowedVoltageDrop	NUMBER		94	1	"The maximum voltage drop across the circuit that must not be exceeded.  There are two  voltage drop limit settings that may be applied; one for sub-main circuits, and one in each Distribution Board or Consumer Unit for final circuits connected to ..."	1
 PARAM	adfde980-d1da-11e1-8000-00215ad4efdf	NetImpedance	INVALID		94	1	The maximum earth loop impedance upstream of a circuit (typically stated as the variable Zs). This value is for 55o C (130oF) Celsius usage.	1
 PARAM	b9511500-d1da-11e1-8000-00215ad4efdf	DesignName	TEXT		95	1	A name for the design values.	1
-PARAM	ce2da880-d1da-11e1-8000-00215ad4efdf	PressureClass	HVACPRESSURE		95	1	Nominal pressure rating of the system components. (Data type = PressureMeasure)	1
-PARAM	d38af300-d1da-11e1-8000-00215ad4efdf	LeakageClass	HVACPRESSURE		95	1	Nominal leakage rating for the system components.	1
+PARAM	ce2da880-d1da-11e1-8000-00215ad4efdf	PressureClass	HVAC_PRESSURE		95	1	Nominal pressure rating of the system components. (Data type = PressureMeasure)	1
+PARAM	d38af300-d1da-11e1-8000-00215ad4efdf	LeakageClass	HVAC_PRESSURE		95	1	Nominal leakage rating for the system components.	1
 PARAM	d84fa700-d1da-11e1-8000-00215ad4efdf	FrictionLoss	NUMBER		95	1	The pressure loss due to friction per unit length. (Data type = PressureMeasure/LengthMeasure)	1
 PARAM	ddacf180-d1da-11e1-8000-00215ad4efdf	ScrapFactor	NUMBER		95	1	Sheet metal scrap factor.	1
-PARAM	e69dc300-d1da-11e1-8000-00215ad4efdf	MaximumVelocity	HVACVELOCITY		95	1	The maximum design velocity of the air in the duct or fitting.	1
+PARAM	e69dc300-d1da-11e1-8000-00215ad4efdf	MaximumVelocity	HVAC_VELOCITY		95	1	The maximum design velocity of the air in the duct or fitting.	1
 PARAM	eef5fe00-d1da-11e1-8000-00215ad4efdf	AspectRatio	NUMBER		95	1	The default aspect ratio.	1
 PARAM	f87f6600-d1da-11e1-8000-00215ad4efdf	MinimumHeight	LENGTH		95	1	"The minimum duct height for rectangular, oval or round duct."	1
 PARAM	02a16480-d1db-11e1-8000-00215ad4efdf	MinimumWidth	LENGTH		95	1	The minimum duct width for oval or rectangular duct.	1
-PARAM	f2e14a80-d1f1-11e1-8000-00215ad4efdf	HeatingDryBulb	HVACTEMPERATURE		96	1	Outside dry bulb temperature for heating design.	1
-PARAM	f8d72b80-d1f1-11e1-8000-00215ad4efdf	HeatingWetBulb	HVACTEMPERATURE		96	1	Outside wet bulb temperature for heating design.	1
+PARAM	f2e14a80-d1f1-11e1-8000-00215ad4efdf	HeatingDryBulb	HVAC_TEMPERATURE		96	1	Outside dry bulb temperature for heating design.	1
+PARAM	f8d72b80-d1f1-11e1-8000-00215ad4efdf	HeatingWetBulb	HVAC_TEMPERATURE		96	1	Outside wet bulb temperature for heating design.	1
 PARAM	fecd0c80-d1f1-11e1-8000-00215ad4efdf	HeatingDesignDay	TEXT		96	1	"The month, day and time that has been selected for the heating design calculations."	1
-PARAM	0391c080-d1f2-11e1-8000-00215ad4efdf	CoolingDryBulb	HVACTEMPERATURE		96	1	Outside dry bulb temperature for cooling design.	1
-PARAM	08ef0b00-d1f2-11e1-8000-00215ad4efdf	CoolingWetBulb	HVACTEMPERATURE		96	1	Outside wet bulb temperature for cooling design.	1
+PARAM	0391c080-d1f2-11e1-8000-00215ad4efdf	CoolingDryBulb	HVAC_TEMPERATURE		96	1	Outside dry bulb temperature for cooling design.	1
+PARAM	08ef0b00-d1f2-11e1-8000-00215ad4efdf	CoolingWetBulb	HVAC_TEMPERATURE		96	1	Outside wet bulb temperature for cooling design.	1
 PARAM	0e4c5580-d1f2-11e1-8000-00215ad4efdf	CoolingDesignDay	TEXT		96	1	"The month, day  and time that has been selected for the cooling design calculations."	1
 PARAM	13110980-d1f2-11e1-8000-00215ad4efdf	WeatherDataStation	TEXT		96	1	The site weather data station description or reference to the data source from which weather data was obtained for use in calculations.	1
 PARAM	186e5400-d1f2-11e1-8000-00215ad4efdf	WeatherDataDate	TEXT		96	1	The date for which the weather data was gathered.	1
 PARAM	27ed9d00-d1f2-11e1-8000-00215ad4efdf	PrevailingWindDirection	ANGLE		96	1	The prevailing wind angle direction measured from True North (0 degrees) in a clockwise direction.	1
-PARAM	2d4ae780-d1f2-11e1-8000-00215ad4efdf	PrevailingWindVelocity	HVACVELOCITY		96	1	The design wind velocity coming from the direction specified by the PrevailingWindDirection attribute.	1
-PARAM	19f84600-d20b-11e1-8000-00215ad4efdf	CoolingDesignAirflow	PIPINGFLOW		99	1	The air flowrate required during the peak cooling conditions.	1
-PARAM	1fee2700-d20b-11e1-8000-00215ad4efdf	HeatingDesignAirflow	PIPINGFLOW		99	1	"The air flowrate required during the peak heating conditions, but could also be determined by minimum ventilation requirement or minimum air change requirements."	1
-PARAM	25e40800-d20b-11e1-8000-00215ad4efdf	TotalSensibleHeatGain	HVACPOWER		99	1	The total sensible heat or energy gained by the space during the peak cooling conditions.	1
-PARAM	2c727f80-d20b-11e1-8000-00215ad4efdf	TotalHeatGain	HVACPOWER		99	1	The total amount of heat or energy gained by the space at the time of the space's peak cooling conditions.	1
-PARAM	31373380-d20b-11e1-8000-00215ad4efdf	TotalHeatLoss	HVACPOWER		99	1	The total amount of heat or energy lost by the space at the time of the space's peak heating conditions.	1
+PARAM	2d4ae780-d1f2-11e1-8000-00215ad4efdf	PrevailingWindVelocity	HVAC_VELOCITY		96	1	The design wind velocity coming from the direction specified by the PrevailingWindDirection attribute.	1
+PARAM	19f84600-d20b-11e1-8000-00215ad4efdf	CoolingDesignAirflow	PIPING_FLOW		99	1	The air flowrate required during the peak cooling conditions.	1
+PARAM	1fee2700-d20b-11e1-8000-00215ad4efdf	HeatingDesignAirflow	PIPING_FLOW		99	1	"The air flowrate required during the peak heating conditions, but could also be determined by minimum ventilation requirement or minimum air change requirements."	1
+PARAM	25e40800-d20b-11e1-8000-00215ad4efdf	TotalSensibleHeatGain	HVAC_POWER		99	1	The total sensible heat or energy gained by the space during the peak cooling conditions.	1
+PARAM	2c727f80-d20b-11e1-8000-00215ad4efdf	TotalHeatGain	HVAC_POWER		99	1	The total amount of heat or energy gained by the space at the time of the space's peak cooling conditions.	1
+PARAM	31373380-d20b-11e1-8000-00215ad4efdf	TotalHeatLoss	HVAC_POWER		99	1	The total amount of heat or energy lost by the space at the time of the space's peak heating conditions.	1
 PARAM	3dbb8c00-d20b-11e1-8000-00215ad4efdf	CoolingRelativeHumidity	NUMBER		99	1	Inside relative humidity for cooling design.	1
 PARAM	490eb780-d20b-11e1-8000-00215ad4efdf	HeatingRelativeHumidity	NUMBER		99	1	Inside relative humidity for heating design.	1
-PARAM	4f9d2f00-d20b-11e1-8000-00215ad4efdf	VentilationAirFlowrate	PIPINGFLOW		99	1	Ventilation outside air requirement for the space.	1
-PARAM	54fa7980-d20b-11e1-8000-00215ad4efdf	ExhaustAirFlowrate	PIPINGFLOW		99	1	Design exhaust air flow rate for the space.	1
+PARAM	4f9d2f00-d20b-11e1-8000-00215ad4efdf	VentilationAirFlowrate	PIPING_FLOW		99	1	Ventilation outside air requirement for the space.	1
+PARAM	54fa7980-d20b-11e1-8000-00215ad4efdf	ExhaustAirFlowrate	PIPING_FLOW		99	1	Design exhaust air flow rate for the space.	1
 PARAM	5a57c400-d20b-11e1-8000-00215ad4efdf	CeilingRAPlenum	YESNO		99	1	"Ceiling plenum used for return air or not. TRUE = Yes, FALSE = No."	1
 PARAM	617ed200-d20b-11e1-8000-00215ad4efdf	BoundaryAreaHeatLoss	NUMBER		99	1	Heat loss per unit area for the boundary object. This is a design input value for use in the absence of calculated load data.	1
-PARAM	df91a780-d210-11e1-8000-00215ad4efdf	TotalCoolingLoad	HVACPOWER		102	1	"The peak total cooling load for the building, zone or space."	1
-PARAM	e4eef200-d210-11e1-8000-00215ad4efdf	TotalHeatingLoad	HVACPOWER		102	1	"The peak total heating load for the building, zone or space."	1
+PARAM	df91a780-d210-11e1-8000-00215ad4efdf	TotalCoolingLoad	HVAC_POWER		102	1	"The peak total cooling load for the building, zone or space."	1
+PARAM	e4eef200-d210-11e1-8000-00215ad4efdf	TotalHeatingLoad	HVAC_POWER		102	1	"The peak total heating load for the building, zone or space."	1
 PARAM	18ca1780-d211-11e1-8000-00215ad4efdf	OccupancyDiversity	NUMBER		103	1	Diversity factor that may be applied to the number of people in the space.	1
-PARAM	1ebff880-d211-11e1-8000-00215ad4efdf	OutsideAirPerPerson	PIPINGFLOW		103	1	Design quantity of outside air to be provided per person in the space.	1
+PARAM	1ebff880-d211-11e1-8000-00215ad4efdf	OutsideAirPerPerson	PIPING_FLOW		103	1	Design quantity of outside air to be provided per person in the space.	1
 PARAM	24b5d980-d211-11e1-8000-00215ad4efdf	ReceptacleLoadIntensity	NUMBER		103	1	Average power use intensity of appliances and other non-HVAC equipment in the space per unit area.(PowerMeasure/IfcAreaMeasure).	1
 PARAM	2aabba80-d211-11e1-8000-00215ad4efdf	AppliancePercentLoadToRadiant	NUMBER		103	1	Percent of sensible load to radiant heat.	1
 PARAM	313a3200-d211-11e1-8000-00215ad4efdf	LightingLoadIntensity	NUMBER		103	1	Average lighting load intensity in the space per unit area (PowerMeasure/IfcAreaMeasure).	1
@@ -953,12 +953,12 @@ PARAM	bfa1ba00-d1f7-11e1-8000-00215ad4efdf	ScheduledFrequency	TEXT		140	1	The pe
 PARAM	e3650000-d1f7-11e1-8000-00215ad4efdf	IsFOB	YESNO		142	1	Indication of whether contents of the purchase order are delivered 'Free on Board' (= True) or not (= False). FOB is a shipping term which indicates that the supplier pays the shipping costs (and usually also the insurance costs) from the point of...	1
 PARAM	ebbd3b00-d1f7-11e1-8000-00215ad4efdf	ShipMethod	TEXT		142	1	Method of shipping that will be used for goods or services.	1
 PARAM	4dac7f00-d1bd-11e1-8000-00215ad4efdf	ManualOverride	YESNO		145	1	Identifies whether hand-operated operation is provided as an override (= TRUE) or not (= FALSE). Note that this value should be set to FALSE by default in the case of a Hand Operated Actuator.	1
-PARAM	58ffaa80-d1bd-11e1-8000-00215ad4efdf	ActuatorInputPower	HVACPOWER		146	1	Maximum input power requirement.	1
-PARAM	759be280-d1bd-11e1-8000-00215ad4efdf	InputPressure	HVACPRESSURE		147	1	Maximum design pressure for the actuator.	1
-PARAM	7af92d00-d1bd-11e1-8000-00215ad4efdf	InputFlowrate	PIPINGFLOW		147	1	Maximum hydraulic flowrate requirement.	1
+PARAM	58ffaa80-d1bd-11e1-8000-00215ad4efdf	ActuatorInputPower	HVAC_POWER		146	1	Maximum input power requirement.	1
+PARAM	759be280-d1bd-11e1-8000-00215ad4efdf	InputPressure	HVAC_PRESSURE		147	1	Maximum design pressure for the actuator.	1
+PARAM	7af92d00-d1bd-11e1-8000-00215ad4efdf	InputFlowrate	PIPING_FLOW		147	1	Maximum hydraulic flowrate requirement.	1
 PARAM	877d8580-d1bd-11e1-8000-00215ad4efdf	Force	FORCE		148	1	Indicates the maximum close-off force for the actuator.	1
 PARAM	8cdad000-d1bd-11e1-8000-00215ad4efdf	Stroke	LENGTH		148	1	Indicates the maximum distance the actuator must traverse.	1
-PARAM	b1cf4300-d1bd-11e1-8000-00215ad4efdf	Torque	FORCELENGTHPERANGLE		150	1	Indicates the maximum close-off torque for the actuator.	1
+PARAM	b1cf4300-d1bd-11e1-8000-00215ad4efdf	Torque	FORCE_LENGTH_PER_ANGLE		150	1	Indicates the maximum close-off torque for the actuator.	1
 PARAM	b8f65100-d1bd-11e1-8000-00215ad4efdf	RangeAngle	ANGLE		150	1	Indicates the maximum rotation the actuator must traverse.	1
 PARAM	69b81c80-d1cd-11e1-8000-00215ad4efdf	SignalOffset	NUMBER		155	1	Offset constant added to modfied signal.	1
 PARAM	6de43a00-d1cd-11e1-8000-00215ad4efdf	SignalFactor	NUMBER		155	1	Factor multiplied onto offset signal.	1
@@ -973,8 +973,8 @@ PARAM	f7940780-d1cd-11e1-8000-00215ad4efdf	SignalTimeDecrease	TEXT		158	1	Time f
 PARAM	27dba600-d1ce-11e1-8000-00215ad4efdf	Polarity	YESNO		159	1	True indicates normal polarity; False indicates reverse polarity.	1
 PARAM	2d38f080-d1ce-11e1-8000-00215ad4efdf	Value	YESNO		159	1	The default value such as normally-closed or normally-open.	1
 PARAM	caece980-d1e7-11e1-8000-00215ad4efdf	DisplaySize	LENGTH		162	1	The physical size of the display. For a dial pressure gauge it will be the diameter of the dial.	1
-PARAM	2083bf00-d205-11e1-8000-00215ad4efdf	FireSensorSetPoint	HVACTEMPERATURE		169	1	The temperature value to be sensed to indicate the presence of fire.	1
-PARAM	2679a000-d205-11e1-8000-00215ad4efdf	AccuracyOfFireSensor	HVACTEMPERATURE		169	1	The accuracy of the sensor.	1
+PARAM	2083bf00-d205-11e1-8000-00215ad4efdf	FireSensorSetPoint	HVAC_TEMPERATURE		169	1	The temperature value to be sensed to indicate the presence of fire.	1
+PARAM	2679a000-d205-11e1-8000-00215ad4efdf	AccuracyOfFireSensor	HVAC_TEMPERATURE		169	1	The accuracy of the sensor.	1
 PARAM	2c6f8100-d205-11e1-8000-00215ad4efdf	TimeConstant	TEXT		169	1	The time constant of the sensor.	1
 PARAM	490bb900-d205-11e1-8000-00215ad4efdf	GasDetected	TEXT		172	1	"Identification of the gas that is being detected, according to chemical formula.  For example, carbon monoxide is 'CO', carbon dioxide is 'CO2', oxygen is 'O2'."	1
 PARAM	6a6ca500-d205-11e1-8000-00215ad4efdf	CoverageArea	AREA		172	1	The floor area that is covered by the sensor (typically measured as a circle whose center is at the location of the sensor).	1
@@ -982,18 +982,18 @@ PARAM	8cfebe00-d205-11e1-8000-00215ad4efdf	RateOfTemperatureRise	NUMBER		173	1	T
 PARAM	b61f4e80-d205-11e1-8000-00215ad4efdf	SubstanceDetected	TEXT		176	1	"Identification of the substance that is being detected according to chemical formula.  For example, calcium carbonate is 'CaCO3'"	1
 PARAM	30e86980-d206-11e1-8000-00215ad4efdf	IsSwitch	YESNO		182	1	Identifies if the sensor also functions as a switch at the set point (=TRUE) or not (= FALSE).	1
 PARAM	68571600-d206-11e1-8000-00215ad4efdf	HasBuiltInAlarm	YESNO		185	1	Indicates whether the smoke sensor is included as an element within a smoke alarm/sensor unit (TRUE) or not (FALSE).	1
-PARAM	b66c1980-d206-11e1-8000-00215ad4efdf	SetPointSpeed	HVACVELOCITY		188	1	The wind speed value to be sensed. Use IfcPropertyBoundedValue.SetPointValue to set the set point value.	1
+PARAM	b66c1980-d206-11e1-8000-00215ad4efdf	SetPointSpeed	HVAC_VELOCITY		188	1	The wind speed value to be sensed. Use IfcPropertyBoundedValue.SetPointValue to set the set point value.	1
 PARAM	0e346180-d1c2-11e1-8000-00215ad4efdf	IsOutdoors	YESNO		205	1	Indicates if camera is designed to be used outdoors.	1
 PARAM	1391ac00-d1c2-11e1-8000-00215ad4efdf	VideoResolutionWidth	ANGLE		205	1	Indicates the number of horizontal pixels (the largest native video resolution width).	1
 PARAM	18eef680-d1c2-11e1-8000-00215ad4efdf	VideoResolutionHeight	ANGLE		205	1	Indicates the number of vertical pixels (the largest native video resolution height).	1
 PARAM	99adf280-d1c2-11e1-8000-00215ad4efdf	NominalSize	LENGTH		207	1	Indicates the diagonal screen size.	1
 PARAM	a03c6a00-d1c2-11e1-8000-00215ad4efdf	DisplayWidth	LENGTH		207	1	Indicates the physical width of the screen (only the display surface).	1
 PARAM	a6cae180-d1c2-11e1-8000-00215ad4efdf	DisplayHeight	LENGTH		207	1	Indicates the physical height of the screen (only the display surface).	1
-PARAM	ab8f9580-d1c2-11e1-8000-00215ad4efdf	Brightness	ELECTRICALILLUMINANCE		207	1	Indicates the display brightness.	1
+PARAM	ab8f9580-d1c2-11e1-8000-00215ad4efdf	Brightness	ELECTRICAL_ILLUMINANCE		207	1	Indicates the display brightness.	1
 PARAM	b0ece000-d1c2-11e1-8000-00215ad4efdf	ContrastRatio	NUMBER		207	1	Indicates the display contrast ratio.	1
-PARAM	b77b5780-d1c2-11e1-8000-00215ad4efdf	RefreshRate	STRUCTURALFREQUENCY		207	1	Indicates the display refresh frequency.	1
+PARAM	b77b5780-d1c2-11e1-8000-00215ad4efdf	RefreshRate	STRUCTURAL_FREQUENCY		207	1	Indicates the display refresh frequency.	1
 PARAM	1214b380-d1c3-11e1-8000-00215ad4efdf	PlayerMediaEject	YESNO		208	1	Indicates whether the media can be ejected from the player (if physical media).	1
-PARAM	c7e00200-d1c3-11e1-8000-00215ad4efdf	Impedence	STRUCTURALFREQUENCY		211	1	Indicates the speaker impedence.	1
+PARAM	c7e00200-d1c3-11e1-8000-00215ad4efdf	Impedence	STRUCTURAL_FREQUENCY		211	1	Indicates the speaker impedence.	1
 PARAM	83099a80-d1c6-11e1-8000-00215ad4efdf	LadderConfiguration	TEXT		214	1	Description of the configuration of the ladder structure used.	1
 PARAM	99aff180-d1c6-11e1-8000-00215ad4efdf	HasCover	YESNO		215	1	"Indication of whether the cable tray has a cover (=TRUE) or not (= FALSE). By default, this value should be set to FALSE.."	1
 PARAM	b0eedf00-d1c6-11e1-8000-00215ad4efdf	NumberOfCompartments	ANGLE		216	1	The number of separate internal compartments within the trunking.	1
@@ -1002,21 +1002,21 @@ PARAM	d9a5be45-4039-4d22-8b6c-573471e71f22	UserCorrectionFactor	NUMBER		220	1	An
 PARAM	4a80a2ec-f350-4fc6-ba3f-2235e2f25f04	NumberOfParallelCircuits	ANGLE		220	1	Number of parallel circuits.	1
 PARAM	7c0ce24f-9d03-4d9b-83da-2ac5e4a0634c	InstallationMethod	TEXT		220	1	"Method of installation of cable/conductor. Installation methods are typically defined by reference in standards such as IEC 60364-5-52, table 52A-1 or BS7671 Appendix 4 Table 4A1 etc. Selection of the value to be used should be determined from suc..."	1
 PARAM	977d1cc9-f8f5-48dc-aa23-820a3e9d0774	DistanceBetweenParallelCircuits	LENGTH		220	1	Distance measured between parallel circuits.	1
-PARAM	366428fd-19e5-4457-a10a-d655640758e7	SoilConductivity	HVACTHERMALCONDUCTIVITY		220	1	"Thermal conductivity of soil. Generally, within standards such as IEC 60364-5-52, table 52A-16, the resistivity of soil is required (measured in [SI] units of degK.m /W). This is the reciprocal of the conductivity value and needs to be calculated ..."	1
+PARAM	366428fd-19e5-4457-a10a-d655640758e7	SoilConductivity	HVAC_THERMAL_CONDUCTIVITY		220	1	"Thermal conductivity of soil. Generally, within standards such as IEC 60364-5-52, table 52A-16, the resistivity of soil is required (measured in [SI] units of degK.m /W). This is the reciprocal of the conductivity value and needs to be calculated ..."	1
 PARAM	7a917ce3-5e22-4ad5-8d1e-87bc3656c1b8	CarrierStackNumber	ANGLE		220	1	"Number of carrier segments (tray, ladder etc.) that are vertically stacked (vertical is measured as the z-axis of the local coordinate system of the carrier segment)."	1
 PARAM	d4ec2718-6333-4e1e-a8cd-d1a1d63c7708	IsHorizontalCable	YESNO		220	1	Indication of whether the cable occurrences are mounted horizontally (= TRUE) or vertically (= FALSE).	1
 PARAM	2632b748-03d3-46c0-aafd-3f7cff1f8d99	IsMountedFlatCable	YESNO		220	1	Indication of whether the cable occurrences are mounted flat (= TRUE) or in a trefoil pattern (= FALSE).	1
-PARAM	a56d3362-7278-4003-b141-8d8169f8652f	CurrentCarryingCapasity	ELECTRICALCURRENT		220	1	"Maximum value of electric current which can be carried continuously by a conductor, a device or an apparatus, under specified conditions without its steady-state temperature exceeding a  specified value. Based on IEC60826-11-13. NOTE: The temperat..."	1
+PARAM	a56d3362-7278-4003-b141-8d8169f8652f	CurrentCarryingCapasity	ELECTRICAL_CURRENT		220	1	"Maximum value of electric current which can be carried continuously by a conductor, a device or an apparatus, under specified conditions without its steady-state temperature exceeding a  specified value. Based on IEC60826-11-13. NOTE: The temperat..."	1
 PARAM	a008e02d-7f54-4833-83e4-f8069dde0f37	MaximumCableLength	LENGTH		220	1	Maximum cable length based on voltagedrop. NOTE: This value may also be specified as a constraint within an IFC model if required but is included within the property set at this stage pending implementation of the required capabilities within soft...	1
-PARAM	47d6edba-8d71-4af2-b05f-07d968909ff6	PowerLoss	ELECTRICALCURRENT		220	1	Total loss of power across this cable.	1
+PARAM	47d6edba-8d71-4af2-b05f-07d968909ff6	PowerLoss	ELECTRICAL_CURRENT		220	1	Total loss of power across this cable.	1
 PARAM	1e027480-d1c7-11e1-8000-00215ad4efdf	IsHorizontalBusbar	YESNO		221	1	Indication of whether the busbar occurrences are routed horizontally (= TRUE) or vertically (= FALSE).	1
 PARAM	2b1f6380-d1c7-11e1-8000-00215ad4efdf	Standard	TEXT		222	1	The designation of the standard applicable for the definition of the Cable/Bus used.	1
 PARAM	31154480-d1c7-11e1-8000-00215ad4efdf	NumberOfCores	ANGLE		222	1	The number of cores in Cable/Bus.	1
 PARAM	38d4e900-d1c7-11e1-8000-00215ad4efdf	OverallDiameter	LENGTH		222	1	The overall diameter of a Cable/Bus.	1
 PARAM	4ab68c00-d1c7-11e1-8000-00215ad4efdf	ScreenDiameter	LENGTH		222	1	The diameter of the screen around a cable or bus segment (if present).	1
 PARAM	5904a800-d1c7-11e1-8000-00215ad4efdf	HasProtectiveEarth	YESNO		222	1	"One core has protective earth marked insulation, Yellow/Green."	1
-PARAM	6de13b80-d1c7-11e1-8000-00215ad4efdf	MaximumOperatingTemperature	HVACTEMPERATURE		222	1	The maximum temperature at which a cable or bus is certified to operate.	1
-PARAM	7f2a4800-d1c7-11e1-8000-00215ad4efdf	MaximumShortCircuitTemperature	HVACTEMPERATURE		222	1	The maximum short circuit temperature at which a cable or bus is certified to operate.	1
+PARAM	6de13b80-d1c7-11e1-8000-00215ad4efdf	MaximumOperatingTemperature	HVAC_TEMPERATURE		222	1	The maximum temperature at which a cable or bus is certified to operate.	1
+PARAM	7f2a4800-d1c7-11e1-8000-00215ad4efdf	MaximumShortCircuitTemperature	HVAC_TEMPERATURE		222	1	The maximum short circuit temperature at which a cable or bus is certified to operate.	1
 PARAM	87828300-d1c7-11e1-8000-00215ad4efdf	SpecialConstruction	TEXT		222	1	"Special construction capabilities like self-supporting, flat devidable cable or bus flat non devidable cable or bus supporting elements inside (steal, textile, concentric conductor). Note that materials used should be agreed between exchange parti..."	1
 PARAM	8ea99100-d1c7-11e1-8000-00215ad4efdf	Weight	MASS		222	1	Weight of cable kg/km.	1
 PARAM	936e4500-d1c7-11e1-8000-00215ad4efdf	SelfExtinguishing60332_1	YESNO		222	1	Self Extinguishing cable/core according to IEC 60332.1.	1
@@ -1033,18 +1033,18 @@ PARAM	c8b9fc58-cd02-4eed-a320-8ff916082beb	IsMain	YESNO		233	1	Identifies if the
 PARAM	421bd751-0cf9-47d8-9829-53510c16a01a	IsSkilledOperator	YESNO		233	1	Identifies if the current instance requires a skilled person or instructed person to perform operations on the distribution board (= TRUE) or whether operations may be performed by a person without appropriate skills or instruction (= FALSE).	1
 PARAM	a277fb1f-cdca-4fcc-9c29-8634518b1066	Level	NUMBER		235	1	The fraction of usable energy stored.	1
 PARAM	2915ce80-d1e0-11e1-8000-00215ad4efdf	NominalSupplyVoltage	NUMBER		236	1	The nominal voltage of the supply.	1
-PARAM	359a2700-d1e0-11e1-8000-00215ad4efdf	NominalFrequency	STRUCTURALFREQUENCY		236	1	The nominal frequency of the supply.	1
-PARAM	51053200-d1e0-11e1-8000-00215ad4efdf	ShortCircuit3PoleMaximumState	ELECTRICALCURRENT		236	1	Maximum 3 pole short circuit current provided at the point of supply.	1
+PARAM	359a2700-d1e0-11e1-8000-00215ad4efdf	NominalFrequency	STRUCTURAL_FREQUENCY		236	1	The nominal frequency of the supply.	1
+PARAM	51053200-d1e0-11e1-8000-00215ad4efdf	ShortCircuit3PoleMaximumState	ELECTRICAL_CURRENT		236	1	Maximum 3 pole short circuit current provided at the point of supply.	1
 PARAM	56fb1300-d1e0-11e1-8000-00215ad4efdf	ShortCircuit3PolePowerFactorMaximumState	NUMBER		236	1	Power factor of the maximum 3 pole short circuit current provided at the point of supply.	1
-PARAM	5c585d80-d1e0-11e1-8000-00215ad4efdf	ShortCircuit2PoleMinimumState	ELECTRICALCURRENT		236	1	Minimum 2 pole short circuit current provided at the point of supply.	1
+PARAM	5c585d80-d1e0-11e1-8000-00215ad4efdf	ShortCircuit2PoleMinimumState	ELECTRICAL_CURRENT		236	1	Minimum 2 pole short circuit current provided at the point of supply.	1
 PARAM	64b09880-d1e0-11e1-8000-00215ad4efdf	ShortCircuit2PolePowerFactorMinimumState	NUMBER		236	1	Power factor of the minimum 2 pole short circuit current provided at the point of supply.	1
-PARAM	76923b80-d1e0-11e1-8000-00215ad4efdf	ShortCircuit1PoleMaximumState	ELECTRICALCURRENT		236	1	Maximum 1 pole short circuit current provided at the point of supply i.e. the fault between 1 phase and N.	1
+PARAM	76923b80-d1e0-11e1-8000-00215ad4efdf	ShortCircuit1PoleMaximumState	ELECTRICAL_CURRENT		236	1	Maximum 1 pole short circuit current provided at the point of supply i.e. the fault between 1 phase and N.	1
 PARAM	7db94980-d1e0-11e1-8000-00215ad4efdf	ShortCircuit1PolePowerFactorMaximumState	NUMBER		236	1	Power factor of the maximum 1 pole short circuit current provided at the point of supply i.e. the fault between 1 phase and N.	1
-PARAM	83af2a80-d1e0-11e1-8000-00215ad4efdf	ShortCircuit1PoleMinimumState	ELECTRICALCURRENT		236	1	Minimum 1 pole short circuit current provided at the point of supply i.e. the fault between 1 phase and N.	1
+PARAM	83af2a80-d1e0-11e1-8000-00215ad4efdf	ShortCircuit1PoleMinimumState	ELECTRICAL_CURRENT		236	1	Minimum 1 pole short circuit current provided at the point of supply i.e. the fault between 1 phase and N.	1
 PARAM	890c7500-d1e0-11e1-8000-00215ad4efdf	ShortCircuit1PolePowerFactorMinimumState	NUMBER		236	1	Power factor of the minimum 1 pole short circuit current provided at the point of supply i.e. the fault between 1 phase and N.	1
-PARAM	8dd12900-d1e0-11e1-8000-00215ad4efdf	EarthFault1PoleMaximumState	ELECTRICALCURRENT		236	1	Maximum 1 pole earth fault current provided at the point of supply i.e. the fault between 1 phase and PE/PEN.	1
+PARAM	8dd12900-d1e0-11e1-8000-00215ad4efdf	EarthFault1PoleMaximumState	ELECTRICAL_CURRENT		236	1	Maximum 1 pole earth fault current provided at the point of supply i.e. the fault between 1 phase and PE/PEN.	1
 PARAM	932e7380-d1e0-11e1-8000-00215ad4efdf	EarthFault1PolePowerFactorMaximumState	NUMBER		236	1	Power factor of the maximum 1 pole earth fault  current provided at the point of supply i.e. the fault between 1 phase and PE/PEN.	1
-PARAM	97f32780-d1e0-11e1-8000-00215ad4efdf	EarthFault1PoleMinimumState	ELECTRICALCURRENT		236	1	Minimum 1 pole earth fault current provided at the point of supply i.e. the fault between 1 phase and PE/PEN.	1
+PARAM	97f32780-d1e0-11e1-8000-00215ad4efdf	EarthFault1PoleMinimumState	ELECTRICAL_CURRENT		236	1	Minimum 1 pole earth fault current provided at the point of supply i.e. the fault between 1 phase and PE/PEN.	1
 PARAM	9d507200-d1e0-11e1-8000-00215ad4efdf	EarthFault1PolePowerFactorMinimumState	NUMBER		236	1	Power factor of the minimum 1 pole earth fault current provided at the point of supply i.e. the fault between 1 phase and PE/PEN.	1
 PARAM	7c868260-451b-4803-8f4f-c498fc0e3a9b	RadiativeFraction	INVALID		236	1	The fraction of energy converted to heat.	1
 PARAM	7813d9d4-8068-4f79-aca2-93559a565df4	ModuleCapacity	INVALID		236	1	The capacity for each battery module.	1
@@ -1052,46 +1052,46 @@ PARAM	64446b41-70e2-49fa-9c6a-4564917ccfd9	ModulesInParallel	INVALID		236	1	"The
 PARAM	9c327be7-6d6f-4139-ab9f-58c6a5cc7a9a	ModulesInSeries	INVALID		236	1	"The number of modules in series, where the total number of modules equals the number in parallel multiplied by the number in series."	1
 PARAM	bb1dd700-d1e0-11e1-8000-00215ad4efdf	ElectricGeneratorEfficiency	NUMBER		237	1	The ratio of output capacity to intake capacity.	1
 PARAM	c07b2180-d1e0-11e1-8000-00215ad4efdf	StartCurrentFactor	NUMBER		237	1	IEC. Start current factor defines how large the peek starting current will become on the engine. StartCurrentFactor is multiplied to NominalCurrent and we get the start current.	1
-PARAM	c53fd580-d1e0-11e1-8000-00215ad4efdf	MaximumPowerOutput	HVACPOWER		237	1	The maximum output power rating of the engine.	1
+PARAM	c53fd580-d1e0-11e1-8000-00215ad4efdf	MaximumPowerOutput	HVAC_POWER		237	1	The maximum output power rating of the engine.	1
 PARAM	e99bb200-d1e0-11e1-8000-00215ad4efdf	ElectricMotorEfficiency	NUMBER		238	1	The ratio of output capacity to intake capacity.	1
 PARAM	f3251a00-d1e0-11e1-8000-00215ad4efdf	StartingTime	TEXT		238	1	"The time (in s) needed for the motor to reach its rated speed with its driven equipment attached, starting from standstill and at the nominal voltage applied at its terminals."	1
 PARAM	f8826480-d1e0-11e1-8000-00215ad4efdf	TeTime	TEXT		238	1	The maximum time (in s) at which the motor could run with locked rotor when the motor is used in an EX-environment. The time indicates that a protective device should trip before this time when the starting current of the motor is slowing through ...	1
-PARAM	fddfaf00-d1e0-11e1-8000-00215ad4efdf	LockedRotorCurrent	ELECTRICALCURRENT		238	1	Input current when a motor armature is energized but not rotating.	1
+PARAM	fddfaf00-d1e0-11e1-8000-00215ad4efdf	LockedRotorCurrent	ELECTRICAL_CURRENT		238	1	Input current when a motor armature is energized but not rotating.	1
 PARAM	0fc15200-d1e1-11e1-8000-00215ad4efdf	FrameSize	TEXT		238	1	Designation of the frame size according to the named range of frame sizes designated at the place of use or according to a given standard.	1
 PARAM	15b73300-d1e1-11e1-8000-00215ad4efdf	IsGuarded	YESNO		238	1	Indication of whether the motor enclosure is guarded (= TRUE) or not (= FALSE).	1
 PARAM	1b147d80-d1e1-11e1-8000-00215ad4efdf	HasPartWinding	YESNO		238	1	"Indication of whether the motor is single speed, i.e. has a single winding (= FALSE) or multi-speed i.e.has part winding (= TRUE) ."	1
 PARAM	9dee0600-d1ea-11e1-8000-00215ad4efdf	NumberOfGangs	ANGLE		240	1	"Number of slots available for switches/outlets (most commonly 1, 2, 3, or 4)."	1
 PARAM	0fc64f80-d1eb-11e1-8000-00215ad4efdf	ContributedLuminousFlux	INVALID		241	1	"Luminous flux is a photometric measure of radiant flux, i.e. the volume of light emitted from a light source. Luminous flux is measured either for the interior as a whole or for a part of the interior (partial luminous flux for a solid angle). All..."	1
-PARAM	15bc3080-d1eb-11e1-8000-00215ad4efdf	LightEmitterNominalPower	HVACPOWER		241	1	Light emitter nominal power.	1
+PARAM	15bc3080-d1eb-11e1-8000-00215ad4efdf	LightEmitterNominalPower	HVAC_POWER		241	1	Light emitter nominal power.	1
 PARAM	1c4aa800-d1eb-11e1-8000-00215ad4efdf	LampMaintenanceFactor	NUMBER		241	1	Non recoverable losses of luminous flux of a lamp due to lamp depreciation; i.e. the decreasing of light output of a luminaire due to aging and dirt.	1
 PARAM	41d7b180-d1eb-11e1-8000-00215ad4efdf	ColorAppearance	TEXT		241	1	"In both the DIN and CIE standards, artificial light sources are classified in terms of their color appearance. To the human eye they all appear to be white; the difference can only be detected by direct comparison. Visual performance is not direct..."	1
-PARAM	59af3580-d1eb-11e1-8000-00215ad4efdf	ColorTemperature	HVACTEMPERATURE		241	1	The color temperature of any source of radiation is defined as the temperature (in Kelvin) of a black-body or Planckian radiator whose radiation has the same chromaticity as the source of radiation. Often the values are only approximate color temp...	1
+PARAM	59af3580-d1eb-11e1-8000-00215ad4efdf	ColorTemperature	HVAC_TEMPERATURE		241	1	The color temperature of any source of radiation is defined as the temperature (in Kelvin) of a black-body or Planckian radiator whose radiation has the same chromaticity as the source of radiation. Often the values are only approximate color temp...	1
 PARAM	5fa51680-d1eb-11e1-8000-00215ad4efdf	ColorRenderingIndex	ANGLE		241	1	"The CRI indicates how well a light source renders eight standard colors compared to perfect reference lamp with the same color temperature. The CRI scale ranges from 1 to 100, with 100 representing perfect rendering properties."	1
 PARAM	a4c94880-d1eb-11e1-8000-00215ad4efdf	NumberOfSources	ANGLE		242	1	Number of sources .	1
-PARAM	aa269300-d1eb-11e1-8000-00215ad4efdf	TotalWattage	HVACPOWER		242	1	Wattage on whole lightfitting device with all sources intact.	1
+PARAM	aa269300-d1eb-11e1-8000-00215ad4efdf	TotalWattage	HVAC_POWER		242	1	Wattage on whole lightfitting device with all sources intact.	1
 PARAM	d80bd780-d1eb-11e1-8000-00215ad4efdf	MaintenanceFactor	NUMBER		242	1	"The arithmetical allowance made for depreciation of lamps and reflective equipment from their initial values due to dirt, fumes, or age."	1
-PARAM	de01b880-d1eb-11e1-8000-00215ad4efdf	MaximumPlenumSensibleLoad	HVACPOWER		242	1	Maximum or Peak sensible thermal load contributed to return air plenum by the light fixture.	1
-PARAM	e528c680-d1eb-11e1-8000-00215ad4efdf	MaximumSpaceSensibleLoad	HVACPOWER		242	1	Maximum or Peak sensible thermal load contributed to the conditioned space by the light fixture.	1
+PARAM	de01b880-d1eb-11e1-8000-00215ad4efdf	MaximumPlenumSensibleLoad	HVAC_POWER		242	1	Maximum or Peak sensible thermal load contributed to return air plenum by the light fixture.	1
+PARAM	e528c680-d1eb-11e1-8000-00215ad4efdf	MaximumSpaceSensibleLoad	HVAC_POWER		242	1	Maximum or Peak sensible thermal load contributed to the conditioned space by the light fixture.	1
 PARAM	ea861100-d1eb-11e1-8000-00215ad4efdf	SensibleLoadToRadiant	NUMBER		242	1	Percent of sensible thermal load to radiant heat.	1
 PARAM	05588580-d1ec-11e1-8000-00215ad4efdf	FixtureHeight	LENGTH		243	1	"The height of the fixture, such as the text height of an exit sign."	1
 PARAM	e826b580-d1f1-11e1-8000-00215ad4efdf	IsPluggableOutlet	YESNO		245	1	Indication of whether the outlet accepts a loose plug connection (= TRUE) or whether it is directly connected (= FALSE) or whether the form of connection has not yet been determined (= UNKNOWN).	1
 PARAM	f9dc44b0-33ee-47e8-adea-fbbbd20abdd8	NumberOfSockets	ANGLE		245	1	"The number of sockets that may be connected. In case of inconsistency, sockets defined on ports take precedence."	1
-PARAM	d09efb00-d1f8-11e1-8000-00215ad4efdf	NominalCurrent	ELECTRICALCURRENT		246	1	A set of nominal currents in [A] for which the data of this instance is valid. At least one value shall be provided. Any value in the set shall not exceed the value of the UltimateRatedCurrent associated with the same breaker unit.	1
-PARAM	b6b1e800-d1f9-11e1-8000-00215ad4efdf	ICU60947	ELECTRICALCURRENT		249	1	The ultimate breaking capacity in [A] for an MCB tested in accordance with the IEC 60947 series.	1
-PARAM	c0d3e680-d1f9-11e1-8000-00215ad4efdf	ICS60947	ELECTRICALCURRENT		249	1	The service breaking capacity in [A] for an MCB tested in accordance with the IEC 60947 series.	1
-PARAM	c9c4b800-d1f9-11e1-8000-00215ad4efdf	ICN60898	ELECTRICALCURRENT		249	1	The nominal breaking capacity in [A] for an MCB tested in accordance with the IEC 60898 series.	1
-PARAM	d2b58980-d1f9-11e1-8000-00215ad4efdf	ICS60898	ELECTRICALCURRENT		249	1	The service breaking capacity in [A] for an MCB tested in accordance with the IEC 60898 series.	1
-PARAM	14decb00-d1fa-11e1-8000-00215ad4efdf	ICW60947	ELECTRICALCURRENT		250	1	The thermal withstand current in [A] for a circuit breaker or motor protection device tested in accordance with the IEC 60947 series. The value shall be related to 1 s.	1
-PARAM	1a3c1580-d1fa-11e1-8000-00215ad4efdf	ICM60947	ELECTRICALCURRENT		250	1	The making capacity in [A] for a circuit breaker or motor protection device tested in accordance with the IEC 60947 series.	1
+PARAM	d09efb00-d1f8-11e1-8000-00215ad4efdf	NominalCurrent	ELECTRICAL_CURRENT		246	1	A set of nominal currents in [A] for which the data of this instance is valid. At least one value shall be provided. Any value in the set shall not exceed the value of the UltimateRatedCurrent associated with the same breaker unit.	1
+PARAM	b6b1e800-d1f9-11e1-8000-00215ad4efdf	ICU60947	ELECTRICAL_CURRENT		249	1	The ultimate breaking capacity in [A] for an MCB tested in accordance with the IEC 60947 series.	1
+PARAM	c0d3e680-d1f9-11e1-8000-00215ad4efdf	ICS60947	ELECTRICAL_CURRENT		249	1	The service breaking capacity in [A] for an MCB tested in accordance with the IEC 60947 series.	1
+PARAM	c9c4b800-d1f9-11e1-8000-00215ad4efdf	ICN60898	ELECTRICAL_CURRENT		249	1	The nominal breaking capacity in [A] for an MCB tested in accordance with the IEC 60898 series.	1
+PARAM	d2b58980-d1f9-11e1-8000-00215ad4efdf	ICS60898	ELECTRICAL_CURRENT		249	1	The service breaking capacity in [A] for an MCB tested in accordance with the IEC 60898 series.	1
+PARAM	14decb00-d1fa-11e1-8000-00215ad4efdf	ICW60947	ELECTRICAL_CURRENT		250	1	The thermal withstand current in [A] for a circuit breaker or motor protection device tested in accordance with the IEC 60947 series. The value shall be related to 1 s.	1
+PARAM	1a3c1580-d1fa-11e1-8000-00215ad4efdf	ICM60947	ELECTRICAL_CURRENT		250	1	The making capacity in [A] for a circuit breaker or motor protection device tested in accordance with the IEC 60947 series.	1
 PARAM	f9250bdd-70df-4cbf-af6a-d72d26170202	LongTimeFunction	YESNO		251	1	Applying long time functionA flag indicating that the long time function (i.e. the thermal tripping) of the device is used. The value should be set to TRUE for all devices except those that allows the Long time function of the device not to be used.	1
 PARAM	337c40a4-98c5-4e4b-aa54-a444cf4790ea	ShortTimeFunction	YESNO		251	1	"Applying short time function A flag indicating that the short time function of the device is used. The value should be set to FALSE for devices not having a short time function, or if the short time function is not selected to be used."	1
 PARAM	ab1a66c0-9b66-4bc3-9fab-a566d40fc3f6	ShortTimei2tFunction	YESNO		251	1	Applying short time i2t function. A flag indicating that the I2t short time function of the device is used. The value should be set to TRUE only if the I2t function ?áis explicitly selected for the device.	1
 PARAM	8a30c271-7469-4aa7-8319-e83f13deaf14	GroundFaultFunction	YESNO		251	1	"Applying ground fault function. A flag indicating that the ground fault function of the device is used. The value should be set to FALSE for devices not having a ground fault function, or if the ground fault function is not selected to be used."	1
 PARAM	01151008-7b3e-484a-a631-627e3ef99db0	GroundFaulti2tFunction	YESNO		251	1	Applying ground fault i2t function. A flag indicating that the I2t ground fault function of the device is used. The value should be set to TRUE only if the I2t function is explicitly selected for the device.	1
-PARAM	4bc3d721-5dac-42f8-ad3e-069dc2559ee2	LongTimeCurrentSetValue	ELECTRICALCURRENT		251	1	Long time current set value. The set value of the long time tripping current if adjustable.	1
-PARAM	70aaff91-61f9-49ee-b5bc-5517d4044d3e	ShortTimeCurrentSetValue	ELECTRICALCURRENT		251	1	Short time current set value. The set value of the long time tripping current if adjustable.	1
-PARAM	3be6cdde-9842-42b0-a0d6-4478bc12607e	InstantaneousCurrentSetValue	ELECTRICALCURRENT		251	1	Instantaneous current set value. The set value of the instantaneous tripping current if adjustable.	1
-PARAM	f0e1b994-3900-433a-8bb2-e462694b55d1	GroundFaultCurrentSetValue	ELECTRICALCURRENT		251	1	Ground fault current set value. The set value of the ground tripping current if adjustable.	1
+PARAM	4bc3d721-5dac-42f8-ad3e-069dc2559ee2	LongTimeCurrentSetValue	ELECTRICAL_CURRENT		251	1	Long time current set value. The set value of the long time tripping current if adjustable.	1
+PARAM	70aaff91-61f9-49ee-b5bc-5517d4044d3e	ShortTimeCurrentSetValue	ELECTRICAL_CURRENT		251	1	Short time current set value. The set value of the long time tripping current if adjustable.	1
+PARAM	3be6cdde-9842-42b0-a0d6-4478bc12607e	InstantaneousCurrentSetValue	ELECTRICAL_CURRENT		251	1	Instantaneous current set value. The set value of the instantaneous tripping current if adjustable.	1
+PARAM	f0e1b994-3900-433a-8bb2-e462694b55d1	GroundFaultCurrentSetValue	ELECTRICAL_CURRENT		251	1	Ground fault current set value. The set value of the ground tripping current if adjustable.	1
 PARAM	f0250a29-337f-4364-acb3-be5daa02add0	LongTimeDelay	TEXT		251	1	Long time delay. The set value of the long time time-delay if adjustable.	1
 PARAM	74cb82ee-d6ff-4aae-9f88-fe5222059167	ShortTimeTrippingTime	TEXT		251	1	Short time tripping time. The set value of the short time tripping time if adjustable.	1
 PARAM	976a7956-1417-4914-adcd-03a1ce7bdf3e	InstantaneousTrippingTime	TEXT		251	1	Instantaneous tripping time. The set value of the instantaneous tripping time if adjustable.	1
@@ -1099,32 +1099,32 @@ PARAM	5a52482a-0258-465f-a47c-c512a46703f1	GroundFaultTrippingTime	TEXT		251	1	G
 PARAM	42c40f80-d1fa-11e1-8000-00215ad4efdf	IsSelectable	YESNO		253	1	Indication whether the S-function can be switched off or not.	1
 PARAM	4a83b400-d1fa-11e1-8000-00215ad4efdf	NominalCurrentAdjusted	YESNO		253	1	"An indication if the tripping currents of the short time protection is related to the nominal current multiplied with the actual setting of the current adjustment, if any, of the long time protection part of the protective device, or not."	1
 PARAM	51122b80-d1fa-11e1-8000-00215ad4efdf	ExternalAdjusted	YESNO		253	1	An indication if the ground fault protection may be adjusted according to an external current coil or not.	1
-PARAM	57080c80-d1fa-11e1-8000-00215ad4efdf	ReleaseCurrent	ELECTRICALCURRENT		253	1	The release current in [x In] for the initial tripping of the S-function.	1
+PARAM	57080c80-d1fa-11e1-8000-00215ad4efdf	ReleaseCurrent	ELECTRICAL_CURRENT		253	1	The release current in [x In] for the initial tripping of the S-function.	1
 PARAM	5bccc080-d1fa-11e1-8000-00215ad4efdf	ReleaseTime	TEXT		253	1	"The release time in [s] for the initial tripping of the relevant part. This time indicates that for current lower than the indicated release current, the tripping time will be longer than the indicated release time. The value is given as a mean va..."	1
 PARAM	61c2a180-d1fa-11e1-8000-00215ad4efdf	CurrentTolerance1	NUMBER		253	1	The tolerance for the current of time/current-curve in [%].	1
 PARAM	671fec00-d1fa-11e1-8000-00215ad4efdf	CurrentToleranceLimit1	TEXT		253	1	"The time limit in [s] limiting the application of CurrentTolerance1, if any. If the value is set to 0, the value of the CurrentTolerance1 is valid for the whole time/current-curve."	1
 PARAM	6d15cd00-d1fa-11e1-8000-00215ad4efdf	CurrentTolerance2	NUMBER		253	1	The tolerance for the current of time/current-curve in [%] valid for times above CurrentTolereanceLimit1.	1
 PARAM	73a44480-d1fa-11e1-8000-00215ad4efdf	IsCurrentTolerancePositiveOnly	YESNO		253	1	"Indication whether the value of  CurrentTolerance1 is provided as a positive tolereance only  or not. If not, the value is proved as a pluss/minus tolerance."	1
 PARAM	7a32bc00-d1fa-11e1-8000-00215ad4efdf	TimeTolerance1	NUMBER		253	1	The tolerance for the time of time/current-curve in [%].	1
-PARAM	80289d00-d1fa-11e1-8000-00215ad4efdf	TimeToleranceLimit1	ELECTRICALCURRENT		253	1	"The current limit in [x In] limiting the application of TimeTolerance1, if any. If the value is set to 0, the value of the TimeTolerance1 is valid for the whole time/current-curve."	1
+PARAM	80289d00-d1fa-11e1-8000-00215ad4efdf	TimeToleranceLimit1	ELECTRICAL_CURRENT		253	1	"The current limit in [x In] limiting the application of TimeTolerance1, if any. If the value is set to 0, the value of the TimeTolerance1 is valid for the whole time/current-curve."	1
 PARAM	84ed5100-d1fa-11e1-8000-00215ad4efdf	TimeTolerance2	NUMBER		253	1	The tolerance for the time of the time/current-curve in [%] valid for currents above TimeToleranceLimit1.	1
 PARAM	8ae33200-d1fa-11e1-8000-00215ad4efdf	IsTimeTolerancePositiveOnly	YESNO		253	1	"Indication whether the value of  TimeTolerance1 is provided as a positive tolereance only  or not. If not, the value is proved as a pluss/minus tolerance."	1
-PARAM	9171a980-d1fa-11e1-8000-00215ad4efdf	ReleaseCurrentI2tStart	ELECTRICALCURRENT		253	1	"The release current in [x In] for the start point of the I2t tripping curve of the G-function, if any."	1
+PARAM	9171a980-d1fa-11e1-8000-00215ad4efdf	ReleaseCurrentI2tStart	ELECTRICAL_CURRENT		253	1	"The release current in [x In] for the start point of the I2t tripping curve of the G-function, if any."	1
 PARAM	96cef400-d1fa-11e1-8000-00215ad4efdf	ReleaseTimeI2tStart	TEXT		253	1	"The release time in [s] for the start point of the I2t tripping curve of the G-function, if any."	1
-PARAM	9c2c3e80-d1fa-11e1-8000-00215ad4efdf	ReleaseCurrentI2tEnd	ELECTRICALCURRENT		253	1	"The release current in [x In] for the end point of the I2t tripping curve of the G-function, if any. The value of ReleaseCurrentI2tEnd shall be larger than ReleaseCurrentI2tStart."	1
+PARAM	9c2c3e80-d1fa-11e1-8000-00215ad4efdf	ReleaseCurrentI2tEnd	ELECTRICAL_CURRENT		253	1	"The release current in [x In] for the end point of the I2t tripping curve of the G-function, if any. The value of ReleaseCurrentI2tEnd shall be larger than ReleaseCurrentI2tStart."	1
 PARAM	a2221f80-d1fa-11e1-8000-00215ad4efdf	ReleaseTimeI2tEnd	TEXT		253	1	"The release time in [s] for the end point of the I2 tripping curve of the G-function, if any. The value of ReleaseTimeI2tEnd shall be lower than ReleaseTimeI2tStart."	1
-PARAM	ffb66c00-d1fa-11e1-8000-00215ad4efdf	MaxAdjustmentX_ICS	ELECTRICALCURRENT		254	1	Provides the maximum setting value for the available current adjustment in relation to theIcs breaking capacity of the protection device of which the actual tripping unit is a part of. The value is not asserted unless the instantaneous time prote...	1
+PARAM	ffb66c00-d1fa-11e1-8000-00215ad4efdf	MaxAdjustmentX_ICS	ELECTRICAL_CURRENT		254	1	Provides the maximum setting value for the available current adjustment in relation to theIcs breaking capacity of the protection device of which the actual tripping unit is a part of. The value is not asserted unless the instantaneous time prote...	1
 PARAM	a3d271ad-1c7d-4743-92e5-ceb1ef243667	IsOffWhenSFunctionOn	YESNO		254	1	Indication whether the I-function is automatically switched off when the S-function is switched on.	1
-PARAM	11980f00-d1fb-11e1-8000-00215ad4efdf	UpperCurrent1	ELECTRICALCURRENT		255	1	"The current in [x In], indicating that for currents larger than UpperCurrent1 the I2t part of the L-function will trip the current."	1
-PARAM	16f55980-d1fb-11e1-8000-00215ad4efdf	UpperCurrent2	ELECTRICALCURRENT		255	1	"The current in [x In], indicating the upper current limit of the upper time/current curve of the I2t part of the L-function."	1
+PARAM	11980f00-d1fb-11e1-8000-00215ad4efdf	UpperCurrent1	ELECTRICAL_CURRENT		255	1	"The current in [x In], indicating that for currents larger than UpperCurrent1 the I2t part of the L-function will trip the current."	1
+PARAM	16f55980-d1fb-11e1-8000-00215ad4efdf	UpperCurrent2	ELECTRICAL_CURRENT		255	1	"The current in [x In], indicating the upper current limit of the upper time/current curve of the I2t part of the L-function."	1
 PARAM	1c52a400-d1fb-11e1-8000-00215ad4efdf	UpperTime1	TEXT		255	1	"The time in [s], indicating that tripping times of the upper time/current curve lower than UpperTime1 is determined by the I2t part of the L-function."	1
 PARAM	21afee80-d1fb-11e1-8000-00215ad4efdf	UpperTime2	TEXT		255	1	"The time in [s], indicating the tripping times of the upper time/current curve at the UpperCurrent2."	1
-PARAM	27a5cf80-d1fb-11e1-8000-00215ad4efdf	LowerCurrent1	ELECTRICALCURRENT		255	1	"The current in [x In], indicating that for currents smaller than LowerCurrent1 the I2t part of the L-function will not trip the current,"	1
-PARAM	2eccdd80-d1fb-11e1-8000-00215ad4efdf	LowerCurrent2	ELECTRICALCURRENT		255	1	"The current in [x In], indicating the upper current limit of the lower time/current curve of the I2t part of the L-function."	1
+PARAM	27a5cf80-d1fb-11e1-8000-00215ad4efdf	LowerCurrent1	ELECTRICAL_CURRENT		255	1	"The current in [x In], indicating that for currents smaller than LowerCurrent1 the I2t part of the L-function will not trip the current,"	1
+PARAM	2eccdd80-d1fb-11e1-8000-00215ad4efdf	LowerCurrent2	ELECTRICAL_CURRENT		255	1	"The current in [x In], indicating the upper current limit of the lower time/current curve of the I2t part of the L-function."	1
 PARAM	34c2be80-d1fb-11e1-8000-00215ad4efdf	LowerTime1	TEXT		255	1	"The time in [s], indicating that tripping times of the lower time/current curve lower than LowerTime1 is determined by the I2t part of the L-function."	1
 PARAM	39877280-d1fb-11e1-8000-00215ad4efdf	LowerTime2	TEXT		255	1	"The time in [s], indicating the tripping times of the upper time/current curve at the LowerCurrent2."	1
 PARAM	8521329d-79b1-46be-b0fd-056df538df7f	IsOffWhenLfunctionOn	YESNO		256	1	Indication whether the S-function is automatically switched off when the I-function is switched on.	1
-PARAM	b87cab00-d1fb-11e1-8000-00215ad4efdf	AdjustmentRangeStepValue	ELECTRICALCURRENT		257	1	Step value of current adjustment for an AdjustmentValueType = RANGE. Note that this property should not have a value for an  AdjustmentValueType = LIST.	1
+PARAM	b87cab00-d1fb-11e1-8000-00215ad4efdf	AdjustmentRangeStepValue	ELECTRICAL_CURRENT		257	1	Step value of current adjustment for an AdjustmentValueType = RANGE. Note that this property should not have a value for an  AdjustmentValueType = LIST.	1
 PARAM	c4686d00-d1fb-11e1-8000-00215ad4efdf	AdjustmentDesignation	TEXT		257	1	The desgnation on the device for the adjustment.	1
 PARAM	f083ee00-d1fb-11e1-8000-00215ad4efdf	CurrentForTimeDelay	TEXT		258	1	"The tripping current in [x In] at which the time delay is specified. A value for this property should only be asserted for time delay of L-function, and for I2t of the S and G function."	1
 PARAM	25904080-d1fc-11e1-8000-00215ad4efdf	UseInDiscrimination	YESNO		259	1	An indication whether the time/current tripping information can be applied in a discrimination analysis or not.	1
@@ -1134,7 +1134,7 @@ PARAM	393ba700-d1fc-11e1-8000-00215ad4efdf	LimitingTerminalSize	AREA		259	1	The 
 PARAM	553f4880-d1fc-11e1-8000-00215ad4efdf	I1	NUMBER		260	1	"The (thermal) lower testing current limit in [x In], indicating that for currents lower than I1, the tripping time shall be longer than the associated tripping time, T2."	1
 PARAM	5b352980-d1fc-11e1-8000-00215ad4efdf	I2	NUMBER		260	1	"The (thermal) upper testing current limit in [x In], indicating that for currents larger than I2, the tripping time shall be shorter than the associated tripping time, T2."	1
 PARAM	60927400-d1fc-11e1-8000-00215ad4efdf	T2	TEXT		260	1	The (thermal) testing time in [s] associated with the testing currents I1 and I2.	1
-PARAM	68521880-d1fc-11e1-8000-00215ad4efdf	DefinedTemperature	HVACTEMPERATURE		260	1	The ambient temperature at which the thermal current/time-curve associated with this protection device is defined.	1
+PARAM	68521880-d1fc-11e1-8000-00215ad4efdf	DefinedTemperature	HVAC_TEMPERATURE		260	1	The ambient temperature at which the thermal current/time-curve associated with this protection device is defined.	1
 PARAM	6ee09000-d1fc-11e1-8000-00215ad4efdf	TemperatureFactor	NUMBER		260	1	The correction factor (typically measured as %/deg K) for adjusting the thermal current/time to an ambient temperature different from the value given by the defined temperature.	1
 PARAM	73a54400-d1fc-11e1-8000-00215ad4efdf	I4	NUMBER		260	1	"The lower electromagnetic testing current limit in [x In], indicating that for currents lower than I4, the tripping time shall be longer than the associated tripping time, T5, i.e. the device shall not trip instantaneous."	1
 PARAM	799b2500-d1fc-11e1-8000-00215ad4efdf	I5	NUMBER		260	1	"The upper electromagnetic testing current limit in [x In], indicating that for currents larger than I5, the tripping time shall be shorter than or equal to the associated tripping time, T5, i.e. the device shall trip instantaneous."	1
@@ -1144,8 +1144,8 @@ PARAM	a94a2d00-d1fc-11e1-8000-00215ad4efdf	N_Protection	YESNO		261	1	"An indicat
 PARAM	b0713b00-d1fc-11e1-8000-00215ad4efdf	N_Protection_50	YESNO		261	1	An indication whether the electronic tripping unit is tripping if the current in the N conductor is more than 50% of that of the phase conductors. The property is only asserted if the property N_Protection is asserted.	1
 PARAM	b8c97600-d1fc-11e1-8000-00215ad4efdf	N_Protection_100	YESNO		261	1	An indication whether the electronic tripping unit is tripping if the current in the N conductor is more than 100% of that of the phase conductors. The property is only asserted if the property N_Protection is asserted.	1
 PARAM	bebf5700-d1fc-11e1-8000-00215ad4efdf	N_Protection_Select	YESNO		261	1	"An indication whether the use of the N_Protection can be selected by the user or not. If both the properties N_Protection_50 and N_Protection_100 are asserted, the value of N_Protection_Select property is set to TRUE. The property is only asserted..."	1
-PARAM	e6fb8580-d1fd-11e1-8000-00215ad4efdf	Sensitivity	ELECTRICALCURRENT		266	1	The rated rms value of the vector sum of the instantaneous currents flowing in the main circuits of the device which causes the device to operate under specified conditions. (IEC 61008-1).	1
-PARAM	3fcb1e00-d1fe-11e1-8000-00215ad4efdf	IC60269	ELECTRICALCURRENT		267	1	The breaking capacity in [A] for fuses in accordance with the IEC 60269 series.	1
+PARAM	e6fb8580-d1fd-11e1-8000-00215ad4efdf	Sensitivity	ELECTRICAL_CURRENT		266	1	The rated rms value of the vector sum of the instantaneous currents flowing in the main circuits of the device which causes the device to operate under specified conditions. (IEC 61008-1).	1
+PARAM	3fcb1e00-d1fe-11e1-8000-00215ad4efdf	IC60269	ELECTRICAL_CURRENT		267	1	The breaking capacity in [A] for fuses in accordance with the IEC 60269 series.	1
 PARAM	9a9a35d2-95f8-4d56-8bac-6657ec7bec7d	ActiveCellSurfaceAreaFraction	NUMBER		271	1	The percentage of surface area containing active solar cells. Note: the surface area may be provided at Qto_SolarDeviceBaseQuantities.GrossArea.	1
 PARAM	034f6cea-a9d8-48df-8940-419e8c744201	CellEfficiency	NUMBER		271	1	The ratio of power generated divided by incident solar power.	1
 PARAM	cd623a00-d20d-11e1-8000-00215ad4efdf	HasLock	YESNO		272	1	Indication of whether a switching device has a key operated lock (=TRUE) or not (= FALSE).	1
@@ -1153,26 +1153,26 @@ PARAM	d4894800-d20d-11e1-8000-00215ad4efdf	IsIlluminated	YESNO		272	1	An indicat
 PARAM	db17bf80-d20d-11e1-8000-00215ad4efdf	Legend	TEXT		272	1	A text inscribed or applied to the switch as a legend to indicate purpose or function.	1
 PARAM	5dee4980-d211-11e1-8000-00215ad4efdf	PrimaryVoltage	NUMBER		283	1	The voltage that is going to be transformed and that runs into the transformer on the primary side.	1
 PARAM	634b9400-d211-11e1-8000-00215ad4efdf	SecondaryVoltage	NUMBER		283	1	The voltage that has been transformed and is running out of the transformer on the secondary side.	1
-PARAM	6a72a200-d211-11e1-8000-00215ad4efdf	PrimaryCurrent	ELECTRICALCURRENT		283	1	The current that is going to be transformed and that runs into the transformer on the primary side.	1
-PARAM	71011980-d211-11e1-8000-00215ad4efdf	SecondaryCurrent	ELECTRICALCURRENT		283	1	The current that has been transformed and is running out of the transformer on the secondary side.	1
-PARAM	778f9100-d211-11e1-8000-00215ad4efdf	PrimaryFrequency	STRUCTURALFREQUENCY		283	1	The frequency that is going to be transformed and that runs into the transformer on the primary side.	1
-PARAM	7e1e0880-d211-11e1-8000-00215ad4efdf	SecondaryFrequency	STRUCTURALFREQUENCY		283	1	The frequency that has been transformed and is running out of the transformer on the secondary side.	1
-PARAM	837b5300-d211-11e1-8000-00215ad4efdf	PrimaryApparentPower	HVACPOWER		283	1	The power in VA (volt ampere) that has been transformed and that runs into the transformer on the primary side.	1
-PARAM	89713400-d211-11e1-8000-00215ad4efdf	SecondaryApparentPower	HVACPOWER		283	1	The power in VA (volt ampere) that has been transformed and is running out of the transformer on the secondary side.	1
-PARAM	8f671500-d211-11e1-8000-00215ad4efdf	MaximumApparentPower	HVACPOWER		283	1	Maximum apparent power/capacity in VA (volt ampere).	1
+PARAM	6a72a200-d211-11e1-8000-00215ad4efdf	PrimaryCurrent	ELECTRICAL_CURRENT		283	1	The current that is going to be transformed and that runs into the transformer on the primary side.	1
+PARAM	71011980-d211-11e1-8000-00215ad4efdf	SecondaryCurrent	ELECTRICAL_CURRENT		283	1	The current that has been transformed and is running out of the transformer on the secondary side.	1
+PARAM	778f9100-d211-11e1-8000-00215ad4efdf	PrimaryFrequency	STRUCTURAL_FREQUENCY		283	1	The frequency that is going to be transformed and that runs into the transformer on the primary side.	1
+PARAM	7e1e0880-d211-11e1-8000-00215ad4efdf	SecondaryFrequency	STRUCTURAL_FREQUENCY		283	1	The frequency that has been transformed and is running out of the transformer on the secondary side.	1
+PARAM	837b5300-d211-11e1-8000-00215ad4efdf	PrimaryApparentPower	HVAC_POWER		283	1	The power in VA (volt ampere) that has been transformed and that runs into the transformer on the primary side.	1
+PARAM	89713400-d211-11e1-8000-00215ad4efdf	SecondaryApparentPower	HVAC_POWER		283	1	The power in VA (volt ampere) that has been transformed and is running out of the transformer on the secondary side.	1
+PARAM	8f671500-d211-11e1-8000-00215ad4efdf	MaximumApparentPower	HVAC_POWER		283	1	Maximum apparent power/capacity in VA (volt ampere).	1
 PARAM	a0b02180-d211-11e1-8000-00215ad4efdf	ShortCircuitVoltage	INVALID		283	1	A complex number that specifies the real and imaginary parts of the short-circuit voltage at rated current of a transformer given in %.	1
 PARAM	a6a60280-d211-11e1-8000-00215ad4efdf	RealImpedanceRatio	NUMBER		283	1	The ratio between the real part of the zero sequence impedance and the real part of the positive impedance (i.e. real part of the short-circuit voltage) of the transformer. Used for three-phase transformer which includes a N-conductor.	1
 PARAM	ac9be380-d211-11e1-8000-00215ad4efdf	ImaginaryImpedanceRatio	NUMBER		283	1	The ratio between the imaginary part of the zero sequence impedance and the imaginary part of the positive impedance (i.e. imaginary part of the short-circuit voltage) of the transformer. Used for three-phase transformer which includes a N-conductor.	1
 PARAM	d228ed00-d211-11e1-8000-00215ad4efdf	IsNeutralPrimaryTerminalAvailable	YESNO		283	1	An indication of whether the neutral point of the primary winding is available as a terminal (=TRUE) or not (= FALSE).	1
 PARAM	d94ffb00-d211-11e1-8000-00215ad4efdf	IsNeutralSecondaryTerminalAvailable	YESNO		283	1	An indication of whether the neutral point of the secondary winding is available as a terminal (=TRUE) or not (= FALSE).	1
-PARAM	a16b9800-d1be-11e1-8000-00215ad4efdf	NominalAirFlowRate	PIPINGFLOW		307	1	Nominal airflow rate.	1
+PARAM	a16b9800-d1be-11e1-8000-00215ad4efdf	NominalAirFlowRate	PIPING_FLOW		307	1	Nominal airflow rate.	1
 PARAM	c829ce80-d1be-11e1-8000-00215ad4efdf	HasSoundAttenuator	YESNO		307	1	Terminal box has a sound attenuator.	1
 PARAM	cd871900-d1be-11e1-8000-00215ad4efdf	HasReturnAir	YESNO		307	1	Terminal box has return air mixed with supply air from duct work.	1
 PARAM	d37cfa00-d1be-11e1-8000-00215ad4efdf	HasFan	YESNO		307	1	Terminal box has a fan inside (fan powered box).	1
-PARAM	d972db00-d1be-11e1-8000-00215ad4efdf	NominalInletAirPressure	HVACPRESSURE		307	1	Nominal airflow inlet static pressure.	1
+PARAM	d972db00-d1be-11e1-8000-00215ad4efdf	NominalInletAirPressure	HVAC_PRESSURE		307	1	Nominal airflow inlet static pressure.	1
 PARAM	df68bc00-d1be-11e1-8000-00215ad4efdf	NominalDamperDiameter	LENGTH		307	1	Nominal damper diameter.	1
 PARAM	e4c60680-d1be-11e1-8000-00215ad4efdf	HousingThickness	LENGTH		307	1	Air terminal box housing material thickness.	1
-PARAM	89dd48d1-b318-4f25-99c1-2f06ce904666	AirFlowRate	PIPINGFLOW		308	1	The actual airflow rate as designed.	1
+PARAM	89dd48d1-b318-4f25-99c1-2f06ce904666	AirFlowRate	PIPING_FLOW		308	1	The actual airflow rate as designed.	1
 PARAM	9107ed00-d1bf-11e1-8000-00215ad4efdf	SlotWidth	LENGTH		310	1	Slot width.	1
 PARAM	96653780-d1bf-11e1-8000-00215ad4efdf	SlotLength	LENGTH		310	1	Slot length.	1
 PARAM	9c5b1880-d1bf-11e1-8000-00215ad4efdf	NumberOfSlots	ANGLE		310	1	Number of slots.	1
@@ -1186,21 +1186,21 @@ PARAM	3f139700-d1c0-11e1-8000-00215ad4efdf	HasThermalInsulation	YESNO		310	1	"If
 PARAM	4470e180-d1c0-11e1-8000-00215ad4efdf	NeckArea	AREA		310	1	Neck area of the air terminal.	1
 PARAM	49ce2c00-d1c0-11e1-8000-00215ad4efdf	EffectiveArea	AREA		310	1	Effective discharge area of the air terminal.	1
 PARAM	b77a5800-d1c0-11e1-8000-00215ad4efdf	HasDefrost	YESNO		312	1	has the heat exchanger has defrost function or not.	1
-PARAM	75ebac00-d1c4-11e1-8000-00215ad4efdf	PressureRating	HVACPRESSURE		314	1	Nominal pressure rating of the boiler as rated by the agency having jurisdiction.	1
+PARAM	75ebac00-d1c4-11e1-8000-00215ad4efdf	PressureRating	HVAC_PRESSURE		314	1	Nominal pressure rating of the boiler as rated by the agency having jurisdiction.	1
 PARAM	84d25e80-d1c4-11e1-8000-00215ad4efdf	HeatTransferSurfaceArea	AREA		314	1	Total heat transfer area of the vessel.	1
 PARAM	9451a780-d1c4-11e1-8000-00215ad4efdf	WaterStorageCapacity	VOLUME		314	1	Water storage capacity.	1
 PARAM	987dc500-d1c4-11e1-8000-00215ad4efdf	IsWaterStorageHeater	YESNO		314	1	"This is used to identify if the boiler has storage capacity (TRUE). If FALSE, then there is no storage capacity built into the boiler, such as an instantaneous hot water heater."	1
-PARAM	a9c6d180-d1c4-11e1-8000-00215ad4efdf	NominalEnergyConsumption	HVACPOWER		314	1	Nominal fuel consumption rate required to produce the total boiler heat output.	1
+PARAM	a9c6d180-d1c4-11e1-8000-00215ad4efdf	NominalEnergyConsumption	HVAC_POWER		314	1	Nominal fuel consumption rate required to produce the total boiler heat output.	1
 PARAM	c82ccd00-d1c4-11e1-8000-00215ad4efdf	MaximumOutletPressure	TEXT		315	1	Maximum steam outlet pressure.	1
-PARAM	fe6c4b80-d1c8-11e1-8000-00215ad4efdf	NominalCapacity	HVACPOWER		319	1	Nominal cooling capacity of chiller at standardized conditions as defined by the agency having jurisdiction.	1
+PARAM	fe6c4b80-d1c8-11e1-8000-00215ad4efdf	NominalCapacity	HVAC_POWER		319	1	Nominal cooling capacity of chiller at standardized conditions as defined by the agency having jurisdiction.	1
 PARAM	04622c80-d1c9-11e1-8000-00215ad4efdf	NominalEfficiency	NUMBER		319	1	Nominal chiller efficiency under nominal conditions.	1
-PARAM	0926e080-d1c9-11e1-8000-00215ad4efdf	NominalCondensingTemperature	HVACTEMPERATURE		319	1	Chiller condensing temperature.	1
-PARAM	0e842b00-d1c9-11e1-8000-00215ad4efdf	NominalEvaporatingTemperature	HVACTEMPERATURE		319	1	Chiller evaporating temperature.	1
-PARAM	147a0c00-d1c9-11e1-8000-00215ad4efdf	NominalHeatRejectionRate	HVACPOWER		319	1	Sum of the refrigeration effect and the heat equivalent of the power input to the compressor.	1
-PARAM	19d75680-d1c9-11e1-8000-00215ad4efdf	NominalPowerConsumption	HVACPOWER		319	1	Nominal total power consumption.	1
+PARAM	0926e080-d1c9-11e1-8000-00215ad4efdf	NominalCondensingTemperature	HVAC_TEMPERATURE		319	1	Chiller condensing temperature.	1
+PARAM	0e842b00-d1c9-11e1-8000-00215ad4efdf	NominalEvaporatingTemperature	HVAC_TEMPERATURE		319	1	Chiller evaporating temperature.	1
+PARAM	147a0c00-d1c9-11e1-8000-00215ad4efdf	NominalHeatRejectionRate	HVAC_POWER		319	1	Sum of the refrigeration effect and the heat equivalent of the power input to the compressor.	1
+PARAM	19d75680-d1c9-11e1-8000-00215ad4efdf	NominalPowerConsumption	HVAC_POWER		319	1	Nominal total power consumption.	1
 PARAM	789cd000-d1c9-11e1-8000-00215ad4efdf	HasSoundAttenuation	YESNO		320	1	"TRUE if the coil has sound attenuation, FALSE if it does not."	1
-PARAM	bb5ea800-d1c9-11e1-8000-00215ad4efdf	NominalSensibleCapacity	HVACPOWER		322	1	Nominal sensible capacity.	1
-PARAM	c0235c00-d1c9-11e1-8000-00215ad4efdf	NominalLatentCapacity	HVACPOWER		322	1	Nominal latent capacity.	1
+PARAM	bb5ea800-d1c9-11e1-8000-00215ad4efdf	NominalSensibleCapacity	HVAC_POWER		322	1	Nominal sensible capacity.	1
+PARAM	c0235c00-d1c9-11e1-8000-00215ad4efdf	NominalLatentCapacity	HVAC_POWER		322	1	Nominal latent capacity.	1
 PARAM	c580a680-d1c9-11e1-8000-00215ad4efdf	NominalUA	NUMBER		322	1	Nominal UA value.	1
 PARAM	0b3d6f00-d1ca-11e1-8000-00215ad4efdf	CoilFaceArea	AREA		323	1	Coil face area in the direction against air the flow.	1
 PARAM	109ab980-d1ca-11e1-8000-00215ad4efdf	HeatExchangeSurfaceArea	AREA		323	1	Heat exchange surface area associated with U-value.	1
@@ -1212,8 +1212,8 @@ PARAM	42ac1b80-d1ca-11e1-8000-00215ad4efdf	WetCoilFraction	NUMBER		323	1	Fractio
 PARAM	4db37b80-d1cb-11e1-8000-00215ad4efdf	MinimumPartLoadRatio	NUMBER		325	1	Minimum part load ratio as a fraction of nominal capacity.	1
 PARAM	5310c600-d1cb-11e1-8000-00215ad4efdf	MaximumPartLoadRatio	NUMBER		325	1	Maximum part load ratio as a fraction of nominal capacity.	1
 PARAM	57d57a00-d1cb-11e1-8000-00215ad4efdf	CompressorSpeed	INVALID		325	1	Compressor speed.	1
-PARAM	6459d280-d1cb-11e1-8000-00215ad4efdf	IdealCapacity	HVACPOWER		325	1	Compressor capacity under ideal conditions.	1
-PARAM	6b80e080-d1cb-11e1-8000-00215ad4efdf	IdealShaftPower	HVACPOWER		325	1	Compressor shaft power under ideal conditions.	1
+PARAM	6459d280-d1cb-11e1-8000-00215ad4efdf	IdealCapacity	HVAC_POWER		325	1	Compressor capacity under ideal conditions.	1
+PARAM	6b80e080-d1cb-11e1-8000-00215ad4efdf	IdealShaftPower	HVAC_POWER		325	1	Compressor shaft power under ideal conditions.	1
 PARAM	70de2b00-d1cb-11e1-8000-00215ad4efdf	HasHotGasBypass	YESNO		325	1	"Whether or not hot gas bypass is provided for the compressor. TRUE = Yes, FALSE = No."	1
 PARAM	76d40c00-d1cb-11e1-8000-00215ad4efdf	ImpellerDiameter	LENGTH		325	1	Diameter of compressor impeller - used to scale performance of geometrically similar compressors.	1
 PARAM	b0f1dd80-d1cc-11e1-8000-00215ad4efdf	ExternalSurfaceArea	AREA		327	1	External surface area (both primary and secondary area).	1
@@ -1224,45 +1224,45 @@ PARAM	c6670780-d1cc-11e1-8000-00215ad4efdf	NominalHeatTransferArea	AREA		327	1	N
 PARAM	cbc45200-d1cc-11e1-8000-00215ad4efdf	NominalHeatTransferCoefficient	NUMBER		327	1	Nominal overall heat transfer coefficient associated with nominal heat transfer area.	1
 PARAM	a0426700-d1ce-11e1-8000-00215ad4efdf	ConnectionSize	LENGTH		330	1	Duct connection diameter.	1
 PARAM	bfd98f80-d1ce-11e1-8000-00215ad4efdf	IsFreeHanging	YESNO		331	1	Is it free hanging type (not mounted in a false ceiling)?	1
-PARAM	dbdd3100-d1ce-11e1-8000-00215ad4efdf	NominalCoolingCapacity	HVACPOWER		331	1	Nominal cooling capacity.	1
-PARAM	e1d31200-d1ce-11e1-8000-00215ad4efdf	NominalSurroundingTemperatureCooling	HVACTEMPERATURE		331	1	Nominal surrounding temperature (refers to nominal cooling capacity).	1
+PARAM	dbdd3100-d1ce-11e1-8000-00215ad4efdf	NominalCoolingCapacity	HVAC_POWER		331	1	Nominal cooling capacity.	1
+PARAM	e1d31200-d1ce-11e1-8000-00215ad4efdf	NominalSurroundingTemperatureCooling	HVAC_TEMPERATURE		331	1	Nominal surrounding temperature (refers to nominal cooling capacity).	1
 PARAM	e697c600-d1ce-11e1-8000-00215ad4efdf	NominalSurroundingHumidityCooling	NUMBER		331	1	Nominal surrounding humidity (refers to nominal cooling capacity).	1
-PARAM	eb5c7a00-d1ce-11e1-8000-00215ad4efdf	NominalSupplyWaterTemperatureCooling	HVACTEMPERATURE		331	1	Nominal supply water temperature (refers to nominal cooling capacity).	1
-PARAM	f0b9c480-d1ce-11e1-8000-00215ad4efdf	NominalReturnWaterTemperatureCooling	HVACTEMPERATURE		331	1	Nominal return water temperature (refers to nominal cooling capacity).	1
-PARAM	f6170f00-d1ce-11e1-8000-00215ad4efdf	NominalWaterFlowCooling	PIPINGFLOW		331	1	Nominal water flow (refers to nominal cooling capacity).	1
-PARAM	fc0cf000-d1ce-11e1-8000-00215ad4efdf	NominalHeatingCapacity	HVACPOWER		331	1	Nominal heating capacity.	1
-PARAM	016a3a80-d1cf-11e1-8000-00215ad4efdf	NominalSurroundingTemperatureHeating	HVACTEMPERATURE		331	1	Nominal surrounding temperature (refers to nominal heating capacity).	1
-PARAM	062eee80-d1cf-11e1-8000-00215ad4efdf	NominalSupplyWaterTemperatureHeating	HVACTEMPERATURE		331	1	Nominal supply water temperature (refers to nominal heating capacity).	1
-PARAM	0af3a280-d1cf-11e1-8000-00215ad4efdf	NominalReturnWaterTemperatureHeating	HVACTEMPERATURE		331	1	Nominal return water temperature (refers to nominal heating capacity).	1
-PARAM	1050ed00-d1cf-11e1-8000-00215ad4efdf	NominalWaterFlowHeating	PIPINGFLOW		331	1	Nominal water flow (refers to nominal heating capacity).	1
+PARAM	eb5c7a00-d1ce-11e1-8000-00215ad4efdf	NominalSupplyWaterTemperatureCooling	HVAC_TEMPERATURE		331	1	Nominal supply water temperature (refers to nominal cooling capacity).	1
+PARAM	f0b9c480-d1ce-11e1-8000-00215ad4efdf	NominalReturnWaterTemperatureCooling	HVAC_TEMPERATURE		331	1	Nominal return water temperature (refers to nominal cooling capacity).	1
+PARAM	f6170f00-d1ce-11e1-8000-00215ad4efdf	NominalWaterFlowCooling	PIPING_FLOW		331	1	Nominal water flow (refers to nominal cooling capacity).	1
+PARAM	fc0cf000-d1ce-11e1-8000-00215ad4efdf	NominalHeatingCapacity	HVAC_POWER		331	1	Nominal heating capacity.	1
+PARAM	016a3a80-d1cf-11e1-8000-00215ad4efdf	NominalSurroundingTemperatureHeating	HVAC_TEMPERATURE		331	1	Nominal surrounding temperature (refers to nominal heating capacity).	1
+PARAM	062eee80-d1cf-11e1-8000-00215ad4efdf	NominalSupplyWaterTemperatureHeating	HVAC_TEMPERATURE		331	1	Nominal supply water temperature (refers to nominal heating capacity).	1
+PARAM	0af3a280-d1cf-11e1-8000-00215ad4efdf	NominalReturnWaterTemperatureHeating	HVAC_TEMPERATURE		331	1	Nominal return water temperature (refers to nominal heating capacity).	1
+PARAM	1050ed00-d1cf-11e1-8000-00215ad4efdf	NominalWaterFlowHeating	PIPING_FLOW		331	1	Nominal water flow (refers to nominal heating capacity).	1
 PARAM	3a0a1400-d1cf-11e1-8000-00215ad4efdf	CoilLength	LENGTH		331	1	Length of coil.	1
 PARAM	3ecec800-d1cf-11e1-8000-00215ad4efdf	CoilWidth	LENGTH		331	1	Width of coil.	1
 PARAM	d0d6d080-d1cf-11e1-8000-00215ad4efdf	NumberOfCells	ANGLE		333	1	Number of cells in one cooling tower unit.	1
 PARAM	d6341b00-d1cf-11e1-8000-00215ad4efdf	BasinReserveVolume	VOLUME		333	1	Volume between operating and overflow levels in cooling tower basin.	1
 PARAM	db916580-d1cf-11e1-8000-00215ad4efdf	LiftElevationDifference	LENGTH		333	1	Elevation difference between cooling tower sump and the top of the tower.	1
-PARAM	e0561980-d1cf-11e1-8000-00215ad4efdf	WaterRequirement	PIPINGFLOW		333	1	Make-up water requirements.	1
-PARAM	e51acd80-d1cf-11e1-8000-00215ad4efdf	OperationTemperatureRange	HVACTEMPERATURE		333	1	Allowable operation ambient air temperature range.	1
-PARAM	e9df8180-d1cf-11e1-8000-00215ad4efdf	AmbientDesignDryBulbTemperature	HVACTEMPERATURE		333	1	Ambient design dry bulb temperature used for selecting the cooling tower.	1
-PARAM	ef3ccc00-d1cf-11e1-8000-00215ad4efdf	AmbientDesignWetBulbTemperature	HVACTEMPERATURE		333	1	Ambient design wet bulb temperature used for selecting the cooling tower.	1
+PARAM	e0561980-d1cf-11e1-8000-00215ad4efdf	WaterRequirement	PIPING_FLOW		333	1	Make-up water requirements.	1
+PARAM	e51acd80-d1cf-11e1-8000-00215ad4efdf	OperationTemperatureRange	HVAC_TEMPERATURE		333	1	Allowable operation ambient air temperature range.	1
+PARAM	e9df8180-d1cf-11e1-8000-00215ad4efdf	AmbientDesignDryBulbTemperature	HVAC_TEMPERATURE		333	1	Ambient design dry bulb temperature used for selecting the cooling tower.	1
+PARAM	ef3ccc00-d1cf-11e1-8000-00215ad4efdf	AmbientDesignWetBulbTemperature	HVAC_TEMPERATURE		333	1	Ambient design wet bulb temperature used for selecting the cooling tower.	1
 PARAM	0def9280-d1d1-11e1-8000-00215ad4efdf	BladeThickness	LENGTH		336	1	The thickness of the damper blade.	1
 PARAM	3d060400-d1d1-11e1-8000-00215ad4efdf	NumberofBlades	ANGLE		336	1	Number of blades.	1
 PARAM	42634e80-d1d1-11e1-8000-00215ad4efdf	FaceArea	AREA		336	1	Face area open to the airstream.	1
-PARAM	47c09900-d1d1-11e1-8000-00215ad4efdf	MaximumAirFlowRate	PIPINGFLOW		336	1	Maximum allowable air flow rate.	1
-PARAM	53ac5b00-d1d1-11e1-8000-00215ad4efdf	MaximumWorkingPressure	HVACPRESSURE		336	1	Maximum working pressure.	1
-PARAM	5909a580-d1d1-11e1-8000-00215ad4efdf	TemperatureRating	HVACTEMPERATURE		336	1	Temperature rating.	1
-PARAM	632ba400-d1d1-11e1-8000-00215ad4efdf	OpenPressureDrop	HVACPRESSURE		336	1	Total pressure drop across damper.	1
-PARAM	67f05800-d1d1-11e1-8000-00215ad4efdf	LeakageFullyClosed	PIPINGFLOW		336	1	Leakage when fully closed.	1
+PARAM	47c09900-d1d1-11e1-8000-00215ad4efdf	MaximumAirFlowRate	PIPING_FLOW		336	1	Maximum allowable air flow rate.	1
+PARAM	53ac5b00-d1d1-11e1-8000-00215ad4efdf	MaximumWorkingPressure	HVAC_PRESSURE		336	1	Maximum working pressure.	1
+PARAM	5909a580-d1d1-11e1-8000-00215ad4efdf	TemperatureRating	HVAC_TEMPERATURE		336	1	Temperature rating.	1
+PARAM	632ba400-d1d1-11e1-8000-00215ad4efdf	OpenPressureDrop	HVAC_PRESSURE		336	1	Total pressure drop across damper.	1
+PARAM	67f05800-d1d1-11e1-8000-00215ad4efdf	LeakageFullyClosed	PIPING_FLOW		336	1	Leakage when fully closed.	1
 PARAM	85252680-d1d1-11e1-8000-00215ad4efdf	FrameType	TEXT		336	1	"The type of frame used by the damper (e.g., Standard, Single Flange, Single Reversed Flange, Double Flange, etc.)."	1
 PARAM	8b1b0780-d1d1-11e1-8000-00215ad4efdf	FrameDepth	LENGTH		336	1	The length (or depth) of the damper frame.	1
 PARAM	93734280-d1d1-11e1-8000-00215ad4efdf	FrameThickness	LENGTH		336	1	The thickness of the damper frame material.	1
-PARAM	98d08d00-d1d1-11e1-8000-00215ad4efdf	CloseOffRating	HVACPRESSURE		336	1	Close off rating.	1
+PARAM	98d08d00-d1d1-11e1-8000-00215ad4efdf	CloseOffRating	HVAC_PRESSURE		336	1	Close off rating.	1
 PARAM	d6351a80-d1d1-11e1-8000-00215ad4efdf	FireResistanceRating	TEXT		338	1	"Measure of the fire resistance rating in hours (e.g., 1.5 hours, 2 hours, etc.)."	1
-PARAM	dc2afb80-d1d1-11e1-8000-00215ad4efdf	FusibleLinkTemperature	HVACTEMPERATURE		338	1	The temperature that the fusible link melts.	1
+PARAM	dc2afb80-d1d1-11e1-8000-00215ad4efdf	FusibleLinkTemperature	HVAC_TEMPERATURE		338	1	The temperature that the fusible link melts.	1
 PARAM	e77e2700-d1d1-11e1-8000-00215ad4efdf	ControlType	TEXT		339	1	"The type of control used to operate the damper (e.g., Open/Closed Indicator, Resetable Temperature Sensor, Temperature Override, etc.)."	1
 PARAM	e0f5ac80-d1dd-11e1-8000-00215ad4efdf	InteriorRoughnessCoefficient	LENGTH		341	1	The interior roughness of the duct fitting material.	1
 PARAM	e652f700-d1dd-11e1-8000-00215ad4efdf	HasLiner	YESNO		341	1	"TRUE if the fitting has interior duct insulating lining, FALSE if it does not."	1
 PARAM	eb17ab00-d1dd-11e1-8000-00215ad4efdf	Color	TEXT		341	1	The color of the duct segment. Note: This is typically used for any duct segments with a painted surface which is not otherwise specified as a covering.	1
-PARAM	8c066600-d1de-11e1-8000-00215ad4efdf	WorkingPressure	HVACPRESSURE		346	1	"Pressure classification as defined by the authority having jurisdiction (e.g., SMACNA, etc.)."	1
+PARAM	8c066600-d1de-11e1-8000-00215ad4efdf	WorkingPressure	HVAC_PRESSURE		346	1	"Pressure classification as defined by the authority having jurisdiction (e.g., SMACNA, etc.)."	1
 PARAM	a3455380-d1de-11e1-8000-00215ad4efdf	LongitudinalSeam	TEXT		346	1	The type of seam to be used along the longitudinal axis of the duct segment.	1
 PARAM	a8a29e00-d1de-11e1-8000-00215ad4efdf	NominalDiameterOrWidth	LENGTH		346	1	The nominal diameter or width of the duct segment.	1
 PARAM	b6f0ba00-d1de-11e1-8000-00215ad4efdf	Reinforcement	TEXT		346	1	"The type of reinforcement, if any, used for the duct segment."	1
@@ -1271,32 +1271,32 @@ PARAM	ef909380-d1de-11e1-8000-00215ad4efdf	HydraulicDiameter	LENGTH		348	1	Hydra
 PARAM	177ff700-d1df-11e1-8000-00215ad4efdf	HasExteriorInsulation	YESNO		348	1	TRUE if the silencer has exterior insulation. FALSE if it does not.	1
 PARAM	93c80980-d1e2-11e1-8000-00215ad4efdf	HeatExchangeArea	AREA		351	1	Heat exchange area.	1
 PARAM	0d142c00-d1e4-11e1-8000-00215ad4efdf	FractionOfMotorHeatToAirStream	NUMBER		355	1	Fraction of the motor heat released into the fluid flow.	1
-PARAM	890e7400-d1e4-11e1-8000-00215ad4efdf	NominalTotalPressure	HVACPRESSURE		357	1	Nominal total pressure rise across the fan.	1
-PARAM	90ce1880-d1e4-11e1-8000-00215ad4efdf	NominalStaticPressure	HVACPRESSURE		357	1	The static pressure within the air stream that the fan must overcome to insure designed circulation of air.	1
+PARAM	890e7400-d1e4-11e1-8000-00215ad4efdf	NominalTotalPressure	HVAC_PRESSURE		357	1	Nominal total pressure rise across the fan.	1
+PARAM	90ce1880-d1e4-11e1-8000-00215ad4efdf	NominalStaticPressure	HVAC_PRESSURE		357	1	The static pressure within the air stream that the fan must overcome to insure designed circulation of air.	1
 PARAM	96c3f980-d1e4-11e1-8000-00215ad4efdf	NominalRotationSpeed	INVALID		357	1	Nominal fan wheel speed.	1
-PARAM	9b88ad80-d1e4-11e1-8000-00215ad4efdf	NominalPowerRate	HVACPOWER		357	1	Nominal fan power rate.	1
+PARAM	9b88ad80-d1e4-11e1-8000-00215ad4efdf	NominalPowerRate	HVAC_POWER		357	1	Nominal fan power rate.	1
 PARAM	a0e5f800-d1e4-11e1-8000-00215ad4efdf	OperationalCriteria	TEXT		357	1	Time of operation at maximum operational ambient air temperature.	1
 PARAM	747eab80-d1e5-11e1-8000-00215ad4efdf	DustHoldingCapacity	MASS		359	1	Maximum filter dust holding capacity.	1
 PARAM	79435f80-d1e5-11e1-8000-00215ad4efdf	FaceSurfaceArea	AREA		359	1	Face area of filter frame.	1
 PARAM	7fd1d700-d1e5-11e1-8000-00215ad4efdf	MediaExtendedArea	AREA		359	1	Total extended media area.	1
 PARAM	852f2180-d1e5-11e1-8000-00215ad4efdf	NominalCountedEfficiency	NUMBER		359	1	Nominal filter efficiency based the particle count concentration before and after the filter against particles with a certain size distribution.	1
 PARAM	8a8c6c00-d1e5-11e1-8000-00215ad4efdf	NominalWeightedEfficiency	NUMBER		359	1	Nominal filter efficiency based the particle weight concentration before and after the filter against particles with a certain size distribution.	1
-PARAM	d212f800-d1e5-11e1-8000-00215ad4efdf	InitialResistance	HVACPRESSURE		360	1	"Initial new filter fluid resistance (i.e., pressure drop at the maximum air flowrate across the filter when the filter is new per ASHRAE Standard 52.1)."	1
-PARAM	d808d900-d1e5-11e1-8000-00215ad4efdf	FinalResistance	HVACPRESSURE		360	1	"Filter fluid resistance when replacement is required (i.e., Pressure drop at the maximum air flowrate across the filter when the filter needs replacement per ASHRAE Standard 52.1)."	1
-PARAM	ea831280-d1e5-11e1-8000-00215ad4efdf	NominalFilterFaceVelocity	HVACVELOCITY		360	1	Filter face velocity.	1
-PARAM	eeaf3000-d1e5-11e1-8000-00215ad4efdf	NominalMediaSurfaceVelocity	HVACVELOCITY		360	1	Average fluid velocity at the media surface.	1
-PARAM	f2db4d80-d1e5-11e1-8000-00215ad4efdf	NominalPressureDrop	HVACPRESSURE		360	1	Total pressure drop across the filter.	1
-PARAM	f8389800-d1e5-11e1-8000-00215ad4efdf	NominalFlowrate	PIPINGFLOW		360	1	Nominal fluid flow rate through the filter.	1
+PARAM	d212f800-d1e5-11e1-8000-00215ad4efdf	InitialResistance	HVAC_PRESSURE		360	1	"Initial new filter fluid resistance (i.e., pressure drop at the maximum air flowrate across the filter when the filter is new per ASHRAE Standard 52.1)."	1
+PARAM	d808d900-d1e5-11e1-8000-00215ad4efdf	FinalResistance	HVAC_PRESSURE		360	1	"Filter fluid resistance when replacement is required (i.e., Pressure drop at the maximum air flowrate across the filter when the filter needs replacement per ASHRAE Standard 52.1)."	1
+PARAM	ea831280-d1e5-11e1-8000-00215ad4efdf	NominalFilterFaceVelocity	HVAC_VELOCITY		360	1	Filter face velocity.	1
+PARAM	eeaf3000-d1e5-11e1-8000-00215ad4efdf	NominalMediaSurfaceVelocity	HVAC_VELOCITY		360	1	Average fluid velocity at the media surface.	1
+PARAM	f2db4d80-d1e5-11e1-8000-00215ad4efdf	NominalPressureDrop	HVAC_PRESSURE		360	1	Total pressure drop across the filter.	1
+PARAM	f8389800-d1e5-11e1-8000-00215ad4efdf	NominalFlowrate	PIPING_FLOW		360	1	Nominal fluid flow rate through the filter.	1
 PARAM	fd95e280-d1e5-11e1-8000-00215ad4efdf	NominalParticleGeometricMeanDiameter	LENGTH		360	1	Particle geometric mean diameter associated with nominal efficiency.	1
 PARAM	02f32d00-d1e6-11e1-8000-00215ad4efdf	NominalParticleGeometricStandardDeviation	NUMBER		360	1	Particle geometric standard deviation associated with nominal efficiency.	1
-PARAM	17cfc080-d1e6-11e1-8000-00215ad4efdf	OperationPressureMax	HVACPRESSURE		361	1	Maximum pressure under normal operating conditions.	1
+PARAM	17cfc080-d1e6-11e1-8000-00215ad4efdf	OperationPressureMax	HVAC_PRESSURE		361	1	Maximum pressure under normal operating conditions.	1
 PARAM	25854600-d1e6-11e1-8000-00215ad4efdf	AutomaticCondensateDischarge	YESNO		361	1	Whether or not the condensing water or oil is discharged automatically from the filter.	1
 PARAM	2ae29080-d1e6-11e1-8000-00215ad4efdf	CloggingIndicator	YESNO		361	1	Whether the filter has an indicator to display the degree of clogging of the filter.	1
 PARAM	2a4af980-d1e8-11e1-8000-00215ad4efdf	RemoteReading	YESNO		364	1	Indicates whether the meter has a connection for remote reading through connection of a communication device (set TRUE) or not (set FALSE).	1
-PARAM	3afb6f80-d1e8-11e1-8000-00215ad4efdf	MaximumCurrent	ELECTRICALCURRENT		365	1	The maximum allowed current that a device is certified to handle.	1
+PARAM	3afb6f80-d1e8-11e1-8000-00215ad4efdf	MaximumCurrent	ELECTRICAL_CURRENT		365	1	The maximum allowed current that a device is certified to handle.	1
 PARAM	4058ba00-d1e8-11e1-8000-00215ad4efdf	MultipleTarriff	YESNO		365	1	Indicates whether meter has built-in support for multiple tarriffs (variable energy cost rates).	1
-PARAM	641c0000-d1e8-11e1-8000-00215ad4efdf	MaximumFlowRate	PIPINGFLOW		366	1	Maximum rate of flow which the meter is expected to pass.	1
-PARAM	68e0b400-d1e8-11e1-8000-00215ad4efdf	MaximumPressureLoss	HVACPRESSURE		366	1	Pressure loss expected across the meter under conditions of maximum flow.	1
+PARAM	641c0000-d1e8-11e1-8000-00215ad4efdf	MaximumFlowRate	PIPING_FLOW		366	1	Maximum rate of flow which the meter is expected to pass.	1
+PARAM	68e0b400-d1e8-11e1-8000-00215ad4efdf	MaximumPressureLoss	HVAC_PRESSURE		366	1	Pressure loss expected across the meter under conditions of maximum flow.	1
 PARAM	8a8e6b00-d1e9-11e1-8000-00215ad4efdf	NumberOfPlates	ANGLE		370	1	Number of plates used by the plate heat exchanger.	1
 PARAM	dc36f580-d1e9-11e1-8000-00215ad4efdf	NominalMoistureGain	INVALID		372	1	Nominal rate of water vapor added into the airstream.	1
 PARAM	8c106100-d1f2-11e1-8000-00215ad4efdf	FlangeTable	TEXT		374	1	Designation of the standard table to which the flange conforms.	1
@@ -1317,11 +1317,11 @@ PARAM	57e97000-d1f3-11e1-8000-00215ad4efdf	JunctionRightRadius	LENGTH		379	1	The
 PARAM	73547b00-d1f3-11e1-8000-00215ad4efdf	Gradient	NUMBER		380	1	The gradient of the pipe segment.	1
 PARAM	794a5c00-d1f3-11e1-8000-00215ad4efdf	InvertElevation	LENGTH		380	1	The invert elevation relative to the datum established for the project.	1
 PARAM	dba35c80-d1f3-11e1-8000-00215ad4efdf	InternalWidth	LENGTH		383	1	The internal width of the culvert.	1
-PARAM	f4137700-d1f3-11e1-8000-00215ad4efdf	FlowRating	PIPINGFLOW		384	1	Actual flow capacity for the gutter. Value of 0.00 means this value has not been set.	1
-PARAM	f5966c80-d1fe-11e1-8000-00215ad4efdf	NetPositiveSuctionHead	HVACPRESSURE		387	1	Minimum liquid pressure at the pump inlet to prevent cavitation.	1
+PARAM	f4137700-d1f3-11e1-8000-00215ad4efdf	FlowRating	PIPING_FLOW		384	1	Actual flow capacity for the gutter. Value of 0.00 means this value has not been set.	1
+PARAM	f5966c80-d1fe-11e1-8000-00215ad4efdf	NetPositiveSuctionHead	HVAC_PRESSURE		387	1	Minimum liquid pressure at the pump inlet to prevent cavitation.	1
 PARAM	4f506400-d20a-11e1-8000-00215ad4efdf	BodyMass	MASS		390	1	Overall body mass of the heater.	1
 PARAM	57a89f00-d20a-11e1-8000-00215ad4efdf	ThermalMassHeatCapacity	NUMBER		390	1	Product of component mass and specific heat.	1
-PARAM	5d9e8000-d20a-11e1-8000-00215ad4efdf	OutputCapacity	HVACPOWER		390	1	Total nominal heat output as listed by the manufacturer.	1
+PARAM	5d9e8000-d20a-11e1-8000-00215ad4efdf	OutputCapacity	HVAC_POWER		390	1	Total nominal heat output as listed by the manufacturer.	1
 PARAM	63946100-d20a-11e1-8000-00215ad4efdf	ThermalEfficiency	NUMBER		390	1	Overall Thermal Efficiency is defined as gross energy output of the heat transfer device divided by the energy input.	1
 PARAM	6d1dc900-d20a-11e1-8000-00215ad4efdf	NumberOfPanels	ANGLE		390	1	Number of panels.	1
 PARAM	727b1380-d20a-11e1-8000-00215ad4efdf	NumberOfSections	ANGLE		390	1	"Number of vertical sections, measured in the direction of flow."	1
@@ -1329,17 +1329,17 @@ PARAM	a0f8ee80-d20a-11e1-8000-00215ad4efdf	TubingLength	LENGTH		392	1	Water tube
 PARAM	a9512980-d20a-11e1-8000-00215ad4efdf	WaterContent	MASS		392	1	Weight of water content within the heater.	1
 PARAM	ad337a80-d20f-11e1-8000-00215ad4efdf	HasLadder	YESNO		394	1	Indication of whether the tank is provided with a ladder (set TRUE) for access to the top. If no ladder is provided then value is set FALSE. Note: No indication is given of the type of ladder (gooseneck etc.)	1
 PARAM	b3c1f200-d20f-11e1-8000-00215ad4efdf	HasVisualIndicator	YESNO		394	1	Indication of whether the tank is provided with a visual indicator (set TRUE) that shows the water level in the tank. If no visual indicator is provided then value is set FALSE.	1
-PARAM	7be8fc90-c36f-4ab3-9132-6f58dc7ec77c	Temperature	HVACTEMPERATURE		395	1	The temperature of the substance in the tank.	1
-PARAM	4f41ecc2-4f1b-4dc0-981c-a475bd7927d0	Pressure	HVACPRESSURE		395	1	The pressure of the substance in the tank.	1
+PARAM	7be8fc90-c36f-4ab3-9132-6f58dc7ec77c	Temperature	HVAC_TEMPERATURE		395	1	The temperature of the substance in the tank.	1
+PARAM	4f41ecc2-4f1b-4dc0-981c-a475bd7927d0	Pressure	HVAC_PRESSURE		395	1	The pressure of the substance in the tank.	1
 PARAM	eff55280-d20f-11e1-8000-00215ad4efdf	NominalLengthOrDiameter	LENGTH		396	1	"The nominal length or, in the case of a vertical cylindrical tank, the nominal diameter of the tank."	1
 PARAM	f7b4f700-d20f-11e1-8000-00215ad4efdf	NominalWidthOrDiameter	LENGTH		396	1	"The nominal width or, in the case of a horizontal cylindrical tank, the nominal diameter of the tank. Note: Not required for a vertical cylindrical tank."	1
 PARAM	0ac7c700-d210-11e1-8000-00215ad4efdf	EffectiveCapacity	VOLUME		396	1	The total effective or actual volumetric capacity of the tank.	1
 PARAM	0f8c7b00-d210-11e1-8000-00215ad4efdf	OperatingWeight	MASS		396	1	Operating weight of the tank including all of its contents.	1
 PARAM	2cc14980-d210-11e1-8000-00215ad4efdf	FirstCurvatureRadius	LENGTH		396	1	FirstCurvatureRadius should be defined as the base or left side radius of curvature value.	1
 PARAM	3480ee00-d210-11e1-8000-00215ad4efdf	SecondCurvatureRadius	LENGTH		396	1	SecondCurvatureRadius should be defined as the top or right side radius of curvature value.	1
-PARAM	48c4eb00-d210-11e1-8000-00215ad4efdf	ChargePressure	HVACPRESSURE		397	1	Nominal or design operating pressure of the tank.	1
-PARAM	5a0df780-d210-11e1-8000-00215ad4efdf	PressureRegulatorSetting	HVACPRESSURE		397	1	Pressure that is automatically maintained in the tank.	1
-PARAM	5f6b4200-d210-11e1-8000-00215ad4efdf	ReliefValveSetting	HVACPRESSURE		397	1	Pressure at which the relief valve activates.	1
+PARAM	48c4eb00-d210-11e1-8000-00215ad4efdf	ChargePressure	HVAC_PRESSURE		397	1	Nominal or design operating pressure of the tank.	1
+PARAM	5a0df780-d210-11e1-8000-00215ad4efdf	PressureRegulatorSetting	HVAC_PRESSURE		397	1	Pressure that is automatically maintained in the tank.	1
+PARAM	5f6b4200-d210-11e1-8000-00215ad4efdf	ReliefValveSetting	HVAC_PRESSURE		397	1	Pressure at which the relief valve activates.	1
 PARAM	c4269c80-d210-11e1-8000-00215ad4efdf	SectionLength	LENGTH		400	1	The length of a section used in the construction of the tank.	1
 PARAM	cd176e00-d210-11e1-8000-00215ad4efdf	SectionWidth	LENGTH		400	1	The width of a section used in the construction of the tank.	1
 PARAM	58453380-d212-11e1-8000-00215ad4efdf	NumberOfRows	ANGLE		401	1	Number of tube rows in the tube bundle assembly.	1
@@ -1347,7 +1347,7 @@ PARAM	5ed3ab00-d212-11e1-8000-00215ad4efdf	StaggeredRowSpacing	LENGTH		401	1	Sta
 PARAM	672be600-d212-11e1-8000-00215ad4efdf	InLineRowSpacing	LENGTH		401	1	In-line tube row spacing.	1
 PARAM	701cb780-d212-11e1-8000-00215ad4efdf	NumberOfCircuits	ANGLE		401	1	Number of parallel fluid tube circuits.	1
 PARAM	757a0200-d212-11e1-8000-00215ad4efdf	FoulingFactor	INVALID		401	1	Fouling factor of the tubes in the tube bundle.	1
-PARAM	7ad74c80-d212-11e1-8000-00215ad4efdf	ThermalConductivity	HVACTHERMALCONDUCTIVITY		401	1	The thermal conductivity of the tube.	1
+PARAM	7ad74c80-d212-11e1-8000-00215ad4efdf	ThermalConductivity	HVAC_THERMAL_CONDUCTIVITY		401	1	The thermal conductivity of the tube.	1
 PARAM	89256880-d212-11e1-8000-00215ad4efdf	Volume	VOLUME		401	1	Total volume of fluid in the tubes and their headers.	1
 PARAM	96daee00-d212-11e1-8000-00215ad4efdf	OutsideDiameter	LENGTH		401	1	Actual outside diameter of the tube in the tube bundle.	1
 PARAM	9f332900-d212-11e1-8000-00215ad4efdf	InsideDiameter	LENGTH		401	1	Actual inner diameter of the tube in the tube bundle.	1
@@ -1358,30 +1358,30 @@ PARAM	c8ec5000-d212-11e1-8000-00215ad4efdf	Spacing	LENGTH		402	1	Distance betwee
 PARAM	d1dd2180-d212-11e1-8000-00215ad4efdf	Thickness	LENGTH		402	1	Thickness of the fin.	1
 PARAM	fc2edf00-d212-11e1-8000-00215ad4efdf	FinCorrugatedType	TEXT		402	1	Description of a fin corrugated type.	1
 PARAM	0355ed00-d213-11e1-8000-00215ad4efdf	HasCoating	YESNO		402	1	"TRUE if the fin has a coating, FALSE if it does not."	1
-PARAM	5a5bc200-d213-11e1-8000-00215ad4efdf	SensibleCoolingCapacity	HVACPOWER		403	1	Sensible cooling capacity.	1
-PARAM	75c6cd00-d213-11e1-8000-00215ad4efdf	LatentCoolingCapacity	HVACPOWER		403	1	Latent cooling capacity.	1
+PARAM	5a5bc200-d213-11e1-8000-00215ad4efdf	SensibleCoolingCapacity	HVAC_POWER		403	1	Sensible cooling capacity.	1
+PARAM	75c6cd00-d213-11e1-8000-00215ad4efdf	LatentCoolingCapacity	HVAC_POWER		403	1	Latent cooling capacity.	1
 PARAM	7bbcae00-d213-11e1-8000-00215ad4efdf	CoolingEfficiency	NUMBER		403	1	Coefficient of Performance: Ratio of cooling energy output to energy input under full load operating conditions.	1
-PARAM	824b2580-d213-11e1-8000-00215ad4efdf	HeatingCapacity	HVACPOWER		403	1	Heating capacity.	1
+PARAM	824b2580-d213-11e1-8000-00215ad4efdf	HeatingCapacity	HVAC_POWER		403	1	Heating capacity.	1
 PARAM	88410680-d213-11e1-8000-00215ad4efdf	HeatingEfficiency	NUMBER		403	1	Heating efficiency under full load heating conditions.	1
-PARAM	8d9e5100-d213-11e1-8000-00215ad4efdf	CondenserFlowrate	PIPINGFLOW		403	1	Flow rate of fluid through the condenser.	1
-PARAM	93943200-d213-11e1-8000-00215ad4efdf	CondenserEnteringTemperature	HVACTEMPERATURE		403	1	Temperature of fluid entering condenser.	1
-PARAM	9b53d680-d213-11e1-8000-00215ad4efdf	CondenserLeavingTemperature	HVACTEMPERATURE		403	1	Termperature of fluid leaving condenser.	1
-PARAM	a149b780-d213-11e1-8000-00215ad4efdf	OutsideAirFlowrate	PIPINGFLOW		403	1	Flow rate of outside air entering the unit.	1
+PARAM	8d9e5100-d213-11e1-8000-00215ad4efdf	CondenserFlowrate	PIPING_FLOW		403	1	Flow rate of fluid through the condenser.	1
+PARAM	93943200-d213-11e1-8000-00215ad4efdf	CondenserEnteringTemperature	HVAC_TEMPERATURE		403	1	Temperature of fluid entering condenser.	1
+PARAM	9b53d680-d213-11e1-8000-00215ad4efdf	CondenserLeavingTemperature	HVAC_TEMPERATURE		403	1	Termperature of fluid leaving condenser.	1
+PARAM	a149b780-d213-11e1-8000-00215ad4efdf	OutsideAirFlowrate	PIPING_FLOW		403	1	Flow rate of outside air entering the unit.	1
 PARAM	c6d6c100-d213-11e1-8000-00215ad4efdf	DualDeck	YESNO		404	1	"Does the AirHandler have a dual deck? TRUE = Yes, FALSE = No."	1
 PARAM	161cf180-d214-11e1-8000-00215ad4efdf	IsAutomatic	YESNO		407	1	Indication of whether the valve is automatically operated (TRUE) or manually operated (FALSE).	1
 PARAM	6a27d600-d214-11e1-8000-00215ad4efdf	Size	LENGTH		408	1	"The size of the connection to the valve (or to each connection for faucets, mixing valves, etc.)."	1
-PARAM	7875f200-d214-11e1-8000-00215ad4efdf	TestPressure	HVACPRESSURE		408	1	The maximum pressure to which the valve has been subjected under test.	1
+PARAM	7875f200-d214-11e1-8000-00215ad4efdf	TestPressure	HVAC_PRESSURE		408	1	The maximum pressure to which the valve has been subjected under test.	1
 PARAM	8461b400-d214-11e1-8000-00215ad4efdf	FlowCoefficient	NUMBER		408	1	"Flow coefficient (the quantity of fluid that passes through a fully open valve at unit pressure drop), typically expressed as the Kv or Cv value for the valve."	1
 PARAM	96dbed80-d214-11e1-8000-00215ad4efdf	HasHoseUnion	YESNO		409	1	Indicates whether the drawoff cock is fitted with a hose union connection (= TRUE) or not (= FALSE).	1
 PARAM	e02c3d00-d214-11e1-8000-00215ad4efdf	FaucetTopDescription	TEXT		410	1	Description of the operating mechanism/top of the faucet.	1
-PARAM	ec17ff00-d214-11e1-8000-00215ad4efdf	FlushingRate	PIPINGFLOW		411	1	The predetermined quantity of water to be flushed.	1
+PARAM	ec17ff00-d214-11e1-8000-00215ad4efdf	FlushingRate	PIPING_FLOW		411	1	The predetermined quantity of water to be flushed.	1
 PARAM	f20de000-d214-11e1-8000-00215ad4efdf	HasIntegralShutOffDevice	YESNO		411	1	Indication of whether the flushing valve has an integral shut off device fitted (set TRUE) or not (set FALSE).	1
 PARAM	f89c5780-d214-11e1-8000-00215ad4efdf	IsHighPressure	YESNO		411	1	Indication of whether the flushing valve is suitable for use on a high pressure water main (set TRUE) or not (set FALSE).	1
 PARAM	12d63580-d215-11e1-8000-00215ad4efdf	IsNormallyOpen	YESNO		413	1	"If TRUE, the valve is normally open. If FALSE is is normally closed."	1
 PARAM	49ac4b80-d215-11e1-8000-00215ad4efdf	OutletConnectionSize	LENGTH		414	1	The size of the pipework connection from the mixing valve.	1
-PARAM	59c42b00-d215-11e1-8000-00215ad4efdf	UpstreamPressure	HVACPRESSURE		415	1	The operating pressure of the fluid upstream of the pressure reducing valve.	1
-PARAM	5fba0c00-d215-11e1-8000-00215ad4efdf	DownstreamPressure	HVACPRESSURE		415	1	The operating pressure of the fluid downstream of the pressure reducing valve.	1
-PARAM	6cd6fb00-d215-11e1-8000-00215ad4efdf	ReliefPressure	HVACPRESSURE		416	1	The pressure at which the spring or weight in the valve is set to discharge fluid.	1
+PARAM	59c42b00-d215-11e1-8000-00215ad4efdf	UpstreamPressure	HVAC_PRESSURE		415	1	The operating pressure of the fluid upstream of the pressure reducing valve.	1
+PARAM	5fba0c00-d215-11e1-8000-00215ad4efdf	DownstreamPressure	HVAC_PRESSURE		415	1	The operating pressure of the fluid downstream of the pressure reducing valve.	1
+PARAM	6cd6fb00-d215-11e1-8000-00215ad4efdf	ReliefPressure	HVAC_PRESSURE		416	1	The pressure at which the spring or weight in the valve is set to discharge fluid.	1
 PARAM	7f513480-d215-11e1-8000-00215ad4efdf	VibrationTransmissibility	NUMBER		417	1	The vibration transmissibility percentage.	1
 PARAM	85dfac00-d215-11e1-8000-00215ad4efdf	IsolatorStaticDeflection	LENGTH		417	1	Static deflection of the vibration isolator.	1
 PARAM	8b3cf680-d215-11e1-8000-00215ad4efdf	IsolatorCompressibility	NUMBER		417	1	The compressibility of the vibration isolator.	1
@@ -1392,7 +1392,7 @@ PARAM	6a10e180-d1e6-11e1-8000-00215ad4efdf	HasCaps	YESNO		449	1	Does the inlet c
 PARAM	94629f00-d1e6-11e1-8000-00215ad4efdf	PumperConnectionSize	LENGTH		451	1	The size of a connection to which a fire hose may be connected that is then linked to a pumping unit.	1
 PARAM	9af11680-d1e6-11e1-8000-00215ad4efdf	NumberOfHoseConnections	ANGLE		451	1	The number of hose connections on the hydrant (excluding the pumper connection).	1
 PARAM	9fb5ca80-d1e6-11e1-8000-00215ad4efdf	HoseConnectionSize	LENGTH		451	1	The size of connections to which a hose may be connected (other than that to be linked to a pumping unit).	1
-PARAM	a5abab80-d1e6-11e1-8000-00215ad4efdf	DischargeFlowRate	PIPINGFLOW		451	1	The volumetric rate of fluid discharge.	1
+PARAM	a5abab80-d1e6-11e1-8000-00215ad4efdf	DischargeFlowRate	PIPING_FLOW		451	1	The volumetric rate of fluid discharge.	1
 PARAM	aa705f80-d1e6-11e1-8000-00215ad4efdf	FlowClass	TEXT		451	1	Alphanumeric indication of the flow class of a hydrant (may be used in connection with or instead of the FlowRate property).	1
 PARAM	b0fed700-d1e6-11e1-8000-00215ad4efdf	WaterIsPotable	YESNO		451	1	Indication of whether the water flow from the hydrant is potable (set TRUE) or non potable (set FALSE).	1
 PARAM	bbb96c00-d1e6-11e1-8000-00215ad4efdf	BodyColor	TEXT		451	1	Color of the body of the hydrant. Note: Consult local fire regulations for statutory colors that may be required for hydrant bodies in particular circumstances.	1
@@ -1402,9 +1402,9 @@ PARAM	eefbfb00-d1e6-11e1-8000-00215ad4efdf	HoseDiameter	LENGTH		452	1	Notional d
 PARAM	f58a7280-d1e6-11e1-8000-00215ad4efdf	HoseLength	LENGTH		452	1	Notional length of the hose fitted to the hose reel when fully extended.	1
 PARAM	0935d900-d1e7-11e1-8000-00215ad4efdf	ClassOfService	TEXT		452	1	A classification of usage of the hose reel that may be applied.	1
 PARAM	10f57d80-d1e7-11e1-8000-00215ad4efdf	ClassificationAuthority	TEXT		452	1	The name of the authority that applies the classification of service to the hose reel (e.g. NFPA/FEMA).	1
-PARAM	47cb9380-d1e7-11e1-8000-00215ad4efdf	ActivationTemperature	HVACTEMPERATURE		453	1	The temperature at which the object is designed to activate.	1
+PARAM	47cb9380-d1e7-11e1-8000-00215ad4efdf	ActivationTemperature	HVAC_TEMPERATURE		453	1	The temperature at which the object is designed to activate.	1
 PARAM	531ebf00-d1e7-11e1-8000-00215ad4efdf	HasDeflector	YESNO		453	1	Indication of whether the sprinkler has a deflector (baffle) fitted to diffuse the discharge on activation (= TRUE) or not (= FALSE).	1
-PARAM	721d5100-d1e7-11e1-8000-00215ad4efdf	ResidualFlowingPressure	HVACPRESSURE		453	1	The residual flowing pressure in the pipeline at which the discharge flow rate is determined.	1
+PARAM	721d5100-d1e7-11e1-8000-00215ad4efdf	ResidualFlowingPressure	HVAC_PRESSURE		453	1	The residual flowing pressure in the pipeline at which the discharge flow rate is determined.	1
 PARAM	78133200-d1e7-11e1-8000-00215ad4efdf	DischargeCoefficient	NUMBER		453	1	The coefficient of flow at the sprinkler.	1
 PARAM	42bc1380-d1ea-11e1-8000-00215ad4efdf	NominalBodyLength	LENGTH		454	1	"Nominal or quoted length, measured along the x-axis of the local coordinate system of the object, of the body of the object."	1
 PARAM	4a7bb800-d1ea-11e1-8000-00215ad4efdf	NominalBodyWidth	LENGTH		454	1	"Nominal or quoted length, measured along the y-axis of the local coordinate system of the object, of the body of the object."	1
@@ -1449,13 +1449,13 @@ PARAM	6dab6500-d1f4-11e1-8000-00215ad4efdf	ActualProductionDate	TEXT		483	1	Prod
 PARAM	72701900-d1f4-11e1-8000-00215ad4efdf	ActualErectionDate	TEXT		483	1	Date erected.	1
 PARAM	aba88900-d1f4-11e1-8000-00215ad4efdf	CornerChamfer	LENGTH		484	1	The chamfer in the corners of the precast element. The chamfer is presumed to be equal in both directions.	1
 PARAM	b4995a80-d1f4-11e1-8000-00215ad4efdf	ManufacturingToleranceClass	TEXT		484	1	Classification designation of the manufacturing tolerances according to local standards.	1
-PARAM	bb27d200-d1f4-11e1-8000-00215ad4efdf	FormStrippingStrength	HVACPRESSURE		484	1	The minimum required compressive strength of the concrete at form stripping time.	1
-PARAM	c1b64980-d1f4-11e1-8000-00215ad4efdf	LiftingStrength	HVACPRESSURE		484	1	The minimum required compressive strength of the concrete when the concrete element is lifted.	1
-PARAM	c975ee00-d1f4-11e1-8000-00215ad4efdf	ReleaseStrength	HVACPRESSURE		484	1	The minimum required compressive strength of the concrete when the tendon stress is released. This property applies to prestressed concrete elements only.	1
+PARAM	bb27d200-d1f4-11e1-8000-00215ad4efdf	FormStrippingStrength	HVAC_PRESSURE		484	1	The minimum required compressive strength of the concrete at form stripping time.	1
+PARAM	c1b64980-d1f4-11e1-8000-00215ad4efdf	LiftingStrength	HVAC_PRESSURE		484	1	The minimum required compressive strength of the concrete when the concrete element is lifted.	1
+PARAM	c975ee00-d1f4-11e1-8000-00215ad4efdf	ReleaseStrength	HVAC_PRESSURE		484	1	The minimum required compressive strength of the concrete when the tendon stress is released. This property applies to prestressed concrete elements only.	1
 PARAM	cf6bcf00-d1f4-11e1-8000-00215ad4efdf	MinimumAllowableSupportLength	LENGTH		484	1	The minimum allowable support length.	1
-PARAM	d5fa4680-d1f4-11e1-8000-00215ad4efdf	InitialTension	HVACPRESSURE		484	1	The initial stress of the tendon. This property applies to prestressed concrete elements only.	1
+PARAM	d5fa4680-d1f4-11e1-8000-00215ad4efdf	InitialTension	HVAC_PRESSURE		484	1	The initial stress of the tendon. This property applies to prestressed concrete elements only.	1
 PARAM	dbf02780-d1f4-11e1-8000-00215ad4efdf	TendonRelaxation	NUMBER		484	1	The maximum allowable relaxation of the tendon (usually expressed as %/1000 h).This property applies to prestressed concrete elements only.	1
-PARAM	e14d7200-d1f4-11e1-8000-00215ad4efdf	TransportationStrength	HVACPRESSURE		484	1	The minimum required compressive strength of the concrete required for transportation.	1
+PARAM	e14d7200-d1f4-11e1-8000-00215ad4efdf	TransportationStrength	HVAC_PRESSURE		484	1	The minimum required compressive strength of the concrete required for transportation.	1
 PARAM	e7435300-d1f4-11e1-8000-00215ad4efdf	SupportDuringTransportDescription	TEXT		484	1	Textual description of how the concrete element is supported during transportation.	1
 PARAM	f0342480-d1f4-11e1-8000-00215ad4efdf	HollowCorePlugging	TEXT		484	1	"A descriptive label for how the hollow core ends are treated: they may be left open, closed with a plug, or sealed with cast concrete. Values would be, for example: 'Unplugged', 'Plugged', 'SealedWithConcrete'. This property applies to  hollow cor..."	1
 PARAM	f6c29c00-d1f4-11e1-8000-00215ad4efdf	CamberAtMidspan	NUMBER		484	1	"The camber deflection, measured from the midpoint of a cambered face of a piece to the midpoint of the chord joining the ends of the same face, as shown in the figure below, divided by the original (nominal) straight length of the face of the piece."	1
@@ -1515,7 +1515,7 @@ PARAM	c7a82c80-d1ec-11e1-8000-00215ad4efdf	CO2Content	NUMBER		499	1	Carbon dioxi
 PARAM	d262c180-d1ec-11e1-8000-00215ad4efdf	MolecularWeight	INVALID		500	1	Molecular weight of material (typically gas).	1
 PARAM	d858a280-d1ec-11e1-8000-00215ad4efdf	Porosity	NUMBER		500	1	The void fraction of the total volume occupied by material (Vbr - Vnet)/Vbr.	1
 PARAM	ddb5ed00-d1ec-11e1-8000-00215ad4efdf	MassDensity	INVALID		500	1	Material mass density.	1
-PARAM	ea3a4580-d1ec-11e1-8000-00215ad4efdf	CompressiveStrength	HVACPRESSURE		501	1	The compressive strength of the concrete.	1
+PARAM	ea3a4580-d1ec-11e1-8000-00215ad4efdf	CompressiveStrength	HVAC_PRESSURE		501	1	The compressive strength of the concrete.	1
 PARAM	f0302680-d1ec-11e1-8000-00215ad4efdf	MaxAggregateSize	LENGTH		501	1	The maximum aggregate size of the concrete.	1
 PARAM	f7573480-d1ec-11e1-8000-00215ad4efdf	AdmixturesDescription	TEXT		501	1	Description of the admixtures added to the concrete mix.	1
 PARAM	fcb47f00-d1ec-11e1-8000-00215ad4efdf	Workability	TEXT		501	1	Description of the workability of the fresh concrete defined according to local standards.	1
@@ -1527,8 +1527,8 @@ PARAM	1e156b00-d1ed-11e1-8000-00215ad4efdf	ThermalConductivityTemperatureDerivat
 PARAM	22da1f00-d1ed-11e1-8000-00215ad4efdf	SpecificHeatTemperatureDerivative	NUMBER		502	1	Specific heat temperature derivative.	1
 PARAM	28d00000-d1ed-11e1-8000-00215ad4efdf	VisibleRefractionIndex	NUMBER		502	1	"Index of refraction (visible) defines the ""bending"" of the sola! r ray in the visible spectrum when it passes from one medium into another."	1
 PARAM	2f5e7780-d1ed-11e1-8000-00215ad4efdf	SolarRefractionIndex	NUMBER		502	1	"Index of refraction (solar) defines the ""bending"" of the solar ray when it passes from one medium into another."	1
-PARAM	34bbc200-d1ed-11e1-8000-00215ad4efdf	GasPressure	HVACPRESSURE		502	1	Fill pressure (e.g. for between-pane gas fills): the pressure exerted by a mass of gas confined in a constant volume.	1
-PARAM	3eddc080-d1ed-11e1-8000-00215ad4efdf	CombustionTemperature	HVACTEMPERATURE		503	1	Combustion temperature of the material when air is at 298 K and 100 kPa.	1
+PARAM	34bbc200-d1ed-11e1-8000-00215ad4efdf	GasPressure	HVAC_PRESSURE		502	1	Fill pressure (e.g. for between-pane gas fills): the pressure exerted by a mass of gas confined in a constant volume.	1
+PARAM	3eddc080-d1ed-11e1-8000-00215ad4efdf	CombustionTemperature	HVAC_TEMPERATURE		503	1	Combustion temperature of the material when air is at 298 K and 100 kPa.	1
 PARAM	44d3a180-d1ed-11e1-8000-00215ad4efdf	CarbonContent	NUMBER		503	1	The carbon content in the fuel. This is measured in weight of carbon per unit weight of fuel and is therefore unitless.	1
 PARAM	4a30ec00-d1ed-11e1-8000-00215ad4efdf	LowerHeatingValue	INVALID		503	1	"Lower Heating Value is defined as the amount of energy released (MJ/kg) when a fuel is burned completely, and H2O is in vapor form in the combustion products."	1
 PARAM	4ef5a000-d1ed-11e1-8000-00215ad4efdf	HigherHeatingValue	INVALID		503	1	"Higher Heating Value is defined as the amount of energy released (MJ/kg) when a fuel is burned completely, and H2O is in liquid form in the combustion products."	1
@@ -1550,14 +1550,14 @@ PARAM	b7448180-d1ed-11e1-8000-00215ad4efdf	VisibleReflectanceBack	NUMBER		506	1	
 PARAM	bd3a6280-d1ed-11e1-8000-00215ad4efdf	VisibleReflectanceFront	NUMBER		506	1	"Reflectance at normal incidence (visible): front side. Defines the fraction of the solar ray in the visible spectrum that is reflected and not transmitted when the ray passes from one medium into another, at the ""front"" side of the other material,..."	1
 PARAM	c3304380-d1ed-11e1-8000-00215ad4efdf	SolarReflectanceBack	NUMBER		506	1	"Reflectance at normal incidence (solar): back side. Defines the fraction of the solar ray that is reflected and not transmitted when the ray passes from one medium into another, at the ""back"" side of the other material, perpendicular to the surfac..."	1
 PARAM	c7f4f780-d1ed-11e1-8000-00215ad4efdf	SolarReflectanceFront	NUMBER		506	1	"Reflectance at normal incidence (solar): front side. Defines the fraction of the solar ray that is reflected and not transmitted when the ray passes from one medium into another, at the ""front"" side of the other material, perpendicular to the surf..."	1
-PARAM	d3e0b980-d1ed-11e1-8000-00215ad4efdf	YieldStress	HVACPRESSURE		507	1	A measure of the yield stress (or characteristic 0.2 percent proof stress) of the material.	1
-PARAM	d9d69a80-d1ed-11e1-8000-00215ad4efdf	UltimateStress	HVACPRESSURE		507	1	A measure of the ultimate stress of the material.	1
+PARAM	d3e0b980-d1ed-11e1-8000-00215ad4efdf	YieldStress	HVAC_PRESSURE		507	1	A measure of the yield stress (or characteristic 0.2 percent proof stress) of the material.	1
+PARAM	d9d69a80-d1ed-11e1-8000-00215ad4efdf	UltimateStress	HVAC_PRESSURE		507	1	A measure of the ultimate stress of the material.	1
 PARAM	df33e500-d1ed-11e1-8000-00215ad4efdf	UltimateStrain	NUMBER		507	1	A measure of the (engineering) strain at the state of ultimate stress of the material.	1
 PARAM	e4912f80-d1ed-11e1-8000-00215ad4efdf	HardeningModule	INVALID		507	1	A measure of the hardening module of the material (slope of stress versus strain curve after yield range).	1
-PARAM	e9ee7a00-d1ed-11e1-8000-00215ad4efdf	ProportionalStress	HVACPRESSURE		507	1	A measure of the proportional stress of the material. It describes the stress before the first plastic deformation occurs and is commonly measured at a deformation of 0.01%.	1
+PARAM	e9ee7a00-d1ed-11e1-8000-00215ad4efdf	ProportionalStress	HVAC_PRESSURE		507	1	A measure of the proportional stress of the material. It describes the stress before the first plastic deformation occurs and is commonly measured at a deformation of 0.01%.	1
 PARAM	efe45b00-d1ed-11e1-8000-00215ad4efdf	PlasticStrain	NUMBER		507	1	"A measure of the permanent displacement, as in slip or twinning, which remains after the stress has been removed. Currently applied to a strain of 0.2% proportional stress of the material."	1
-PARAM	0be7fc80-d1ee-11e1-8000-00215ad4efdf	BoilingPoint	HVACTEMPERATURE		508	1	The boiling point of the material (fluid).	1
-PARAM	11dddd80-d1ee-11e1-8000-00215ad4efdf	FreezingPoint	HVACTEMPERATURE		508	1	The freezing point of the material (fluid).	1
+PARAM	0be7fc80-d1ee-11e1-8000-00215ad4efdf	BoilingPoint	HVAC_TEMPERATURE		508	1	The boiling point of the material (fluid).	1
+PARAM	11dddd80-d1ee-11e1-8000-00215ad4efdf	FreezingPoint	HVAC_TEMPERATURE		508	1	The freezing point of the material (fluid).	1
 PARAM	215d2680-d1ee-11e1-8000-00215ad4efdf	IsPotable	YESNO		509	1	"If TRUE, then the water is considered potable."	1
 PARAM	27530780-d1ee-11e1-8000-00215ad4efdf	Hardness	INVALID		509	1	"Water hardness as positive, multivalent ion concentration in the water (usually concentrations of calcium and magnesium ions in terms of calcium carbonate)."	1
 PARAM	2cb05200-d1ee-11e1-8000-00215ad4efdf	AlkalinityConcentration	INVALID		509	1	Maximum alkalinity concentration (maximum sum of concentrations of each of the negative ions substances measured as CaCO3).	1
