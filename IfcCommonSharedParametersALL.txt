@@ -522,8 +522,8 @@ GROUP	515	Pset_ProfileMechanical
 PARAM	00c8a880-d1bd-11e1-8000-00215ad4efdf	NumberOfActors	NUMBER		1	1	The number of actors that are to be dealt with together in the population.	1
 PARAM	06be8980-d1bd-11e1-8000-00215ad4efdf	Category	TEXT		1	1	Designation of the category into which the actors in the population belong.	1
 PARAM	0c1bd400-d1bd-11e1-8000-00215ad4efdf	SkillLevel	TEXT		1	1	Skill level exhibited by the actor and which indicates an extent of their capability to perform actions on the artefacts upon which they can act.	1
-PARAM	12d83480-d219-11e1-8000-00215ad4efdf	WorkStartTime	INVALID		2	1	"The default time of day a task is scheduled to start. For presentation purposes, if the start time of a task matches the WorkStartTime, then applications may choose to display the date only. Conversely when entering dates without specifying time, ..."	1
-PARAM	179ce880-d219-11e1-8000-00215ad4efdf	WorkFinishTime	INVALID		2	1	"The default time of day a task is scheduled to finish. For presentation purposes, if the finish time of a task matches the WorkFinishTime, then applications may choose to display the date only. Conversely when entering dates without specifying tim..."	1
+PARAM	12d83480-d219-11e1-8000-00215ad4efdf	WorkStartTime	TEXT		2	1	"The default time of day a task is scheduled to start. For presentation purposes, if the start time of a task matches the WorkStartTime, then applications may choose to display the date only. Conversely when entering dates without specifying time, ..."	1
+PARAM	179ce880-d219-11e1-8000-00215ad4efdf	WorkFinishTime	TEXT		2	1	"The default time of day a task is scheduled to finish. For presentation purposes, if the finish time of a task matches the WorkFinishTime, then applications may choose to display the date only. Conversely when entering dates without specifying tim..."	1
 PARAM	1cfa3300-d219-11e1-8000-00215ad4efdf	WorkDayDuration	TEXT		2	1	"The elapsed time within a worktime-based day. For presentation purposes, applications may choose to display IfcTask durations in work days where IfcTaskTime.DurationType=WORKTIME. This value must be less than or equal to 24 hours (an elapsed day);..."	1
 PARAM	22f01400-d219-11e1-8000-00215ad4efdf	WorkWeekDuration	TEXT		2	1	"The elapsed time within a worktime-based week. For presentation purposes, applications may choose to display IfcTask durations in work weeks where IfcTaskTime.DurationType=WORKTIME. This value must be less than or equal to 168 hours (an elapsed we..."	1
 PARAM	27b4c800-d219-11e1-8000-00215ad4efdf	WorkMonthDuration	TEXT		2	1	"The elapsed time within a worktime-based month. For presentation purposes, applications may choose to display IfcTask durations in work months where IfcTaskTime.DurationType=WORKTIME. This value must be less than or equal to 744 hours (an elapsed ..."	1
@@ -776,7 +776,7 @@ PARAM	4d18569d-f126-4f3b-aceb-2da495f1dfda	OuterDiameter	LENGTH		92	1	The actual
 PARAM	9f173700-d1da-11e1-8000-00215ad4efdf	Diversity	NUMBER		94	1	"The ratio, expressed as a numerical value or as a percentage, of the simultaneous maximum demand of a group of electrical appliances or consumers within a specified period, to the sum of their individual maximum demands within the same period. The..."	1
 PARAM	048b4300-4767-4386-b8ba-5b688c837bda	NumberOfLiveConductors	ANGLE		94	1	Number of live conductors within this circuit. Either this property or the ConductorFunction property (if only one) may be asserted.	1
 PARAM	a9393580-d1da-11e1-8000-00215ad4efdf	MaximumAllowedVoltageDrop	NUMBER		94	1	"The maximum voltage drop across the circuit that must not be exceeded.  There are two  voltage drop limit settings that may be applied; one for sub-main circuits, and one in each Distribution Board or Consumer Unit for final circuits connected to ..."	1
-PARAM	adfde980-d1da-11e1-8000-00215ad4efdf	NetImpedance	INVALID		94	1	The maximum earth loop impedance upstream of a circuit (typically stated as the variable Zs). This value is for 55o C (130oF) Celsius usage.	1
+PARAM	adfde980-d1da-11e1-8000-00215ad4efdf	NetImpedance	INVALID		94	1	The maximum earth loop impedance upstream of a circuit (typically stated as the variable Zs). This value is for 55°C (130°F) Celsius usage.	1
 PARAM	b9511500-d1da-11e1-8000-00215ad4efdf	DesignName	TEXT		95	1	A name for the design values.	1
 PARAM	ce2da880-d1da-11e1-8000-00215ad4efdf	PressureClass	HVAC_PRESSURE		95	1	Nominal pressure rating of the system components. (Data type = PressureMeasure)	1
 PARAM	d38af300-d1da-11e1-8000-00215ad4efdf	LeakageClass	HVAC_PRESSURE		95	1	Nominal leakage rating for the system components.	1
@@ -1048,8 +1048,8 @@ PARAM	97f32780-d1e0-11e1-8000-00215ad4efdf	EarthFault1PoleMinimumState	ELECTRICA
 PARAM	9d507200-d1e0-11e1-8000-00215ad4efdf	EarthFault1PolePowerFactorMinimumState	NUMBER		236	1	Power factor of the minimum 1 pole earth fault current provided at the point of supply i.e. the fault between 1 phase and PE/PEN.	1
 PARAM	7c868260-451b-4803-8f4f-c498fc0e3a9b	RadiativeFraction	INVALID		236	1	The fraction of energy converted to heat.	1
 PARAM	7813d9d4-8068-4f79-aca2-93559a565df4	ModuleCapacity	INVALID		236	1	The capacity for each battery module.	1
-PARAM	64446b41-70e2-49fa-9c6a-4564917ccfd9	ModulesInParallel	INVALID		236	1	"The number of modules in parallel, where the total number of modules equals the number in parallel multiplied by the number in series."	1
-PARAM	9c327be7-6d6f-4139-ab9f-58c6a5cc7a9a	ModulesInSeries	INVALID		236	1	"The number of modules in series, where the total number of modules equals the number in parallel multiplied by the number in series."	1
+PARAM	64446b41-70e2-49fa-9c6a-4564917ccfd9	ModulesInParallel	NUMBER		236	1	"The number of modules in parallel, where the total number of modules equals the number in parallel multiplied by the number in series."	1
+PARAM	9c327be7-6d6f-4139-ab9f-58c6a5cc7a9a	ModulesInSeries	NUMBER		236	1	"The number of modules in series, where the total number of modules equals the number in parallel multiplied by the number in series."	1
 PARAM	bb1dd700-d1e0-11e1-8000-00215ad4efdf	ElectricGeneratorEfficiency	NUMBER		237	1	The ratio of output capacity to intake capacity.	1
 PARAM	c07b2180-d1e0-11e1-8000-00215ad4efdf	StartCurrentFactor	NUMBER		237	1	IEC. Start current factor defines how large the peek starting current will become on the engine. StartCurrentFactor is multiplied to NominalCurrent and we get the start current.	1
 PARAM	c53fd580-d1e0-11e1-8000-00215ad4efdf	MaximumPowerOutput	HVAC_POWER		237	1	The maximum output power rating of the engine.	1
@@ -1061,7 +1061,7 @@ PARAM	0fc15200-d1e1-11e1-8000-00215ad4efdf	FrameSize	TEXT		238	1	Designation of 
 PARAM	15b73300-d1e1-11e1-8000-00215ad4efdf	IsGuarded	YESNO		238	1	Indication of whether the motor enclosure is guarded (= TRUE) or not (= FALSE).	1
 PARAM	1b147d80-d1e1-11e1-8000-00215ad4efdf	HasPartWinding	YESNO		238	1	"Indication of whether the motor is single speed, i.e. has a single winding (= FALSE) or multi-speed i.e.has part winding (= TRUE) ."	1
 PARAM	9dee0600-d1ea-11e1-8000-00215ad4efdf	NumberOfGangs	ANGLE		240	1	"Number of slots available for switches/outlets (most commonly 1, 2, 3, or 4)."	1
-PARAM	0fc64f80-d1eb-11e1-8000-00215ad4efdf	ContributedLuminousFlux	INVALID		241	1	"Luminous flux is a photometric measure of radiant flux, i.e. the volume of light emitted from a light source. Luminous flux is measured either for the interior as a whole or for a part of the interior (partial luminous flux for a solid angle). All..."	1
+PARAM	0fc64f80-d1eb-11e1-8000-00215ad4efdf	ContributedLuminousFlux	ELECTRICAL_LUMINOUS_FLUX		241	1	"Luminous flux is a photometric measure of radiant flux, i.e. the volume of light emitted from a light source. Luminous flux is measured either for the interior as a whole or for a part of the interior (partial luminous flux for a solid angle). All..."	1
 PARAM	15bc3080-d1eb-11e1-8000-00215ad4efdf	LightEmitterNominalPower	HVAC_POWER		241	1	Light emitter nominal power.	1
 PARAM	1c4aa800-d1eb-11e1-8000-00215ad4efdf	LampMaintenanceFactor	NUMBER		241	1	Non recoverable losses of luminous flux of a lamp due to lamp depreciation; i.e. the decreasing of light output of a luminaire due to aging and dirt.	1
 PARAM	41d7b180-d1eb-11e1-8000-00215ad4efdf	ColorAppearance	TEXT		241	1	"In both the DIN and CIE standards, artificial light sources are classified in terms of their color appearance. To the human eye they all appear to be white; the difference can only be detected by direct comparison. Visual performance is not direct..."	1
@@ -1160,7 +1160,7 @@ PARAM	7e1e0880-d211-11e1-8000-00215ad4efdf	SecondaryFrequency	STRUCTURAL_FREQUEN
 PARAM	837b5300-d211-11e1-8000-00215ad4efdf	PrimaryApparentPower	HVAC_POWER		283	1	The power in VA (volt ampere) that has been transformed and that runs into the transformer on the primary side.	1
 PARAM	89713400-d211-11e1-8000-00215ad4efdf	SecondaryApparentPower	HVAC_POWER		283	1	The power in VA (volt ampere) that has been transformed and is running out of the transformer on the secondary side.	1
 PARAM	8f671500-d211-11e1-8000-00215ad4efdf	MaximumApparentPower	HVAC_POWER		283	1	Maximum apparent power/capacity in VA (volt ampere).	1
-PARAM	a0b02180-d211-11e1-8000-00215ad4efdf	ShortCircuitVoltage	INVALID		283	1	A complex number that specifies the real and imaginary parts of the short-circuit voltage at rated current of a transformer given in %.	1
+PARAM	a0b02180-d211-11e1-8000-00215ad4efdf	ShortCircuitVoltage	ELECTRICAL_POTENTIAL		283	1	A complex number that specifies the real and imaginary parts of the short-circuit voltage at rated current of a transformer given in %.	1
 PARAM	a6a60280-d211-11e1-8000-00215ad4efdf	RealImpedanceRatio	NUMBER		283	1	The ratio between the real part of the zero sequence impedance and the real part of the positive impedance (i.e. real part of the short-circuit voltage) of the transformer. Used for three-phase transformer which includes a N-conductor.	1
 PARAM	ac9be380-d211-11e1-8000-00215ad4efdf	ImaginaryImpedanceRatio	NUMBER		283	1	The ratio between the imaginary part of the zero sequence impedance and the imaginary part of the positive impedance (i.e. imaginary part of the short-circuit voltage) of the transformer. Used for three-phase transformer which includes a N-conductor.	1
 PARAM	d228ed00-d211-11e1-8000-00215ad4efdf	IsNeutralPrimaryTerminalAvailable	YESNO		283	1	An indication of whether the neutral point of the primary winding is available as a terminal (=TRUE) or not (= FALSE).	1
@@ -1211,7 +1211,7 @@ PARAM	3cb63a80-d1ca-11e1-8000-00215ad4efdf	SensibleHeatRatio	NUMBER		323	1	"Air-
 PARAM	42ac1b80-d1ca-11e1-8000-00215ad4efdf	WetCoilFraction	NUMBER		323	1	Fraction of coil surface area that is wet (0-1).	1
 PARAM	4db37b80-d1cb-11e1-8000-00215ad4efdf	MinimumPartLoadRatio	NUMBER		325	1	Minimum part load ratio as a fraction of nominal capacity.	1
 PARAM	5310c600-d1cb-11e1-8000-00215ad4efdf	MaximumPartLoadRatio	NUMBER		325	1	Maximum part load ratio as a fraction of nominal capacity.	1
-PARAM	57d57a00-d1cb-11e1-8000-00215ad4efdf	CompressorSpeed	INVALID		325	1	Compressor speed.	1
+PARAM	57d57a00-d1cb-11e1-8000-00215ad4efdf	CompressorSpeed	NUMBER		325	1	Compressor speed.	1
 PARAM	6459d280-d1cb-11e1-8000-00215ad4efdf	IdealCapacity	HVAC_POWER		325	1	Compressor capacity under ideal conditions.	1
 PARAM	6b80e080-d1cb-11e1-8000-00215ad4efdf	IdealShaftPower	HVAC_POWER		325	1	Compressor shaft power under ideal conditions.	1
 PARAM	70de2b00-d1cb-11e1-8000-00215ad4efdf	HasHotGasBypass	YESNO		325	1	"Whether or not hot gas bypass is provided for the compressor. TRUE = Yes, FALSE = No."	1
@@ -1273,7 +1273,7 @@ PARAM	93c80980-d1e2-11e1-8000-00215ad4efdf	HeatExchangeArea	AREA		351	1	Heat exc
 PARAM	0d142c00-d1e4-11e1-8000-00215ad4efdf	FractionOfMotorHeatToAirStream	NUMBER		355	1	Fraction of the motor heat released into the fluid flow.	1
 PARAM	890e7400-d1e4-11e1-8000-00215ad4efdf	NominalTotalPressure	HVAC_PRESSURE		357	1	Nominal total pressure rise across the fan.	1
 PARAM	90ce1880-d1e4-11e1-8000-00215ad4efdf	NominalStaticPressure	HVAC_PRESSURE		357	1	The static pressure within the air stream that the fan must overcome to insure designed circulation of air.	1
-PARAM	96c3f980-d1e4-11e1-8000-00215ad4efdf	NominalRotationSpeed	INVALID		357	1	Nominal fan wheel speed.	1
+PARAM	96c3f980-d1e4-11e1-8000-00215ad4efdf	NominalRotationSpeed	NUMBER		357	1	Nominal fan wheel speed.	1
 PARAM	9b88ad80-d1e4-11e1-8000-00215ad4efdf	NominalPowerRate	HVAC_POWER		357	1	Nominal fan power rate.	1
 PARAM	a0e5f800-d1e4-11e1-8000-00215ad4efdf	OperationalCriteria	TEXT		357	1	Time of operation at maximum operational ambient air temperature.	1
 PARAM	747eab80-d1e5-11e1-8000-00215ad4efdf	DustHoldingCapacity	MASS		359	1	Maximum filter dust holding capacity.	1
@@ -1346,7 +1346,7 @@ PARAM	58453380-d212-11e1-8000-00215ad4efdf	NumberOfRows	ANGLE		401	1	Number of t
 PARAM	5ed3ab00-d212-11e1-8000-00215ad4efdf	StaggeredRowSpacing	LENGTH		401	1	Staggered tube row spacing.	1
 PARAM	672be600-d212-11e1-8000-00215ad4efdf	InLineRowSpacing	LENGTH		401	1	In-line tube row spacing.	1
 PARAM	701cb780-d212-11e1-8000-00215ad4efdf	NumberOfCircuits	ANGLE		401	1	Number of parallel fluid tube circuits.	1
-PARAM	757a0200-d212-11e1-8000-00215ad4efdf	FoulingFactor	INVALID		401	1	Fouling factor of the tubes in the tube bundle.	1
+PARAM	757a0200-d212-11e1-8000-00215ad4efdf	FoulingFactor	NUMBER		401	1	Fouling factor of the tubes in the tube bundle.	1
 PARAM	7ad74c80-d212-11e1-8000-00215ad4efdf	ThermalConductivity	HVAC_THERMAL_CONDUCTIVITY		401	1	The thermal conductivity of the tube.	1
 PARAM	89256880-d212-11e1-8000-00215ad4efdf	Volume	VOLUME		401	1	Total volume of fluid in the tubes and their headers.	1
 PARAM	96daee00-d212-11e1-8000-00215ad4efdf	OutsideDiameter	LENGTH		401	1	Actual outside diameter of the tube in the tube bundle.	1
@@ -1500,21 +1500,21 @@ PARAM	de587e80-d200-11e1-8000-00215ad4efdf	HorizontalBarPitch	LENGTH		491	1	The 
 PARAM	d2837eec-2e95-439f-97cc-eef7c80d6580	BarLength	LENGTH		492	1	The total length of the reinforcing bar. The total length of bended bars are calculated according to local standards with corrections for the bends.	1
 PARAM	002c10a5-49c4-4cd3-a02a-7d3a7cc3e726	BarSpacing	LENGTH		492	1	The spacing between bars if constant.	1
 PARAM	b89eecc8-c2d4-45f3-a269-38ae697189aa	BendingShapeCode	TEXT		492	1	"Shape code per a standard like ACI 315, ISO 3766, or a similar standard.  It is presumed that a single standard for defining the bar bending is used throughout the project and that this standard is referenced from the IfcProject object th..."	1
-PARAM	0829ac88-9a26-4665-b613-28d5c7ff7f24	MeshLength	INVALID		493	1		1
-PARAM	91489045-22ec-4efa-a54e-774dc160c4fb	MeshWidth	INVALID		493	1		1
+PARAM	0829ac88-9a26-4665-b613-28d5c7ff7f24	MeshLength	LENGTH		493	1		1
+PARAM	91489045-22ec-4efa-a54e-774dc160c4fb	MeshWidth	LENGTH		493	1		1
 PARAM	811e1893-d560-4309-b991-a91420614530	LongitudinalBarNominalDiameter	LENGTH		493	1		1
 PARAM	3d68be78-7e02-48bd-ac7b-d525d49bf731	LongitudinalBarSpacing	LENGTH		493	1		1
 PARAM	b387b86a-2194-44f5-b961-f6b7dd3752ae	TransverseBarNominalDiameter	LENGTH		493	1		1
 PARAM	5fc4c373-68ab-4588-9ff1-6a6fbe877c38	TransverseBarSpacing	LENGTH		493	1		1
 PARAM	18a3346a-79c9-48f2-a572-94a707b4868c	TransverseBarBendingShapeCode	TEXT		493	1	"Shape code per a standard like ACI 315, ISO 3766, or a similar standard.  It is presumed that a single standard for defining the bar bending is used throughout the project and that this standard is referenced from the IfcProject object th..."	1
 PARAM	a54972ba-690e-404d-b974-4a365cecd3b3	SheathDiameter	LENGTH		495	1	"Diameter of the sheeth (duct) around the tendon, if there is one with this type of tendon."	1
-PARAM	b6f7b680-d1ec-11e1-8000-00215ad4efdf	SpecificHeatCapacity	INVALID		499	1	Specific heat of the products of combustion: heat energy absorbed per temperature unit.	1
+PARAM	b6f7b680-d1ec-11e1-8000-00215ad4efdf	SpecificHeatCapacity	HVAC_HEATING_LOAD 		499	1	Specific heat of the products of combustion: heat energy absorbed per temperature unit.	1
 PARAM	bc550100-d1ec-11e1-8000-00215ad4efdf	N20Content	NUMBER		499	1	Nitrous oxide (N2O) content of the products of combustion. This is measured in weight of N2O per unit weight and is therefore unitless.	1
 PARAM	c1b24b80-d1ec-11e1-8000-00215ad4efdf	COContent	NUMBER		499	1	Carbon monoxide (CO) content of the products of combustion. This is measured in weight of CO per unit weight and is therefore unitless.	1
 PARAM	c7a82c80-d1ec-11e1-8000-00215ad4efdf	CO2Content	NUMBER		499	1	Carbon dioxide (CO2) content of the products of combustion. This is measured in weight of CO2 per unit weight and is therefore unitless.	1
 PARAM	d262c180-d1ec-11e1-8000-00215ad4efdf	MolecularWeight	INVALID		500	1	Molecular weight of material (typically gas).	1
 PARAM	d858a280-d1ec-11e1-8000-00215ad4efdf	Porosity	NUMBER		500	1	The void fraction of the total volume occupied by material (Vbr - Vnet)/Vbr.	1
-PARAM	ddb5ed00-d1ec-11e1-8000-00215ad4efdf	MassDensity	INVALID		500	1	Material mass density.	1
+PARAM	ddb5ed00-d1ec-11e1-8000-00215ad4efdf	MassDensity	NUMBER		500	1	Material mass density.	1
 PARAM	ea3a4580-d1ec-11e1-8000-00215ad4efdf	CompressiveStrength	HVAC_PRESSURE		501	1	The compressive strength of the concrete.	1
 PARAM	f0302680-d1ec-11e1-8000-00215ad4efdf	MaxAggregateSize	LENGTH		501	1	The maximum aggregate size of the concrete.	1
 PARAM	f7573480-d1ec-11e1-8000-00215ad4efdf	AdmixturesDescription	TEXT		501	1	Description of the admixtures added to the concrete mix.	1
